@@ -1,0 +1,74 @@
+#course{
+    margin: 60px 190px;
+    .container{
+        .course{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .course-title{
+                .name{
+                    margin-bottom: 70px;
+                }
+                h1{
+                    width: 654px;
+                    color: #0B132A;
+                    font-family: Rubik;
+                    font-size: 50px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 70px; 
+                }
+                p{
+                    width: 555px;
+                    color: #4F5665;
+                    font-family: Rubik;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px; 
+                }
+            }
+            .course-sub{
+                display: flex;
+                margin: 116px 0 0 120px;
+                p{
+                    width: 349px;
+                    color: var(--second-text-color, #737373);
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px;
+                    letter-spacing: 0.2px;
+                }
+                h4{
+                    width: 293px;
+                    color: var(--text-color, #252B42);
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 24px;
+                    letter-spacing: 0.1px;
+                }
+            }
+            .sub{
+                margin: 80px 0;
+                h1{
+                    width: 248px;
+                    color: #23A6F0;
+                    font-family: Rubik;
+                    font-size: 96px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 70px; 
+                    margin: 25px 0;
+                }
+            }
+            .course-text{
+                margin-bottom: 110px;
+            }
+        }
+        
+    }
+}
