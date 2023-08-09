@@ -13,10 +13,10 @@ function App() {
       <Main/>
       <Blocks/>
       <Course/>
-      <Header />
       <Routes>
         <Route path={"/aboutUs"} el={<AboutUs/>}/>
       </Routes>
+      </div>
   );
 }
 
