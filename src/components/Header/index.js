@@ -11,8 +11,8 @@ const Header = () => {
             <NavLink>Logo</NavLink>
           </div>
           <div className="header-nav">
-            <NavLink>Главная</NavLink>
-            <NavLink to={'/aboutUs'} > О нас</NavLink>
+            <NavLink to={"/"}> Главная</NavLink>
+            <NavLink to={"/aboutUs"}> О нас</NavLink>
             <NavLink>Курсы</NavLink>
             <NavLink>Контакты</NavLink>
           </div>
