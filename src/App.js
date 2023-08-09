@@ -1,16 +1,22 @@
+import './App.scss';
+import Header from './components/Header'
+import Main from './components/Main';
+import Blocks from './components/Blocks';
+import Course from './components/Course';
 import { Route, Routes } from "react-router";
-import "./App.scss";
 import AboutUs from "./components/aboutUs/aboutUs";
-import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
+      <Header/>
+      <Main/>
+      <Blocks/>
+      <Course/>
       <Header />
       <Routes>
         <Route path={"/aboutUs"} el={<AboutUs/>}/>
       </Routes>
-    </div>
   );
 }
 

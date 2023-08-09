@@ -1,0 +1,51 @@
+#main{
+    .main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 120px  0  55px 170px;
+
+        .main-text{
+           
+            h1{
+                width: 682px;
+                color: #0B132A;
+                font-family: Rubik;
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 70px; 
+                margin-top: -110px;
+            } 
+            p{
+                color: #4F5665;
+                font-family: Rubik;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+                width: 555px;
+                margin-top: 12px;
+            }
+            .btn{
+                margin-top: 58px;
+                display: inline-flex;
+                padding: 17px 96px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 10px;
+                background: #23A6F0;
+                box-shadow: 0px 4px 29px 0px rgba(35, 166, 240, 0.70);
+                border: none;
+                color: #FFF;
+                font-family: Rubik;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 25px; 
+            }
+        } 
+    }
+    
+}
