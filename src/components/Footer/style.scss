@@ -1,0 +1,152 @@
+#footer {
+  .container {
+    .footer {
+      &--block {
+        &__zag {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 65px;
+          h1 {
+            color: #0b132a;
+            font-family: Rubik;
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 70px;
+          }
+          h4 {
+            width: 555px;
+            color: #4f5665;
+            text-align: center;
+            font-family: Rubik;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+          }
+        }
+        &__input {
+          display: flex;
+          justify-content: center;
+          input {
+            display: flex;
+            width: 522.8620000000001px;
+            padding: 22.759px 387.51700000000005px 22.241px 30.345px;
+            align-items: center;
+            border-radius: 7.586px;
+            border: 1.517px solid #949494;
+            background: #fff;
+            color: #737373;
+            font-family: Montserrat;
+            font-size: 21.241px;
+            font-weight: 400;
+            line-height: 42.483px;
+            letter-spacing: 0.303px;
+          }
+          button {
+            border-radius: 0px 7.586px 7.586px 0px;
+            border: 1.517px solid #e6e6e6;
+            background: #23a6f0;
+            display: flex;
+            width: 177.517px;
+            height: 88px;
+            padding: 22.759px 32.38px 22.241px 32.137px;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 21.241px;
+            font-weight: 400;
+            line-height: 42.483px;
+            letter-spacing: 0.303px;
+          }
+        }
+        &__content {
+          display: flex;
+          justify-content: space-around;
+          margin-top: 100px;
+          &--logo {
+            margin-left: 20px;
+
+            h1 {
+              color: #0b132a;
+              font-family: Rubik;
+              font-size: 32px;
+              font-weight: 700;
+            }
+            p {
+              margin: 20px 0 10px 0;
+              color: #4f5665;
+              font-family: Rubik;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 30px;
+              width: 340px;
+            }
+            &__circle {
+              display: flex;
+              &--cruck {
+                margin-right: 28px;
+                border-radius: 50%;
+                width: 33.6px;
+                height: 33.6px;
+                background: #23a6f0;
+              }
+            }
+          }
+          &--product {
+            h1 {
+              color: #181818;
+              font-family: Rubik;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 30px;
+            }
+            P {
+              color: #4f5665;
+              font-family: Rubik;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 30px;
+              margin-top: 10px;
+            }
+          }
+          &--Engage {
+            h1 {
+              color: #181818;
+              font-family: Rubik;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 30px;
+            }
+            p {
+              color: #4f5665;
+              font-family: Rubik;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 30px;
+              margin-top: 10px;
+            }
+          }
+          &--EarnMoney {
+            h1 {
+              color: #181818;
+              font-family: Rubik;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 30px;
+            }
+            p {
+              color: #4f5665;
+              font-family: Rubik;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 30px;
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
