@@ -1,0 +1,30 @@
+#about {
+  .container {
+    .about {
+      &--block1 {
+        margin-top: 181px;
+        margin-left: 150px;
+        display: flex;
+        justify-content: space-between;
+        &__text {
+          h1 {
+            color: var(--text-color, #252b42);
+            font-family: Montserrat;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 52px;
+            letter-spacing: 0.1px;
+            width: 780px;
+          }
+        }
+        &__image {
+          position: relative;
+          &--imageCir {
+          }
+          &--imageRoc {
+          }
+        }
+      }
+    }
+  }
+}
