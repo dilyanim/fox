@@ -3,6 +3,8 @@ import Header from './components/Header'
 import Main from './components/Main';
 import Blocks from './components/Blocks';
 import Course from './components/Course';
+import { Route, Routes } from "react-router";
+import AboutUs from "./components/aboutUs/aboutUs";
 
 function App() {
   return (
@@ -11,8 +13,10 @@ function App() {
       <Main/>
       <Blocks/>
       <Course/>
-       
-    </div>
+      <Header />
+      <Routes>
+        <Route path={"/aboutUs"} el={<AboutUs/>}/>
+      </Routes>
   );
 }
 

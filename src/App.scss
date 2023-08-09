@@ -1,3 +1,6 @@
+@import "../src/components/aboutUs/style.scss";
+
+* {
 @import './components/Header/index.scss';
 @import './components/Main/index.scss';
 @import './components/Blocks/index.scss';
@@ -6,7 +9,8 @@
  *{
   margin: 0;
   padding: 0;
- }
- .container{
+}
+.container {
   width: 90%;
- }
+}
+}
