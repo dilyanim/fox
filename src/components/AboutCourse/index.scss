@@ -1,0 +1,112 @@
+#abCourse{
+     margin: 120px 150px;
+    .container{
+        .abCourse{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h1{
+                width: 682px;
+                color: #0B132A;
+                font-family: Rubik;
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 70px; 
+            }
+            .abBtn{
+                   margin: 70px 0;
+                   color: #FFF;
+                   font-family: Rubik;
+                   font-size: 16px;
+                   font-style: normal;
+                   font-weight: 700;
+                   line-height: 25px; 
+                   border: none;
+                   display: inline-flex;
+                   padding: 17px 96px;
+                   justify-content: center;
+                   align-items: center;
+                   gap: 10px;
+                   border-radius: 10px;
+                   background: #23A6F0;
+                   box-shadow: 0px 4px 29px 0px rgba(35, 166, 240, 0.70);
+                   }
+             .img{
+                width: 492px;
+                height: 456px;
+                flex-shrink: 0;
+                margin-left: 50px;
+              }
+
+        }
+        .popularCourse{
+             align-items: center;
+             text-align: center;
+             justify-content: center;
+            margin-top: 100px;
+            .popular-text{
+                margin: 50px 320px;
+                h1{
+                    margin-left: 20px;
+                    width: 498px;
+                    color: #0B132A;
+                    font-family: Rubik;
+                    font-size: 50px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 70px;
+                }
+                p{
+                    margin: 12px 0;
+                    width: 555px;
+                    color: #4F5665;
+                    font-family: Rubik;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px; /* 187.5% */
+                }
+            }
+            .btn-1{
+                display: flex;
+                padding: 10.882px 21.765px;
+                align-items: flex-start;
+                gap: 10.882px;
+                color: #FFF;
+                font-family: Rubik;
+                font-size: 13.059px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-transform: capitalize;
+                border-radius: 5.441px;
+                background: #23A6F0;
+                border: none;
+                margin-right: 14px;
+
+            }
+            .btn-2{
+                color: #818C96;
+                font-family: Rubik;
+                font-size: 13.059px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-transform: capitalize;
+                display: flex;
+                padding: 10.882px 21.765px;
+                align-items: flex-start;
+                gap: 10.882px;
+                border-radius: 5.441px;
+                border: 1.088px solid #C4C4C4;
+                margin: 0 16px;
+            }
+            .popular-blocks{
+                display: flex;
+                margin-left: 160px;
+            }
+        }
+
+    }
+}
