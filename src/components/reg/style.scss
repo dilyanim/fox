@@ -1,0 +1,178 @@
+#reg {
+  .container {
+    .reg {
+      display: flex;
+      &--content {
+        margin-left: 101px;
+        &__welcome {
+          margin-left: 20px;
+          h1 {
+            color: #000;
+            font-family: Rubik;
+            font-size: 48px;
+            font-weight: 700;
+          }
+        }
+        &__inp {
+          display: flex;
+          flex-direction: column;
+          width: 502px;
+          &--input1 {
+            margin-top: 30px;
+            border: none;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.65);
+            height: 39px;
+            gap: 17px;
+            color: rgba(0, 0, 0, 0.56);
+            font-family: Rubik;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 130.651%;
+          }
+          &--input2 {
+            margin-top: 25px;
+            border: none;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.65);
+            height: 39px;
+            gap: 17px;
+            color: rgba(0, 0, 0, 0.56);
+            font-family: Rubik;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 130.651%;
+          }
+          p {
+            margin-top: 5px;
+            margin-bottom: 20px;
+            color: rgba(0, 0, 0, 0.56);
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 134.4%;
+            text-align: end;
+            cursor: pointer;
+          }
+          button {
+            cursor: pointer;
+            display: flex;
+            padding: 12px 253px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 12px;
+            background: #23a6f0;
+            border: none;
+            outline: none;
+            color: #fff;
+            font-family: Rubik;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 50px;
+          }
+          h5 {
+            margin-bottom: 20px;
+            margin-left: 96px;
+            color: #000;
+            font-family: Rubik;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 30.503px;
+            span {
+              cursor: pointer;
+              color: #23a6f0;
+              font-family: Rubik;
+              font-size: 15px;
+              font-weight: 500;
+              line-height: 30.503px;
+            }
+          }
+          &--gAndf {
+            display: flex;
+            align-items: center;
+            margin-left: 108px;
+            &__linea {
+              width: 111px;
+              height: 2px;
+              background: #348bca;
+            }
+            h6 {
+              margin: 0 10px;
+              color: rgba(0, 0, 0, 0.5);
+              font-family: Rubik;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 30.503px;
+            }
+          }
+          &--googleAndFasebook {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            &__google {
+              cursor: pointer;
+              width: 228px;
+              height: 47px;
+              border-radius: 7px;
+              border: 1px solid #348bca;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-right: 30px;
+              img {
+                margin-right: 7px;
+                width: 18px;
+              }
+              h3 {
+                color: #000;
+                font-family: Montserrat;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 30.503px;
+              }
+              &:hover {
+                transition: 0.5s;
+                background: rgb(2, 0, 36);
+                background: linear-gradient(
+                  90deg,
+                  rgba(2, 0, 36, 1) 0%,
+                  rgba(9, 66, 121, 1) 35%,
+                  rgba(0, 212, 255, 1) 100%
+                );
+              }
+            }
+            &__fasebook {
+              cursor: pointer;
+              width: 228px;
+              height: 47px;
+              border-radius: 7px;
+              border: 1px solid #348bca;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              img {
+                margin-right: 7px;
+                width: 18px;
+              }
+              h3 {
+                color: #000;
+                font-family: Montserrat;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 30.503px;
+              }
+              &:hover {
+                background: rgb(2, 0, 36);
+                background: linear-gradient(
+                  90deg,
+                  rgba(2, 0, 36, 1) 0%,
+                  rgba(9, 66, 121, 1) 35%,
+                  rgba(0, 212, 255, 1) 100%
+                );
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

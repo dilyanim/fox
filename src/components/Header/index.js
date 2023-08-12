@@ -19,9 +19,11 @@ const Header = () => {
 
           <div className="header-arrow">
             <NavLink>Войти</NavLink>
-            <button className="btn">
-              Присоединяйся <AiOutlineArrowRight />
-            </button>
+            <NavLink to={"/reg"}>
+              <button className="btn">
+                Присоединяйся <AiOutlineArrowRight />
+              </button>
+            </NavLink>
           </div>
         </div>
       </div>
