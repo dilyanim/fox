@@ -17,11 +17,10 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/zapylParol" element={<ZapylParol/>} />
-      </Routes>
-    </div>
         <Route path="/aboutCourse" element={<AboutCourse/>} />
       </Routes>
-      </div>
+      <Footer/>
+    </div>
   );
 }
 
