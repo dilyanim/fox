@@ -10,6 +10,7 @@ import { RiAlarmLine} from 'react-icons/ri'
 import  {RiArrowRightSLine} from 'react-icons/ri'
 import { NavLink } from 'react-router-dom';
 import Lessons from '../Lessons';
+import ReviewTwo from '../ReviewTwo';
 
 
 const AboutCourse = () => {
@@ -254,6 +255,7 @@ const AboutCourse = () => {
             
         </div>
         <Lessons/>
+        <ReviewTwo/>
         
        </>
     
