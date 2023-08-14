@@ -1,4 +1,4 @@
-  
+* {
   @import "./components/reg/style.scss";
   @import "./components/Header/index.scss";
   @import "./components/Main/index.scss";
@@ -6,17 +6,12 @@
   @import "./components/Course/index.scss";
   @import "../src/components/aboutUs/style.scss";
   @import "../src/components/Footer/style.scss";
-  @import './components/AboutCourse/index.scss';
-  @import './components/Lessons/index.scss';
-  @import './components/Marceting1/index.scss';
-  
- 
-
- 
- *{
-  margin: 0;
-  padding: 0;
-}
-.container {
-  width: 90%;
+  @import "../src/components/reg/register/style.scss";
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 90%;
+  }
 }
