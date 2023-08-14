@@ -2,6 +2,8 @@ import React from "react";
 import main from "../../img/main.png";
 import Blocks from "../Blocks";
 import Course from "../Course";
+import Courses from "../Courses/Courses";
+import Review from "../Review/Review";
 
 const Main = () => {
   return (
@@ -26,6 +28,8 @@ const Main = () => {
       </div>
       <Blocks />
       <Course />
+      <Courses/>
+        <Review/>
     </>
   );
 };

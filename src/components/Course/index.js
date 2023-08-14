@@ -7,6 +7,7 @@ import course3 from '../../img/course3.png';
 
 
 
+
 const Course = () => {
     return (
         <div id='course'>
@@ -16,8 +17,7 @@ const Course = () => {
                         <div className='name'>
                              <h1>Почему (название кур.)</h1>
                         <p>Мы предоставляем множество функций, которые вы можете использовать. Постепенное накопление информация </p>
-                        </div>
-                       
+                        </div>                                           
                         <div>
                              <div className="sub">
                             <h1>100+</h1>
