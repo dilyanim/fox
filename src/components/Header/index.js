@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
-
+import { Redirect} from 'react-router-dom'
 const Header = () => {
   return (
     <div id="header">
