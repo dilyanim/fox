@@ -184,12 +184,17 @@
 }
 .topic1{
     display: flex;
-    margin: 0 25px;
-   
-    p{  
+    gap: 10px;
+    margin: 0 0 0 22px;
+    h6{
+        color: var(--second-text-color, #737373);
+        font-family: Montserrat;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px; 
+        letter-spacing: 0.2px;   
     }
-    
-    
 }
 .top-text{
     width: 329px; 
