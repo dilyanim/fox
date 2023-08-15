@@ -6,11 +6,13 @@ import lesson3 from '../../img/lesson3.png'
 import lesson4 from '../../img/lessson4.png'
 import lesson5 from '../../img/lesson5.png'
 import lesson6 from '../../img/lesson6.png'
-import { RiAlarmLine} from 'react-icons/ri'
 import  {RiArrowRightSLine} from 'react-icons/ri'
 import { NavLink } from 'react-router-dom';
 import Lessons from '../Lessons';
 import ReviewTwo from '../ReviewTwo';
+import Clock from '../../img/clock.svg'
+import Chart from '../../img/chart.svg'
+import IMG from '../../img/IMG.svg'
 
 
 const AboutCourse = () => {
@@ -52,24 +54,12 @@ const AboutCourse = () => {
                             <h4>Как ставить о оценивать задачи</h4>
                             <p className='top-p' >   Мы ориентируемся на эргономику и ты где работаешь. Это всего лишь нажатие клавиши.</p>
                             <div className='topic1' >
-                                        <RiAlarmLine  style={{
-                                          width: '46px' ,
-                                          height: '20px' ,
-                                          color : '#23A6F0'  }}   />
-                                         <p>22ч 30мин</p>
-                               
-                                         <RiAlarmLine  style={{
-                                          width: '46px' ,
-                                          height: '20px' ,
-                                          color : '#23A6F0'  }}   />
-                                    <p>22ч 30мин</p>
-                              
-                               
-                                    <RiAlarmLine  style={{
-                                          width: '46px' ,
-                                          height: '20px' ,
-                                          color : '#23A6F0'  }}   />
-                                    <p>22ч 30мин</p>
+                                <img src={Clock} alt=""/>
+                                <h6>22ч 30мин</h6>
+                                <img src={Chart} alt=""/>
+                                <h6>64 уроков</h6>
+                                <img src={IMG} alt=""/>
+                                <h6>Прогресс</h6>
                                
                                 
                             </div> 
@@ -85,25 +75,12 @@ const AboutCourse = () => {
                             <h4>Как ставить о оценивать задачи</h4>
                             <p className='top-p' >   Мы ориентируемся на эргономику и ты где работаешь. Это всего лишь нажатие клавиши.</p>
                             <div className='topic1' >
-                                        <RiAlarmLine  style={{
-                                          width: '46px' ,
-                                          height: '20px' ,
-                                          color : '#23A6F0'  }}   />
-                                         <p>22ч 30мин</p>
-                               
-                                         <RiAlarmLine  style={{
-                                          width: '46px' ,
-                                          height: '20px' ,
-                                          color : '#23A6F0'  }}   />
-                                    <p>22ч 30мин</p>
-                              
-                               
-                                    <RiAlarmLine  style={{
-                                          width: '46px' ,
-                                          height: '20px' ,
-                                          color : '#23A6F0'  }}   />
-                                    <p>22ч 30мин</p>
-                               
+                                <img src={Clock} alt=""/>
+                                <h6>22ч 30мин</h6>
+                                <img src={Chart} alt=""/>
+                                <h6>64 уроков</h6>
+                                <img src={IMG} alt=""/>
+                                <h6>Прогресс</h6>
                                 
                             </div> 
                           <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
@@ -118,24 +95,12 @@ const AboutCourse = () => {
                             <h4>Как ставить о оценивать задачи</h4>
                             <p className='top-p' >   Мы ориентируемся на эргономику и ты где работаешь. Это всего лишь нажатие клавиши.</p>
                             <div className='topic1' >
-                                        <RiAlarmLine  style={{
-                                          width: '46px' ,
-                                          height: '20px' ,
-                                          color : '#23A6F0'  }}   />
-                                         <p>22ч 30мин</p>
-                               
-                                         <RiAlarmLine  style={{
-                                          width: '46px' ,
-                                          height: '20px' ,
-                                          color : '#23A6F0'  }}   />
-                                    <p>22ч 30мин</p>
-                              
-                               
-                                    <RiAlarmLine  style={{
-                                          width: '46px' ,
-                                          height: '20px' ,
-                                          color : '#23A6F0'  }}   />
-                                    <p>22ч 30мин</p>
+                                <img src={Clock} alt=""/>
+                                <h6>22ч 30мин</h6>
+                                <img src={Chart} alt=""/>
+                                <h6>64 уроков</h6>
+                                <img src={IMG} alt=""/>
+                                <h6>Прогресс</h6>
                                
                                 
                             </div> 
@@ -153,24 +118,12 @@ const AboutCourse = () => {
                             <h4>Как ставить о оценивать задачи</h4>
                             <p className='top-p' >   Мы ориентируемся на эргономику и ты где работаешь. Это всего лишь нажатие клавиши.</p>
                             <div className='topic1' >
-                                        <RiAlarmLine  style={{
-                                          width: '46px' ,
-                                          height: '20px' ,
-                                          color : '#23A6F0'  }}   />
-                                         <p>22ч 30мин</p>
-                               
-                                         <RiAlarmLine  style={{
-                                          width: '46px' ,
-                                          height: '20px' ,
-                                          color : '#23A6F0'  }}   />
-                                    <p>22ч 30мин</p>
-                              
-                               
-                                    <RiAlarmLine  style={{
-                                          width: '46px' ,
-                                          height: '20px' ,
-                                          color : '#23A6F0'  }}   />
-                                    <p>22ч 30мин</p>
+                                <img src={Clock} alt=""/>
+                                <h6>22ч 30мин</h6>
+                                <img src={Chart} alt=""/>
+                                <h6>64 уроков</h6>
+                                <img src={IMG} alt=""/>
+                                <h6>Прогресс</h6>
                                
                                 
                             </div> 
@@ -186,24 +139,12 @@ const AboutCourse = () => {
                             <h4>Как ставить о оценивать задачи</h4>
                             <p className='top-p' >   Мы ориентируемся на эргономику и ты где работаешь. Это всего лишь нажатие клавиши.</p>
                             <div className='topic1' >
-                                        <RiAlarmLine  style={{
-                                          width: '46px' ,
-                                          height: '20px' ,
-                                          color : '#23A6F0'  }}   />
-                                         <p>22ч 30мин</p>
-                               
-                                         <RiAlarmLine  style={{
-                                          width: '46px' ,
-                                          height: '20px' ,
-                                          color : '#23A6F0'  }}   />
-                                    <p>22ч 30мин</p>
-                              
-                               
-                                    <RiAlarmLine  style={{
-                                          width: '46px' ,
-                                          height: '20px' ,
-                                          color : '#23A6F0'  }}   />
-                                    <p>22ч 30мин</p>
+                                <img src={Clock} alt=""/>
+                                <h6>22ч 30мин</h6>
+                                <img src={Chart} alt=""/>
+                                <h6>64 уроков</h6>
+                                <img src={IMG} alt=""/>
+                                <h6>Прогресс</h6>
                                
                                 
                             </div> 
@@ -219,24 +160,12 @@ const AboutCourse = () => {
                             <h4>Как ставить о оценивать задачи</h4>
                             <p className='top-p' >   Мы ориентируемся на эргономику и ты где работаешь. Это всего лишь нажатие клавиши.</p>
                             <div className='topic1' >
-                                        <RiAlarmLine  style={{
-                                          width: '46px' ,
-                                          height: '20px' ,
-                                          color : '#23A6F0'  }}   />
-                                         <p>22ч 30мин</p>
-                               
-                                         <RiAlarmLine  style={{
-                                          width: '46px' ,
-                                          height: '20px' ,
-                                          color : '#23A6F0'  }}   />
-                                    <p>22ч 30мин</p>
-                              
-                               
-                                    <RiAlarmLine  style={{
-                                          width: '46px' ,
-                                          height: '20px' ,
-                                          color : '#23A6F0'  }}   />
-                                    <p>22ч 30мин</p>
+                                <img src={Clock} alt=""/>
+                                <h6>22ч 30мин</h6>
+                                <img src={Chart} alt=""/>
+                                <h6>64 уроков</h6>
+                                <img src={IMG} alt=""/>
+                                <h6>Прогресс</h6>
                                
                                 
                             </div> 

@@ -1,8 +1,21 @@
 #review2 {
-    padding: 145px 0 50px 0;
-  
+    padding: 20px 0 50px 0;
+    margin: 0 0 0  150px ;
+   
     .container {
       .review2 {
+       
+    
+          overflow-x: scroll; 
+          display: flex;
+          margin: 30px 1px ;
+          gap: 30px;
+                &::-webkit-scrollbar{
+                  display: none;
+                }
+          
+   
+      
   
         &--text {
           h2 {
@@ -31,7 +44,7 @@
   
         &--cards {
           display: flex;
-          gap: 6%;
+          gap: 2%;
   
           &__card {
             padding: 30px;

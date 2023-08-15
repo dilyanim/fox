@@ -33,7 +33,7 @@
                 justify-content: space-between;
                 align-items: center;
                 margin: 0 30px;
-                // margin: 116px 0 0 120px;
+                margin: 116px 0 0 120px;
                 p{
                     width: 349px;
                     color: var(--second-text-color, #737373);
@@ -69,10 +69,13 @@
                 }
             }
             .course-text{
-                margin-bottom: 120px;
                 background: #F5F9FC;
                 width: 640px;
                 height: 530px;
+                margin-bottom: 100px;
+              
+
+
             }
         }
         
