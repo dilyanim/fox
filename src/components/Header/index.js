@@ -2,13 +2,17 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { Redirect } from "react-router-dom";
+
+
+
+
 const Header = () => {
   return (
     <div id="header">
       <div className="container">
         <div className="header">
           <div className="header_logo">
-            <NavLink>Logo</NavLink>
+             <NavLink to={"/"}>Logo</NavLink>
           </div>
           <div className="header-nav">
             <NavLink to={"/"}> Главная</NavLink>

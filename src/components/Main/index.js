@@ -4,6 +4,7 @@ import Blocks from "../Blocks";
 import Course from "../Course";
 import Courses from "../Courses/Courses";
 import Review from "../Review/Review";
+import Lessons from '../Lessons'
 
 const Main = () => {
   return (
@@ -29,7 +30,8 @@ const Main = () => {
       <Blocks />
       <Course />
       <Courses/>
-        <Review/>
+      <Lessons/>
+       <Review/>
     </>
   );
 };
