@@ -1,9 +1,11 @@
 import React from 'react';
 import market from '../../img/product-cover-75.png'
+import Acardion from '../Acardion';
 
 const Marketing1 = () => {
     return (
-        <div id='marketingOne'>
+      <> 
+            <div id='marketingOne'>
             <div className="container">
                 <div className="marketingOne">
                          <div className='market-text'>
@@ -23,13 +25,13 @@ const Marketing1 = () => {
                 </div>
                 <div  style={{
                       
-                            width: "1153px" ,
+                            width: "1140px" ,
                             color: "#000" ,
                             fontFamily: "Rubik",
                             fontSize: "16px",
                             fontStyle: "normal",
                             fontWeight: "400",
-                            margin: "0px 165px" 
+                            margin: "0px 170px" 
                          
                 }} className='h6'> <p>Хранить эти деньги стоит диверсифицированно. 10% сбережений оставляйте в национальной валюте вашей страны. 90 % распределите на 3 валюты: швейцарский франк, норвежская крона, и что-то из: американского доллара, евро либо йены. Рассмотрите варианты сбережений в государственных бумагах, фиксированных к инфляции.Эти рекомендации касаются личного бюджета. Ниже мы рассмотрим основные финансовые рискив бизнесе и стратегии управления ими.</p></div>
                       
@@ -37,6 +39,8 @@ const Marketing1 = () => {
             </div>
             
         </div>
+         <Acardion/>
+      </>
     );
 };
 

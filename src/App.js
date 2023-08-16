@@ -12,7 +12,6 @@ import Marketing1 from './components/Marceting1'
 
 
 
-
 function App() {
   return (
     <div className="App">
@@ -25,7 +24,9 @@ function App() {
         <Route path="/zapylParol" element={<ZapylParol />} />
         <Route path="/aboutCourse" element={<AboutCourse/>} />
          <Route path="/marketing1" element={<Marketing1/>}/> 
+        
       </Routes>
+  
       <Footer />
     </div>
   );
