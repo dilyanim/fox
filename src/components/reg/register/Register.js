@@ -2,10 +2,7 @@ import React, { useEffect, useState } from "react";
 import imageGoogle from "../../../img/google.svg";
 import imageFacebook from "../../../img/fasebook.svg";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
-import { useDispatch } from "react-redux";
-import { Form } from "../../reg/Form";
-import { setUser } from "../../../store/userSlice/userSlice";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+
 const useValidation = (value, validations) => {
   const [isEmpty, setEmpty] = useState(true);
   const [minLengthError, setMinLengthError] = useState(false);
@@ -77,14 +74,6 @@ const Register = () => {
     setPasswordVisible(!passwordVisible);
   };
 
-  const dispatch = useDispatch();
-  const handleRegister = (email, password) => {
-    "";
-    const auth = getAuth();
-    createUserWithEmailAndPassword(auth, email, password)
-      .then(console.log)
-      .catch(console.error);
-  };
   return (
     <div id="register">
       <div className="container">
