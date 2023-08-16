@@ -4,19 +4,8 @@ import imageGoogle from "../../img/google.svg";
 import imageFacebook from "../../img/fasebook.svg";
 import { RxCross2 } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { Form } from "../reg/Form";
-import { setUser } from "../../store/userSlice/userSlice";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+
 const Reg = () => {
-  const dispatch = useDispatch();
-  const handleLogin = (email, password) => {
-    "";
-    const auth = getAuth();
-    signInWithEmailAndPassword(auth, email, password)
-      .then(console.log)
-      .catch(console.error);
-  };
   return (
     <div id="reg">
       <div className="container">
@@ -41,10 +30,15 @@ const Reg = () => {
               <input
                 className="reg--content__inp--input1"
                 type="text"
-                placeholder="Почта"
+                placeholder="Имя "
               />
               <input
                 className="reg--content__inp--input2"
+                type="text"
+                placeholder="Почта"
+              />
+              <input
+                className="reg--content__inp--input3"
                 type="password"
                 placeholder="Пароль "
               />
@@ -80,5 +74,4 @@ const Reg = () => {
     </div>
   );
 };
-
 export default Reg;

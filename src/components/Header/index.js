@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import { Redirect} from 'react-router-dom'
+import { Redirect } from "react-router-dom";
 
 
 
@@ -22,8 +22,8 @@ const Header = () => {
           </div>
 
           <div className="header-arrow">
-            <NavLink>Войти</NavLink>
-            <NavLink to={"/reg"}>
+            <NavLink to={"/log"}>Войти</NavLink>
+            <NavLink to={"/regis"}>
               <button className="btn">
                 Присоединяйся <AiOutlineArrowRight />
               </button>
