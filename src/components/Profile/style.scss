@@ -1,0 +1,149 @@
+#profile {
+  .container {
+    .profile {
+      display: flex;
+      justify-content: space-between;
+      border-top: 2px solid grey;
+      border-right: 2px solid grey;
+      width: 328px;
+      height: 877px;
+      &--nav {
+        margin-left: 145px;
+        margin-top: 30px;
+        &__prof {
+          margin-bottom: 31px;
+
+          display: flex;
+          align-items: center;
+          &--imgUser {
+            width: 24px;
+            height: 24px;
+          }
+          p {
+            cursor: pointer;
+            margin-left: 6px;
+            color: #499bfc;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.32px;
+          }
+        }
+        &__chat {
+          margin-bottom: 31px;
+
+          display: flex;
+          align-items: center;
+          &--imgChat {
+            width: 24px;
+            height: 24px;
+          }
+          p {
+            cursor: pointer;
+            margin-left: 6px;
+            color: #000;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.32px;
+          }
+        }
+        &__kurs {
+          margin-bottom: 31px;
+
+          display: flex;
+          align-items: center;
+          &--imgKurs {
+            width: 24px;
+            height: 24px;
+          }
+          p {
+            cursor: pointer;
+            color: #000;
+            margin-left: 6px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.32px;
+          }
+        }
+        &__status {
+          margin-bottom: 31px;
+
+          display: flex;
+          align-items: center;
+          &--imgStatus {
+            width: 24px;
+            height: 24px;
+          }
+          p {
+            cursor: pointer;
+            color: #000;
+            margin-left: 6px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.32px;
+          }
+        }
+        &__privacy {
+          margin-bottom: 164px;
+
+          display: flex;
+          align-items: center;
+          &--imgSetting {
+            width: 24px;
+            height: 24px;
+          }
+          p {
+            cursor: pointer;
+            color: #000;
+            margin-left: 6px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.32px;
+          }
+        }
+        &__help {
+          margin-bottom: 31px;
+
+          display: flex;
+          align-items: center;
+          &--imgQues {
+            width: 24px;
+            height: 24px;
+          }
+          p {
+            cursor: pointer;
+            color: #000;
+            margin-left: 6px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.32px;
+          }
+        }
+        &__exit {
+          margin-bottom: 31px;
+
+          display: flex;
+          align-items: center;
+          &--imgSingOut {
+            width: 24px;
+            height: 24px;
+          }
+          p {
+            cursor: pointer;
+            color: #000;
+            margin-left: 6px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.32px;
+          }
+        }
+      }
+    }
+  }
+}

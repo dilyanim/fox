@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import imageGoogle from "../../../img/google.svg";
 import imageFacebook from "../../../img/fasebook.svg";
-import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
+import { AiOutlineEye, } from "react-icons/ai";
+import { AiOutlineEyeInvisible } from "react-icons/ai";
+
 import { useDispatch } from "react-redux";
-import { Form } from "../../reg/Form";
 import { setUser } from "../../../store/userSlice/userSlice";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 const useValidation = (value, validations) => {
   const [isEmpty, setEmpty] = useState(true);
   const [minLengthError, setMinLengthError] = useState(false);
@@ -76,13 +78,26 @@ const Register = () => {
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
   };
-
+  const [emaill, setEmail] = useState("");
+  const [passwordd, setPass] = useState("");
+  const [namee, setName] = useState("");
   const dispatch = useDispatch();
-  const handleRegister = (email, password) => {
-    "";
+  const Navigate = useNavigate();
+  const handleRegister = (emaill, passwordd, namee) => {
     const auth = getAuth();
-    createUserWithEmailAndPassword(auth, email, password)
-      .then(console.log)
+    createUserWithEmailAndPassword(auth, emaill, passwordd, namee)
+      .then(({ user }) => {
+        console.log(user);
+        dispatch(
+          setUser({
+            email: user.email,
+            id: user.uid,
+            token: user.accessToken,
+            name: user.displayName,
+          })
+        );
+        Navigate("/");
+      })
       .catch(console.error);
   };
   return (
@@ -103,11 +118,14 @@ const Register = () => {
                   </div>
                 )}
                 <input
-                  onChange={(e) => name.onChange(e)}
+                  onChange={(e) => {
+                    name.onChange(e);
+                    setName(e.target.value);
+                  }}
                   onBlur={(e) => name.onBlur(e)}
-                  value={name.value}
                   type="text"
                   placeholder="Введите свое имя"
+                  value={namee}
                 />
               </div>
               <div className="register--content__blockInp--inp2">
@@ -122,11 +140,14 @@ const Register = () => {
                   <div style={{ color: "red" }}> Не корректный email! </div>
                 )}
                 <input
-                  onChange={(e) => email.onChange(e)}
+                  onChange={(e) => {
+                    email.onChange(e);
+                    setEmail(e.target.value);
+                  }}
                   onBlur={(e) => email.onBlur(e)}
-                  value={email.value}
                   type="text"
-                  placeholder=" Введите свою почту"
+                  placeholder="Введите свое имя"
+                  value={emaill}
                 />
               </div>
               <div className="register--content__blockInp--inp3">
@@ -142,11 +163,14 @@ const Register = () => {
                 )}
                 <div className="register--content__blockInp--inp3__inpPassword">
                   <input
-                    onChange={(e) => password.onChange(e)}
+                    onChange={(e) => {
+                      password.onChange(e);
+                      setPass(e.target.value);
+                    }}
                     onBlur={(e) => password.onBlur(e)}
-                    value={password.value}
-                    type={passwordVisible ? "text" : "password"}
-                    placeholder="Введите свой пароль"
+                    type="text"
+                    placeholder="Введите свое имя"
+                    value={passwordd}
                   />
                   <AiOutlineEyeInvisible
                     onClick={togglePasswordVisibility}
@@ -163,6 +187,7 @@ const Register = () => {
               disabled={
                 !name.inputValid || !email.inputValid || !password.inputValid
               }
+              onClick={() => handleRegister(emaill, passwordd, namee)}
             >
               Регистрация
             </button>

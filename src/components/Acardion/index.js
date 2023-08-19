@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import {BsChevronDown, BsChevronUp} from "react-icons/bs";
 import { IoIosArrowDropdownCircle}  from 'react-icons/io'
 import { IoIosArrowDropupCircle } from 'react-icons/io'
 
@@ -36,8 +35,7 @@ const Acardion = () => {
                                 </button>
                             </div>
                             <div className="pages--weleft--titleaccord--btn__answer">
-                                {/* <p>Очень просто – зарегистрироваться. Это займет всего несколько минут. Создайте свой аккаунт с помощью адреса электронной почты и номера телефона. Мастер-класс станет доступен сразу после оплаты или в день запуска.</p> */}
-                              {/* <img src={movie1}></img> */}
+                              
                            
                             </div>
                         </div>
@@ -61,9 +59,7 @@ const Acardion = () => {
                           </button>
                       </div>
                       <div className="pages--weleft--titleaccord--btn__answer">
-                          {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                              Accusantium  aspernatur eaque error laboriosam molestiae nam omnis
-                              quaerat  repellendus vero, vitae!</p> */}
+                         
                       </div>
                   </div>
                   <div onClick={() => {
@@ -86,9 +82,7 @@ const Acardion = () => {
                           </button>
                       </div>
                       <div className="pages--weleft--titleaccord--btn__answer">
-                          {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                              Accusantium  aspernatur eaque error laboriosam molestiae nam omnis
-                              quaerat  repellendus vero, vitae!</p> */}
+                        
                       </div>
                   </div>
                   <div onClick={() => {
@@ -111,7 +105,6 @@ const Acardion = () => {
                         </button>
                     </div>
                     <div className="pages--weleft--titleaccord--btn__answer">
-                        {/* <p>Очень просто – зарегистрироваться. Это займет всего несколько минут. Создайте свой аккаунт с помощью адреса электронной почты и номера телефона. Мастер-класс станет доступен сразу после оплаты или в день запуска.</p> */}
                     </div>
                 </div>
                 

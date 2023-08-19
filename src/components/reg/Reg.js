@@ -5,16 +5,30 @@ import imageFacebook from "../../img/fasebook.svg";
 import { RxCross2 } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { Form } from "../reg/Form";
 import { setUser } from "../../store/userSlice/userSlice";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 const Reg = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPass] = useState("");
+  const [name, setName] = useState("");
   const dispatch = useDispatch();
-  const handleLogin = (email, password) => {
-    "";
+  const Navigate = useNavigate();
+  const handleLogin = (email, password, name) => {
     const auth = getAuth();
-    signInWithEmailAndPassword(auth, email, password)
-      .then(console.log)
+    signInWithEmailAndPassword(auth, email, password,name)
+      .then(({ user }) => {
+        console.log(user);
+        dispatch(
+          setUser({
+            email: user.email,
+            id: user.uid,
+            token: user.accessToken,
+            name: user.displayName
+          })
+        );
+        Navigate("/");
+      })
       .catch(console.error);
   };
   return (
@@ -41,17 +55,30 @@ const Reg = () => {
               <input
                 className="reg--content__inp--input1"
                 type="text"
-                placeholder="Почта"
+                placeholder="Имя "
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
               <input
                 className="reg--content__inp--input2"
+                type="text"
+                placeholder="Почта"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <input
+                className="reg--content__inp--input3"
                 type="password"
                 placeholder="Пароль "
+                value={password}
+                onChange={(e) => setPass(e.target.value)}
               />
               <NavLink to={"/zapylParol"}>
                 <p> Забыли пароль?</p>
               </NavLink>
-              <button>Ввойти</button>
+              <button onClick={() => handleLogin(email, password, name)}>
+                Ввойти
+              </button>
               <h5>
                 У вас нет аккаунта?{" "}
                 <NavLink to={"/register"}>
@@ -80,5 +107,4 @@ const Reg = () => {
     </div>
   );
 };
-
 export default Reg;
