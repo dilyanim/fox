@@ -1,41 +1,27 @@
 import React from 'react';
-import man from '../../img/young man working on a laptop.png'
-import lesson1 from '../../img/lesson1.png'
-import lesson2 from '../../img/lesson2.png'
-import lesson3 from '../../img/lesson3.png'
-import lesson4 from '../../img/lessson4.png'
-import lesson5 from '../../img/lesson5.png'
-import lesson6 from '../../img/lesson6.png'
+import man from '../../../img/young man working on a laptop.png'
+import lesson1 from '../../../img/lesson1.png'
+import lesson2 from '../../../img/lesson2.png'
+import lesson3 from '../../../img/lesson3.png'
+import lesson4 from '../../../img/lessson4.png'
+import lesson5 from '../../../img/lesson5.png'
+import lesson6 from '../../../img/lesson6.png'
 import  {RiArrowRightSLine} from 'react-icons/ri'
 import { NavLink } from 'react-router-dom';
-import Lessons from '../Lessons';
-import ReviewTwo from '../ReviewTwo';
-import Clock from '../../img/clock.svg'
-import Chart from '../../img/chart.svg'
-import IMG from '../../img/IMG.svg'
+import Clock from '../../../img/clock.svg'
+import Chart from '../../../img/chart.svg'
+import IMG from '../../../img/IMG.svg'
+import Lessons from '../../Lessons';
+import ReviewTwo from '../../ReviewTwo';
 
 
-const AboutCourse = () => {
+const AllCurs = () => {
     return (
        <>
-           <div id='abCourse'>
+           <div id='AllCurs'>
             <div className="container">
-                <div className="abCourse">
-                    <div>
-                        <h1>Развивайте свои навыки с помощью онлайн-курсов с онлайн-обучением</h1>
-                        <button className='abBtn'>Присоединиться</button>
-                    </div>
-                               
-                    <div>
-                        <img className='img' src={man}></img>
-                    </div>
-                </div>
-                <div className="popularCourse">
-                    <div className="popular-text">
-                        <h1>Популярные курсы</h1>
-                        <p>Мы предоставляем множество функций, которые вы можете использовать. Постепенное накопление информация </p>
-
-                    </div>
+                <div className="AllCurs">
+                   
                     <div  className="popular-blocks">
                         <button className='btn-1' >Все курсы</button>
                         <button className='btn-2'>Управление компанией</button>
@@ -63,10 +49,10 @@ const AboutCourse = () => {
                                
                                 
                             </div> 
-                            <NavLink to={"/marketing1"}>  <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
+                          <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
                                  width: '30px' ,
                                  height: '20px'
-                            }} /> </button> </NavLink>
+                            }} /> </button> 
                               </div>
                         </div>
                         <div className='top'>
@@ -83,10 +69,10 @@ const AboutCourse = () => {
                                 <h6>Прогресс</h6>
                                 
                             </div> 
-                            <NavLink to={"/marketing1"}>  <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
+                          <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
                                  width: '30px' ,
                                  height: '20px'
-                            }} /> </button> </NavLink>
+                            }} /> </button> 
                               </div>
                         </div>
                         <div className='top'>
@@ -104,10 +90,10 @@ const AboutCourse = () => {
                                
                                 
                             </div> 
-                            <NavLink to={"/marketing1"}>  <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
+                          <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
                                  width: '30px' ,
                                  height: '20px'
-                            }} /> </button> </NavLink>
+                            }} /> </button> 
                               </div>
                         </div>
                     </div>
@@ -127,10 +113,10 @@ const AboutCourse = () => {
                                
                                 
                             </div> 
-                            <NavLink to={"/marketing1"}>  <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
+                          <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
                                  width: '30px' ,
                                  height: '20px'
-                            }} /> </button> </NavLink>
+                            }} /> </button> 
                               </div>
                         </div>
                         <div className='top'>
@@ -148,10 +134,10 @@ const AboutCourse = () => {
                                
                                 
                             </div> 
-                            <NavLink to={"/marketing1"}>  <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
+                          <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
                                  width: '30px' ,
                                  height: '20px'
-                            }} /> </button> </NavLink>
+                            }} /> </button> 
                               </div>
                         </div>
                         <div className='top'>
@@ -178,13 +164,10 @@ const AboutCourse = () => {
                     </div>
 
                 </div>
-                <button className='slider-btn'>Смотреть больше</button>
-
             </div>
             
         </div>
-        <Lessons/>
-        <ReviewTwo/>
+        
         
        </>
     
@@ -192,4 +175,4 @@ const AboutCourse = () => {
     );
 };
 
-export default AboutCourse;
+export default AllCurs;

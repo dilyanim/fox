@@ -1,0 +1,167 @@
+#user {
+  .container {
+    .user {
+      &--blocks {
+        border-top: 2px solid grey;
+        margin-left: 88px;
+        width: 100%;
+        &__block1 {
+          width: 1130px;
+          height: 301px;
+          border-radius: 10px;
+          border: 1px solid rgba(0, 0, 0, 0.6);
+          margin-left: 22px;
+          margin-top: 24px;
+          &--imgProf {
+            width: 1130px;
+            height: 180px;
+          }
+          &--userInfo {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &__imgAva {
+              position: absolute;
+              bottom: 1px;
+              left: 20px;
+              width: 160px;
+              height: 160px;
+              border-radius: 160px;
+            }
+            &__name {
+              margin-left: 209px;
+              margin-top: 6px;
+              h1 {
+                color: #252b42;
+                font-family: Poppins;
+                font-size: 20px;
+                font-weight: 500;
+              }
+              p {
+                color: #000;
+                font-family: Poppins;
+                font-size: 14px;
+                font-weight: 300;
+                opacity: 0.5;
+              }
+            }
+            &__btn {
+              display: inline-flex;
+              padding: 11px 20px;
+              justify-content: center;
+              align-items: center;
+              gap: 10px;
+              border-radius: 6px;
+              background: #23a6f0;
+              color: #fff;
+              font-family: Poppins;
+              font-size: 16px;
+              font-weight: 400;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              margin-top: 30px;
+              margin-right: 19px;
+            }
+          }
+          &--redac {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 334px;
+            height: 145px;
+            border: 2px solid grey;
+
+            position: absolute;
+            left: 722px;
+            top: 325px;
+            &__input {
+              display: flex;
+              flex-direction: column;
+              margin-top: 10px;
+              input {
+                height: 32px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                width: 247px;
+                outline: none;
+              }
+            }
+            &__btnSave {
+              display: flex;
+              padding: 11px 26px;
+              justify-content: center;
+              background: #23a6f0;
+              outline: none;
+              border: none;
+              cursor: pointer;
+              border-radius: 10px;
+              align-items: center;
+              gap: 10px;
+              color: #fff;
+              font-family: Poppins;
+              font-size: 16px;
+              font-weight: 400;
+              margin-top: 10px;
+            }
+          }
+        }
+        &__block2 {
+          width: 1130px;
+          height: 496px;
+          border-radius: 10px;
+          border: 1px solid rgba(0, 0, 0, 0.6);
+          margin-left: 22px;
+          margin-top: 24px;
+          &--btns {
+            display: flex;
+            margin-top: 20px;
+            margin-left: 20px;
+            &__btn1 {
+              display: flex;
+              padding: 11px 26px;
+              justify-content: center;
+              align-items: center;
+              gap: 10px;
+              border-radius: 6px;
+              background: #23a6f0;
+              color: #fff;
+              font-family: Poppins;
+              font-size: 16px;
+              font-weight: 400;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              margin-right: 18px;
+            }
+            &__btn2 {
+              display: flex;
+              padding: 11px 26px;
+              justify-content: center;
+              align-items: center;
+              gap: 10px;
+              border-radius: 6px;
+              border-radius: 6px;
+              border: 1px solid rgba(0, 0, 0, 0.6);
+              color: rgba(0, 0, 0, 0.6);
+              font-family: Poppins;
+              font-size: 16px;
+              font-weight: 400;
+              outline: none;
+              cursor: pointer;
+              &:hover {
+                color: #fff;
+                background: #23a6f0;
+                border: none;
+                transition: 800ms;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
