@@ -1,0 +1,18 @@
+#stars {
+  .container {
+    .stars {
+      width: 869px;
+      height: 647.208px;
+      flex-shrink: 0;
+      background: #fff;
+      &--modalBlock {
+        h1 {
+          color: #252b42;
+          font-family: Poppins;
+          font-size: 36.334px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

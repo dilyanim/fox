@@ -8,22 +8,25 @@ import imgSetting from "../../img/setting-2.svg";
 import imgQuestion from "../../img/Question.svg";
 import imgSingOut from "../../img/SignOut.svg";
 import ProfileUser from "./ProfileUser/ProfileUser";
+import Stars from "./Stars/Stars";
+import AllCurs from "./AllCurs/AllCurs";
 const Profile = () => {
   const [activeSection, setActiveSection] = useState("profile");
-
   const handleSectionClick = (section) => {
     setActiveSection(section);
   };
+
   return (
     <div id="profile">
       <div className="container">
         <div className="profile">
           <div className="profile--nav">
-            <div className={`profile--nav__prof ${
+            <div
+              className={`profile--nav__prof ${
                 activeSection === "profile" ? "active" : ""
-              }`} 
+              }`}
               onClick={() => handleSectionClick("profile")}
-              >
+            >
               <img
                 className="profile--nav__prof--imgUser"
                 src={imgUser}
@@ -39,7 +42,12 @@ const Profile = () => {
               />
               <p>Чат</p>
             </div>
-            <div className="profile--nav__kurs">
+            <div
+              className={`profile--nav__kurs ${
+                activeSection === "AllCurs" ? "active" : ""
+              }`}
+              onClick={() => handleSectionClick("AllCurs")}
+            >
               <img
                 className="profile--nav__kurs--imgKurs"
                 src={imgSms}
@@ -61,7 +69,7 @@ const Profile = () => {
                 src={imgSetting}
                 alt=""
               />
-              <p>Оценить</p>
+              <p>Настройки</p>
             </div>
             <div className="profile--nav__help">
               <img
@@ -81,7 +89,9 @@ const Profile = () => {
             </div>
           </div>
           <div className="profile--block1">
-          {activeSection === "profile" && <ProfileUser />}
+            {activeSection === "profile" && <ProfileUser />}
+            {activeSection === "AllCurs" && <AllCurs />}
+            <Stars />
           </div>
         </div>
       </div>
