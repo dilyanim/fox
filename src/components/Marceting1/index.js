@@ -1,8 +1,20 @@
-import React from 'react';
 import market from '../../img/product-cover-75.png'
 import Acardion from '../Acardion';
+import { useState } from 'react';
+import imgLogo from '../../img/logo1.png'
+import imgCards from '../../img/cards.svg'
 
 const Marketing1 = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const openModal = () => {
+      setIsOpen(true);
+    }
+  
+    const closeModal = () => {
+      setIsOpen(false);
+    }
+    
     return (
       <> 
             <div id='marketingOne'>
@@ -35,8 +47,55 @@ const Marketing1 = () => {
                          
                 }} className='h6'> <p>Хранить эти деньги стоит диверсифицированно. 10% сбережений оставляйте в национальной валюте вашей страны. 90 % распределите на 3 валюты: швейцарский франк, норвежская крона, и что-то из: американского доллара, евро либо йены. Рассмотрите варианты сбережений в государственных бумагах, фиксированных к инфляции.Эти рекомендации касаются личного бюджета. Ниже мы рассмотрим основные финансовые рискив бизнесе и стратегии управления ими.</p></div>
                       
-                      <div><button className='market-btn' >Купить курс</button></div>
+                <button  onClick={openModal} className='market-btn'>купить курс</button>
+                {isOpen && (
+        <div className="modal">
+          <div className='modal--content'>
+          <div className="modal--content__panel">
+           <div className='modal--content__panel--general'>
+           <img style={{paddingTop:"100px",paddingLeft:"80px"}} src={imgLogo} alt=''/>
+           <div className='modal--content__panel--general__top'>
+            <div className='modal--content__panel--general__top--h1'>
+                <h1 style={{paddingLeft:"80px"}}>КРЕДИТНАЯ / ДЕБЕТОВАЯ КАРТА</h1>
             </div>
+            <div className='modal--content__panel--general__top--cardsImg'>
+                <img src={imgCards} alt=''/>
+            </div>
+           </div>
+           <div className='modal--content__panel--general__inputs'>
+            <div className='modal--content__panel--general__inputs--left'>
+                 
+                    <p>Имя владельца карты *</p>
+                 <input type=''/> 
+                
+                
+                 <p>Номер кредитной/дебетовой карты * </p>
+                     <input type='number'/> 
+                     <div style={{marginLeft:"328px"}}><button  onClick={closeModal}>Назад </button></div>
+
+                
+                
+            </div>
+            <div className='modal--content__panel--general__inputs--right'>
+                
+                    <p>Дата истечения срока действия  *</p>
+                    <input type="month" placeholder="MM/YY"/>
+                    
+                    <p>CVC/CVV  * </p>
+                    <input type=''/> 
+                    <div><button>Оплата</button></div>
+
+            </div>
+           </div>
+           </div>
+          </div>
+          </div>
+        </div>
+      )}
+            </div>
+            <div>
+       
+    </div>
             
         </div>
          <Acardion/>
