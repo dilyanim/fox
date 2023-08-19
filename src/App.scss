@@ -1,4 +1,3 @@
-  
   @import "./components/reg/style.scss";
   @import "./components/Header/index.scss";
   @import "./components/Main/index.scss";
@@ -9,10 +8,12 @@
   @import './components/AboutCourse/index.scss';
   @import './components/Lessons/index.scss';
   @import './components/Marceting1/index.scss';
-  @import  './components/Courses/Courses.scss';
+@import './components/CoursesMain/Courses.scss';
   @import  './components/Review/Review.scss';
   @import  './components/ReviewTwo/index.scss';
   @import '../src/components/reg/register/style.scss';
+  @import './components/Marceting1/index.scss' ;
+  @import './components/Acardion/index.scss' ;
   
  
 

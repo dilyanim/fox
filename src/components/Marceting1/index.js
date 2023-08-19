@@ -1,9 +1,12 @@
 import React from 'react';
 import market from '../../img/product-cover-75.png'
+import Acardion from '../Acardion';
+
 
 const Marketing1 = () => {
     return (
-        <div id='marketingOne'>
+       <>
+           <div id='marketingOne'>
             <div className="container">
                 <div className="marketingOne">
                          <div className='market-text'>
@@ -37,6 +40,9 @@ const Marketing1 = () => {
             </div>
             
         </div>
+        <Acardion/>
+       
+       </>
     );
 };
 

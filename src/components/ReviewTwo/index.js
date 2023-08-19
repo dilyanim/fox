@@ -3,7 +3,7 @@ import Star from "../../img/star.svg"
 import Avatar from "../../img/avatar.svg"
 import Ava2 from '../../img/ava2.svg'
 import Ava3 from '../../img/ava3.svg'
-
+import { BsArrowLeftCircle , BsArrowRightCircle } from 'react-icons/bs'
 
 
 
@@ -98,7 +98,11 @@ const ReviewTwo = () => {
                         </div> 
                     </div> 
                 </div>
+                    <div className='arrow'>
+                          <div>...</div>
+                          <div>  <BsArrowLeftCircle/> <BsArrowRightCircle/>   </div>
 
+                    </div>
              
                
             </div>

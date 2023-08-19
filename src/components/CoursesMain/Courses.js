@@ -1,7 +1,4 @@
 import React from 'react';
-import lesson4 from '../../img/lessson4.png'
-import lesson5 from '../../img/lesson5.png'
-import lesson6 from '../../img/lesson6.png'
 import  {RiArrowRightSLine} from 'react-icons/ri'
 import { NavLink } from 'react-router-dom';
 import Clock from '../../img/clock.svg'
@@ -12,14 +9,14 @@ import main2 from '../../img/main2.png'
 import main3 from '../../img/main3.png'
 
 
-const Courses = () => {
+const CoursesMain = () => {
     return (
        <>
-           <div id='abCourse'>
+           <div id='coursesM'>
             <div className="container">
-                
-                <div className="popularCourse">
-                    <div className="popular-text">
+                <div className='coursesM'>
+                <div className="popMain">
+                    <div className="CM-text">
                         <h1>Доступные курсы</h1>
                         <p>Мы предоставляем множество функций, которые вы можете использовать. Постепенное накопление информация </p>
 
@@ -27,8 +24,8 @@ const Courses = () => {
                 </div>
                
           
-                <div className="lessons">
-                    <div className='first'>
+                <div className="ann">
+                    <div className='ann1'>
                     <div className='top'>
                            <img className='top-img' src={main1}></img>
                             <div className='top-text'>
@@ -96,6 +93,9 @@ const Courses = () => {
 
                 </div>
 
+                </div>
+                
+                
             </div>
             
         </div>
@@ -107,4 +107,4 @@ const Courses = () => {
     );
 };
 
-export default Courses;
+export default CoursesMain;
