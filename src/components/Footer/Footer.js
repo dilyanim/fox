@@ -31,27 +31,24 @@ const Footer = () => {
                 </div>
               </div>
               <div className="footer--block__content--product">
-                <h1>Продукт</h1>
-                <p>Download </p>
-                <p>Pricing</p>
-                <p>Locations</p>
-                <p>Server</p>
-                <p>Countries</p>
-                <p>Blog</p>
+                <h1>Курсы</h1>
+                <p>Маркетинг </p>
+                <p>Управление</p>
+                <p>Продажи</p>
+                <p>Командаобразование</p>
+               
               </div>
               <div className="footer--block__content--Engage">
-                <h1>Engage</h1>
-                <p>LaslesVPN ? </p>
-                <p>FAQ</p>
-                <p>Tutorials</p>
-                <p>About Us</p>
-                <p>Privacy Policy</p>
-                <p>Terms of Service</p>
+                <h1>Название</h1>
+                <p>О нас</p>
+                <p>Курсы</p>
+                <p>Главная</p>
+               
               </div>
               <div className="footer--block__content--EarnMoney">
-                <h1>Earn Money</h1>
-                <p>Affiliate</p>
-                <p>Become Partner</p>
+                <h1>Контакты</h1>
+                <p>hello@courses.com</p>
+                <p>0220 234 547</p>
               </div>
             </div>
           </div>

@@ -813,13 +813,13 @@
             }
           }
           &__content {
-            display: flex;
+            flex-direction: column;
             &--image {
-              margin-left: 106px;
-              margin-right: 30px;
+              margin-left: 142px;
             }
   
             &--text1 {
+              
               p {
                 width: 486px;
                 height: 475px;
@@ -828,8 +828,7 @@
                 font-size: 20px;
                 font-weight: 400;
                 line-height: 149.4%;
-                left: 10px;
-                top: 1110px;
+                margin: 20px 150px;
                 flex-direction: column;
               }
             }
@@ -838,14 +837,15 @@
             margin-left: 102px;
             margin-top: 13px;
             p {
-              width: 975px;
-              height: 249px;
-              color: #000;
-              font-family: Montserrat;
-              font-size: 20px;
-              font-weight: 400;
-              line-height: 149.4%;
-              flex-direction: column;
+              // width: 975px;
+              // height: 249px;
+              // color: #000;
+              // font-family: Montserrat;
+              // font-size: 20px;
+              // font-weight: 400;
+              // line-height: 149.4%;
+              // flex-direction: column;
+              display: none;
             }
           }
         }
@@ -982,17 +982,18 @@
           
           
             h1{
-              width: 456px;
-              color: var(--text-color, #252B42);
-              text-align: center;
-              font-family: Rubik;
-              font-size: 31px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 35px;
-              letter-spacing: 0.1px;
-              margin-top: 162px;
-              left: -55px;
+                  width: 652px      ;  
+                color: var(--text-color, #252B42);
+                  text-align: center;
+                  font-family: Rubik;
+                  font-size: 40px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 35px;
+                  letter-spacing: 0.1px;
+                  margin-top: 162px  ; 
+                   left:  -94px;
+              
           
 
             }
@@ -1000,8 +1001,11 @@
           &__image {
             position: absolute;
             top: -89px;
-            right: 54px;
+            right: -6px;
             z-index: 2; 
+           
+;
+
            
             &--imgCir {
               position: absolute;
@@ -1035,12 +1039,13 @@
             }
             &--img2 {
               position: absolute;
-              width: 260px;
-              height: 475px;
-              top: 229px;
-              bottom: 0;
-              left: 248px;
+              width: 260px;  
+              height: 475px  ;   
+              top:  229px;
+              bottom: 0;  
+              left:  205px;
               right: 19px;
+          
             }
             &--img3 {
               position: absolute;
@@ -1053,12 +1058,61 @@
             }
             &--img4 {
               position: absolute;
-              width: 260px;
-              height: 475px;
-              top: 773px;
-              bottom: 27px;
-              left: 248px;
-              right: 19px;
+              width: 260px
+          ;    height: 
+          475px
+          ;    top: 
+          773px;
+              bottom: 27px
+          ;    left: 
+          195px;
+              right: 19px
+          ;
+          
+            }
+          }
+        }
+        &--block3 {
+          margin-top: 1800px;
+          &__zag {
+            h1 {
+              margin: 0 0 30px 122px;
+
+            }
+          }
+          &__content {
+            display: flex;
+            &--image {
+              margin-right: 30px;
+              margin-left: 100px
+            }
+  
+            &--text1 {
+              p {
+                    width: 486px ; 
+                    height:  475px;
+                    color: #000;
+                    font-family: Montserrat;    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 149.4%;
+                    margin: 20px
+                 103px
+                ;
+                
+              }
+            }
+          }
+          &__text2 {
+            margin-left: 160px;
+            margin-top: 13px;
+            p {
+              width: 1146px;
+              height: 249px;
+              color: #000;
+              font-family: Montserrat;
+              font-size: 24px;
+              font-weight: 400;
+              line-height: 149.4%;
             }
           }
         }
@@ -1194,17 +1248,17 @@
           
           
             h1{
-              width: 375px;
+              width: 553px;
               color: var(--text-color, #252B42);
               text-align: center;
               font-family: Rubik;
-              font-size: 22px;
+              font-size: 35px;
               font-style: normal;
               font-weight: 700;
-              line-height: 25px;
+              line-height: 40px;
               letter-spacing: 0.1px;
               margin-top: 162px;
-              left: -69px;
+              left: -67px;
           
 
             }
@@ -1212,7 +1266,7 @@
           &__image {
             position: absolute;
             top: -89px;
-            right: 5px;
+            right: -85px;
             z-index: 2; 
            
             &--imgCir {
@@ -1293,17 +1347,17 @@
           
           
             h1{
-              width: 375px;
+              width: 553px;
               color: var(--text-color, #252B42);
               text-align: center;
               font-family: Rubik;
-              font-size: 22px;
+              font-size: 33px;
               font-style: normal;
               font-weight: 700;
-              line-height: 25px;
+              line-height: 40px;
               letter-spacing: 0.1px;
               margin-top: 162px;
-              left: -69px;
+              left: -67px;
           
 
             }
@@ -1311,7 +1365,7 @@
           &__image {
             position: absolute;
             top: -89px;
-            right: -56px;
+            right: -140px;
             z-index: 2; 
            
             &--imgCir {
