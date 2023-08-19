@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import imageGoogle from "../../../img/google.svg";
 import imageFacebook from "../../../img/fasebook.svg";
-import { AiOutlineEye, } from "react-icons/ai";
+import { AiOutlineEye } from "react-icons/ai";
 import { AiOutlineEyeInvisible } from "react-icons/ai";
 
 import { useDispatch } from "react-redux";
@@ -183,12 +183,7 @@ const Register = () => {
               <input type="checkbox" />
               <h5>Согласен с Условиями</h5>
             </div>
-            <button
-              disabled={
-                !name.inputValid || !email.inputValid || !password.inputValid
-              }
-              onClick={() => handleRegister(emaill, passwordd, namee)}
-            >
+            <button onClick={() => handleRegister(emaill, passwordd, namee)}>
               Регистрация
             </button>
             <div className="register--content__or">

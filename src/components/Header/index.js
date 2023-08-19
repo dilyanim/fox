@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import { Redirect } from "react-router-dom";
-
+import { useAuth } from "../../hooks/use-auth";
+import imgAva from "../../img/AvatarUser.png";
 const Header = () => {
+  const { isAuth, name } = useAuth();
   return (
     <div id="header">
       <div className="container">
@@ -19,12 +20,28 @@ const Header = () => {
           </div>
 
           <div className="header-arrow">
-            <NavLink to={"/reg"}>Войти</NavLink>
-            <NavLink to={"/register"}>
-              <button className="btn">
-                Присоединяйся <AiOutlineArrowRight />
-              </button>
-            </NavLink>
+            {isAuth ? (
+              <NavLink to={"/profile"}>
+                <img
+                  src={imgAva}
+                  alt=""
+                  style={{
+                    width: "30px",
+                    height: "30px",
+                    borderRadius: "160px",
+                  }}
+                />
+              </NavLink>
+            ) : (
+              <>
+                <NavLink to={"/reg"}>Войти</NavLink>
+                <NavLink to={"/register"}>
+                  <button className="btn">
+                    Присоединяйся <AiOutlineArrowRight />
+                  </button>
+                </NavLink>
+              </>
+            )}
           </div>
         </div>
       </div>

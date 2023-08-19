@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import imgProf from "../../../img/profileUser.png";
 import imgAvatar from "../../../img/AvatarUser.png";
+import Curs from "../MyCurs/MyCurs";
 
 const ProfileUser = () => {
   const [isEditing, setIsEditing] = useState(false);
-
+  const [activeTab, setActiveTab] = useState("Curs");
   const handleEditClick = () => {
     setIsEditing(!isEditing);
   };
@@ -51,10 +52,20 @@ const ProfileUser = () => {
             </div>
             <div className="user--blocks__block2">
               <div className="user--blocks__block2--btns">
-                <button className="user--blocks__block2--btns__btn1">
+                <button
+                  className={`user--blocks__block2--btns__btn1 ${
+                    activeTab === "Curs" ? "active" : ""
+                  }`}
+                  onClick={() => setActiveTab("Curs")}
+                >
                   Мои курсы
                 </button>
-                <button className="user--blocks__block2--btns__btn2">
+                <button
+                  className={`user--blocks__block2--btns__btn2 ${
+                    activeTab === "Favorites" ? "active" : ""
+                  }`}
+                  onClick={() => setActiveTab("Favorites")}
+                >
                   Избранные
                 </button>
               </div>
