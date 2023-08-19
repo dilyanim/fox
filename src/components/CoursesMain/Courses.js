@@ -26,12 +26,12 @@ const CoursesMain = () => {
           
                 <div className="ann">
                     <div className='ann1'>
-                    <div className='top'>
-                           <img className='top-img' src={main1}></img>
-                            <div className='top-text'>
+                    <div className='topM'>
+                           <img className='top-imgM' src={main1}></img>
+                            <div className='top-textM'>
                             <h4>Как ставить о оценивать задачи</h4>
-                            <p className='top-p' >   Мы ориентируемся на эргономику и ты где работаешь. Это всего лишь нажатие клавиши.</p>
-                            <div className='topic1' >
+                            <p className='top-pM' >   Мы ориентируемся на эргономику и ты где работаешь. Это всего лишь нажатие клавиши.</p>
+                            <div className='topic1M' >
                                 <img src={Clock} alt=""/>
                                 <h6>22ч 30мин</h6>
                                 <img src={Chart} alt=""/>
@@ -41,18 +41,18 @@ const CoursesMain = () => {
                                
                                 
                             </div> 
-                          <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
+                            <NavLink to={"/marketing1"}>  <button className='top-btnM'>Узнать больше <RiArrowRightSLine style={{
                                  width: '30px' ,
                                  height: '20px'
-                            }} /> </button> 
+                            }} /> </button> </NavLink>
                               </div>
                         </div>
-                        <div className='top'>
-                           <img className='top-img' src={main2}></img>
-                            <div className='top-text'>
+                        <div className='topM'>
+                           <img className='top-imgM' src={main2}></img>
+                            <div className='top-textM'>
                             <h4>Как ставить о оценивать задачи</h4>
-                            <p className='top-p' >   Мы ориентируемся на эргономику и ты где работаешь. Это всего лишь нажатие клавиши.</p>
-                            <div className='topic1' >
+                            <p className='top-pM' >   Мы ориентируемся на эргономику и ты где работаешь. Это всего лишь нажатие клавиши.</p>
+                            <div className='topic1M' >
                                 <img src={Clock} alt=""/>
                                 <h6>22ч 30мин</h6>
                                 <img src={Chart} alt=""/>
@@ -62,18 +62,18 @@ const CoursesMain = () => {
                                
                                 
                             </div> 
-                          <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
+                            <NavLink to={"/marketing1"}>  <button className='top-btnM'>Узнать больше <RiArrowRightSLine style={{
                                  width: '30px' ,
                                  height: '20px'
-                            }} /> </button> 
+                            }} /> </button> </NavLink>
                               </div>
                         </div>
-                        <div className='top'>
-                           <img className='top-img' src={main3}></img>
-                            <div className='top-text'>
+                        <div className='topM'>
+                           <img className='top-imgM' src={main3}></img>
+                            <div className='top-textM'>
                             <h4>Как ставить о оценивать задачи</h4>
-                            <p className='top-p' >   Мы ориентируемся на эргономику и ты где работаешь. Это всего лишь нажатие клавиши.</p>
-                            <div className='topic1' >
+                            <p className='top-pM' >   Мы ориентируемся на эргономику и ты где работаешь. Это всего лишь нажатие клавиши.</p>
+                            <div className='topic1M' >
                                 <img src={Clock} alt=""/>
                                 <h6>22ч 30мин</h6>
                                 <img src={Chart} alt=""/>
@@ -83,7 +83,7 @@ const CoursesMain = () => {
                                
                                 
                             </div> 
-                         <NavLink to={"/marketing1"}>  <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
+                         <NavLink to={"/marketing1"}>  <button className='top-btnM'>Узнать больше <RiArrowRightSLine style={{
                                  width: '30px' ,
                                  height: '20px'
                             }} /> </button> </NavLink>
