@@ -16,7 +16,7 @@ const Reg = () => {
   const Navigate = useNavigate();
   const handleLogin = (email, password, name) => {
     const auth = getAuth();
-    signInWithEmailAndPassword(auth, email, password)
+    signInWithEmailAndPassword(auth, email, password,name)
       .then(({ user }) => {
         console.log(user);
         dispatch(
@@ -24,6 +24,7 @@ const Reg = () => {
             email: user.email,
             id: user.uid,
             token: user.accessToken,
+            name: user.displayName
           })
         );
         Navigate("/");

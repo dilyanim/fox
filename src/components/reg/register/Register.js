@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import imageGoogle from "../../../img/google.svg";
 import imageFacebook from "../../../img/fasebook.svg";
-import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
+import { AiOutlineEye, } from "react-icons/ai";
+import { AiOutlineEyeInvisible } from "react-icons/ai";
+
 import { useDispatch } from "react-redux";
 import { setUser } from "../../../store/userSlice/userSlice";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
@@ -81,9 +83,9 @@ const Register = () => {
   const [namee, setName] = useState("");
   const dispatch = useDispatch();
   const Navigate = useNavigate();
-  const handleRegister = (emaill, passwordd) => {
+  const handleRegister = (emaill, passwordd, namee) => {
     const auth = getAuth();
-    createUserWithEmailAndPassword(auth, emaill, passwordd)
+    createUserWithEmailAndPassword(auth, emaill, passwordd, namee)
       .then(({ user }) => {
         console.log(user);
         dispatch(
@@ -91,6 +93,7 @@ const Register = () => {
             email: user.email,
             id: user.uid,
             token: user.accessToken,
+            name: user.displayName,
           })
         );
         Navigate("/");
@@ -181,10 +184,10 @@ const Register = () => {
               <h5>Согласен с Условиями</h5>
             </div>
             <button
-              onClick={() => handleRegister(emaill, passwordd)}
               disabled={
                 !name.inputValid || !email.inputValid || !password.inputValid
               }
+              onClick={() => handleRegister(emaill, passwordd, namee)}
             >
               Регистрация
             </button>
