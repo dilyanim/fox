@@ -9,6 +9,7 @@ import ZapylParol from "./components/reg/ZabylParol";
 import Register from "./components/reg/register/Register";
 import AboutCourse from './components/AboutCourse'
 import Marketing1 from './components/Marceting1'
+import Profile from "./components/Profile/Profile";
 
 
 
@@ -17,6 +18,7 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
+        <Route path="/profile" element={<Profile/>} />
         <Route path="/register" element={<Register/>} />
         <Route path="/reg" element={<Reg />} />
         <Route path="/" element={<Main />} />
