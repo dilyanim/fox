@@ -6,7 +6,7 @@ import { AiOutlineEyeInvisible } from "react-icons/ai";
 
 import { useDispatch } from "react-redux";
 import { setUser } from "../../../store/userSlice/userSlice";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword,updateProfile  } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 const useValidation = (value, validations) => {
   const [isEmpty, setEmpty] = useState(true);
@@ -73,7 +73,7 @@ const Register = () => {
   const name = useInput("", { isEmpty: true, minLength: 3 });
   const email = useInput("", { isEmpty: true, minLength: 3, isEmail: true });
   const password = useInput("", { isEmpty: true, minLength: 5 });
-
+  const [nextInput, setNextInput] = useState(false);
   const [passwordVisible, setPasswordVisible] = useState(false);
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
@@ -83,23 +83,46 @@ const Register = () => {
   const [namee, setName] = useState("");
   const dispatch = useDispatch();
   const Navigate = useNavigate();
-  const handleRegister = (emaill, passwordd, namee) => {
+  useEffect(() => {
+    const storedName = localStorage.getItem('userName');
+    const storedEmail = localStorage.getItem('userEmail');
+
+    if (storedName && storedEmail) {
+        setName(storedName);
+        setEmail(storedEmail);
+        setNextInput(true);
+    }
+}, []);
+  const handleRegister = (emaill, passwordd, displayName) => {
     const auth = getAuth();
-    createUserWithEmailAndPassword(auth, emaill, passwordd, namee)
-      .then(({ user }) => {
-        console.log(user);
-        dispatch(
-          setUser({
-            email: user.email,
-            id: user.uid,
-            token: user.accessToken,
-            name: user.displayName,
-          })
-        );
-        Navigate("/");
-      })
-      .catch(console.error);
+    createUserWithEmailAndPassword(auth, emaill, passwordd)
+    .then((userCredential) => {
+      const user = userCredential.user;
+      return updateProfile(user, { displayName: displayName })
+          .then(() => user);
+  })
+  .then((user) => {
+      localStorage.setItem('userName', user.displayName);
+      localStorage.setItem('userEmail', user.email);
+      Navigate("/");
+      dispatch(setUser({
+          email: user.email,
+          token: user.accessToken,
+          id: user.uid,
+          name: user.displayName
+      }));
+  })
+  .catch(() => {
+    console.error()
+  });
   };
+  const handleNext = () => {
+    if (nextInput) {
+        handleRegister(emaill, passwordd, namee);
+    } else {
+        setNextInput(true);
+    }
+};
   return (
     <div id="register">
       <div className="container">
@@ -146,7 +169,7 @@ const Register = () => {
                   }}
                   onBlur={(e) => email.onBlur(e)}
                   type="text"
-                  placeholder="Введите свое имя"
+                  placeholder="Введите свою почту"
                   value={emaill}
                 />
               </div>
@@ -169,7 +192,7 @@ const Register = () => {
                     }}
                     onBlur={(e) => password.onBlur(e)}
                     type="text"
-                    placeholder="Введите свое имя"
+                    placeholder="Введите свой пароль"
                     value={passwordd}
                   />
                   <AiOutlineEyeInvisible
@@ -183,7 +206,7 @@ const Register = () => {
               <input type="checkbox" />
               <h5>Согласен с Условиями</h5>
             </div>
-            <button onClick={() => handleRegister(emaill, passwordd, namee)}>
+            <button onClick={handleNext}>
               Регистрация
             </button>
             <div className="register--content__or">

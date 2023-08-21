@@ -8,14 +8,31 @@ import imgSetting from "../../img/setting-2.svg";
 import imgQuestion from "../../img/Question.svg";
 import imgSingOut from "../../img/SignOut.svg";
 import ProfileUser from "./ProfileUser/ProfileUser";
-import Stars from "./Stars/Stars";
 import AllCurs from "./AllCurs/AllCurs";
+import Chat from "./Chat/Chat";
+import { removeUser } from "../../store/userSlice/userSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import Stars from "./Stars/Stars";
+
 const Profile = () => {
+  const dispatch = useDispatch();
+  const userState = useSelector((state) => state.user);
+  const Navigate = useNavigate();
   const [activeSection, setActiveSection] = useState("profile");
   const handleSectionClick = (section) => {
     setActiveSection(section);
   };
+  const exitAccount = () => {
+    dispatch(removeUser());
 
+    localStorage.removeItem("email");
+    localStorage.removeItem("token");
+    localStorage.removeItem("id");
+    localStorage.removeItem("name");
+    localStorage.removeItem("userImage");
+    Navigate("/");
+  };
   return (
     <div id="profile">
       <div className="container">
@@ -34,7 +51,12 @@ const Profile = () => {
               />
               <p>Профиль</p>
             </div>
-            <div className="profile--nav__chat">
+            <div
+              className={`profile--nav__chat ${
+                activeSection === "Chat" ? "active" : ""
+              }`}
+              onClick={() => handleSectionClick("Chat")}
+            >
               <img
                 className="profile--nav__chat--imgChat"
                 src={imgChat}
@@ -85,13 +107,13 @@ const Profile = () => {
                 src={imgSingOut}
                 alt=""
               />
-              <p>Выйти</p>
+              <p onClick={exitAccount}>Выйти</p>
             </div>
           </div>
           <div className="profile--block1">
             {activeSection === "profile" && <ProfileUser />}
             {activeSection === "AllCurs" && <AllCurs />}
-            <Stars />
+            {activeSection === "Chat" && <Chat />}
           </div>
         </div>
       </div>

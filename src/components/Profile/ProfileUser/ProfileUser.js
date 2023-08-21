@@ -6,10 +6,21 @@ import Curs from "../MyCurs/MyCurs";
 const ProfileUser = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [activeTab, setActiveTab] = useState("Curs");
+  const [name, setName] = useState("Имя пользователя"); //! Имя пользователя
+  const [selectedImage, setSelectedImage] = useState(null);
   const handleEditClick = () => {
     setIsEditing(!isEditing);
   };
+  const handleSaveClick = () => {
+  
+    setIsEditing(false);
+  };
 
+  const handleImageChange = (event) => {
+    const file = event.target.files[0];
+    setSelectedImage(file);
+  };
+  
   return (
     <div id="user">
       <div className="container">
@@ -28,7 +39,15 @@ const ProfileUser = () => {
                   alt="img"
                 />
                 <div className="user--blocks__block1--userInfo__name">
-                  <h1>Name</h1>
+                  {isEditing ? (
+                    <input
+                      type="text"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                    />
+                  ) : (
+                    <h1>{name}</h1>
+                  )}
                   <p>Студент</p>
                 </div>
                 <button
@@ -44,7 +63,10 @@ const ProfileUser = () => {
                     <input type="file" />
                     <input type="text" placeholder="Name" />
                   </div>
-                  <button className="user--blocks__block1--redac__btnSave">
+                  <button
+                    onClick={handleSaveClick}
+                    className="user--blocks__block1--redac__btnSave"
+                  >
                     Сохранить
                   </button>
                 </div>
@@ -52,6 +74,7 @@ const ProfileUser = () => {
             </div>
             <div className="user--blocks__block2">
               <div className="user--blocks__block2--btns">
+                
                 <button
                   className={`user--blocks__block2--btns__btn1 ${
                     activeTab === "Curs" ? "active" : ""

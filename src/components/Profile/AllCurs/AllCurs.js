@@ -11,8 +11,7 @@ import { NavLink } from 'react-router-dom';
 import Clock from '../../../img/clock.svg'
 import Chart from '../../../img/chart.svg'
 import IMG from '../../../img/IMG.svg'
-import Lessons from '../../Lessons';
-import ReviewTwo from '../../ReviewTwo';
+
 
 
 const AllCurs = () => {
