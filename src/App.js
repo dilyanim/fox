@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/register" element={<Register />} />
         <Route path="/reg" element={<Reg />} />
-        <Route path="/" element={<Main />} />
+         <Route path="/" element={<Main />} />
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/zapylParol" element={<ZapylParol />} />
         <Route path="/aboutCourse" element={<AboutCourse />} />

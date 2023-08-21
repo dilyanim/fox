@@ -11,20 +11,20 @@ const Blocks = () => {
             <div className="container">
                 <div className="blocks">
                     <div className="block1">
-                         <img src={img1}></img>
+                         <img  className='bl-img' src={img1}></img>
                          <h4>Пожизненный доступ</h4>
                          <div className='line'><img src={line}></img></div>
                          <p>Постепенное накопление информация об атомном и мелкомасштабное поведение...</p>
                     </div>
                     <div className="block1">
-                    <img src={img2}></img>
+                    <img className='bl-img' src={img2}></img>
                          <h4>Сертифицированный преподаватель</h4>
                          <div className='line'><img src={line}></img></div>
 
                          <p>Постепенное  накопление информация об атомном и мелкомасштабное поведение...</p>
                     </div>
-                    <div className="block1">
-                         <img src={img3}></img>
+                    <div  className="block1">
+                         <img className='bl-img' src={img3}></img>
                          <h4>Обучающие курсы</h4>
                          <div className='line'><img src={line}></img></div>
                          <p>Постепенное накопление информация об атомном и мелкомасштабное поведение...</p></div>

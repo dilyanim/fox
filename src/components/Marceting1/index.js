@@ -99,7 +99,7 @@ const Marketing1 = () => {
     </div>
             
         </div>
-        <Acardion/>
+        {/* <Acardion/> */}
        
        </>
     );

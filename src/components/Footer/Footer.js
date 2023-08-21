@@ -30,6 +30,7 @@ const Footer = () => {
                   <div className="footer--block__content--logo__circle--cruck"></div>
                 </div>
               </div>
+              {/* <div className="foot-bl"> */}
               <div className="footer--block__content--product">
                 <h1>Курсы</h1>
                 <p>Маркетинг </p>
@@ -50,6 +51,8 @@ const Footer = () => {
                 <p>hello@courses.com</p>
                 <p>0220 234 547</p>
               </div>
+              {/* </div> */}
+             
             </div>
           </div>
         </div>

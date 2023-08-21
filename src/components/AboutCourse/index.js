@@ -37,6 +37,7 @@ const AboutCourse = () => {
 
                     </div>
                     <div  className="popular-blocks">
+                        
                         <button className='btn-1' >Все курсы</button>
                         <button className='btn-2'>Управление компанией</button>
                         <button className='btn-2' >Командаобразование</button>
@@ -184,7 +185,7 @@ const AboutCourse = () => {
             
         </div>
         <Lessons/>
-        <ReviewTwo/>
+        {/* <ReviewTwo/>  */}
         
        </>
     
