@@ -29,9 +29,9 @@ const Main = () => {
         </div>
       </div>
        <Blocks />
-      <Course />
-      <CoursesMain/>
-       <Lessons/> 
+      {/* <Course /> */}
+    {/*   <CoursesMain/>
+       <Lessons/>  */}
        {/* <Review/>  */}
     </>
   );

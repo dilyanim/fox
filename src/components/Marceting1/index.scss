@@ -1,5 +1,7 @@
 #marketingOne{
+    
     .container{
+        
         .marketingOne{ 
             
             .market-text{
@@ -132,7 +134,6 @@
         
     }
 }
- 
 .market-btn{
     color: #FFF;
     font-family: Rubik;
@@ -155,3 +156,1002 @@
 }
 
 
+
+@media (max-width:1440px) {
+    #marketingOne{
+        .container{
+            .marketingOne{ 
+                
+                .market-text{
+                    margin: 52px 442px;
+                    align-items: center;
+                    text-align: center;
+                    
+    
+                    h1{
+                        width: 278px;
+                        color: #0B132A;
+                        font-family: Rubik;
+                        font-size: 50px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 70px; 
+                        margin-left: 140px;
+                    }
+                    p{
+                        width: 555px;
+                        color: #4F5665;
+                        text-align: center;
+                        font-family: Rubik;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 30px; 
+                    }
+                }
+                .market-img{
+                    margin-left: 170px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    h1{
+                        width: 638px;
+                        color: var(--text-color, #252B42);
+                        font-family: Rubik;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 39px;
+                        letter-spacing: 0.1px;
+                         margin: 20px 0;
+                    }
+                    h6{
+                        width: 653px;
+                        color: #000;
+                        font-family: Rubik;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 22.857px; 
+                        margin: 20px 0;
+                       
+                    }
+                   
+                }
+                 
+    
+                
+            }
+            .modal{
+                position: relative;
+               &--content{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 999;
+                background: #000000ab;
+                backdrop-filter: blur(10px);
+                &__panel{
+                    width: 75%;
+                    height: 90%;
+                    background: #efecec;
+                
+                    &--general{
+                       
+                        &__top{
+                            display: flex;
+                            align-items: center;
+                            gap: 150px;
+                            background-color:  #C9E7FD;
+                            h1{
+                                font-size: 20px;
+                            }
+                        }
+                        &__inputs{
+                            padding: 30px 68px;
+                            display: flex;
+                            gap: 50px;
+                            button{
+                                background: #23A6F0;
+                                font-size: 16px;
+                                padding: 10px 55px;
+                                border: none;
+                                border-radius: 5px;
+                                color: white;
+                                transition: .4s;
+                                margin: 20px 0;
+                                cursor: pointer;
+                                &:hover{
+                                    background: #efecec;
+                                    color: #23A6F0;
+                                    border: 1px solid #23A6F0;
+                                }
+                            }
+                            input{
+                                width: 29rem;
+                                height: 3rem;
+                                border-radius: 5px;
+                                border: 1px solid rgba(0, 0, 0, 0.40);
+                                outline: none;
+                                padding: 0 10px;
+                            }
+                            p{
+                                padding: 14px 0;
+                            }
+                        }
+                    }
+                    
+                }
+               }
+            }
+            
+        }
+    }
+    .market-btn{
+        color: #FFF;
+        font-family: Rubik;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px; 
+        letter-spacing: 0.2px;
+        display: flex;
+        width: 335px;
+        height: 52px;
+        padding: 15px 100px;
+        align-items: center;
+        gap: 15px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        background: #23A6F0;
+        border: none;
+        margin: 100px 582px;
+    } 
+    
+}
+@media (max-width:1400px) {
+    #marketingOne{
+      
+        .container{
+            .h6 p{
+                width: 1153px ;
+                color : #000 ;
+                font-family: Rubik;
+                font-size: 16px;
+                font-style: normal ;
+                font-weight: 400 ;
+                margin: 0px -32px ;
+            }
+            .marketingOne{ 
+
+                
+                .market-text{
+                    margin: 52px 442px;
+                    align-items: center;
+                    text-align: center;
+                    
+    
+                    h1{
+                        width: 278px;
+                        color: #0B132A;
+                        font-family: Rubik;
+                        font-size: 50px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 70px; 
+                        margin-left: 140px;
+                    }
+                    p{
+                        width: 555px;
+                        color: #4F5665;
+                        text-align: center;
+                        font-family: Rubik;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 30px; 
+                    }
+                }
+                .market-img{
+                    margin-left: 129px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    h1{
+                        width: 638px;
+                        color: var(--text-color, #252B42);
+                        font-family: Rubik;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 39px;
+                        letter-spacing: 0.1px;
+                         margin: 20px 16px;
+                    }
+                    h6{
+                        width: 653px;
+                        color: #000;
+                        font-family: Rubik;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 22.857px; 
+                        margin: 20px 16px;
+                       
+                    }
+                   
+                }
+                 
+    
+                
+            }
+            .modal{
+                position: relative;
+               &--content{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 999;
+                background: #000000ab;
+                backdrop-filter: blur(10px);
+                &__panel{
+                    width: 75%;
+                    height: 90%;
+                    background: #efecec;
+                
+                    &--general{
+                       
+                        &__top{
+                            display: flex;
+                            align-items: center;
+                            gap: 150px;
+                            background-color:  #C9E7FD;
+                            h1{
+                                font-size: 20px;
+                            }
+                        }
+                        &__inputs{
+                            padding: 30px 68px;
+                            display: flex;
+                            gap: 50px;
+                            button{
+                                background: #23A6F0;
+                                font-size: 16px;
+                                padding: 10px 55px;
+                                border: none;
+                                border-radius: 5px;
+                                color: white;
+                                transition: .4s;
+                                margin: 20px 0;
+                                cursor: pointer;
+                                &:hover{
+                                    background: #efecec;
+                                    color: #23A6F0;
+                                    border: 1px solid #23A6F0;
+                                }
+                            }
+                            input{
+                                width: 29rem;
+                                height: 3rem;
+                                border-radius: 5px;
+                                border: 1px solid rgba(0, 0, 0, 0.40);
+                                outline: none;
+                                padding: 0 10px;
+                            }
+                            p{
+                                padding: 14px 0;
+                            }
+                        }
+                    }
+                    
+                }
+               }
+            }
+            
+        }
+    }
+    .market-btn{
+        color: #FFF;
+        font-family: Rubik;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px; 
+        letter-spacing: 0.2px;
+        display: flex;
+        width: 335px;
+        height: 52px;
+        padding: 15px 100px;
+        align-items: center;
+        gap: 15px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        background: #23A6F0;
+        border: none;
+        margin: 100px 582px;
+    } 
+    
+}
+@media (max-width:1200px) {
+    #marketingOne{
+      
+        .container{
+            .h6 p{
+                width: 1153px ;
+                color : #000 ;
+                font-family: Rubik;
+                font-size: 16px;
+                font-style: normal ;
+                font-weight: 400 ;
+                margin: 0px -84px ;
+            }
+            .marketingOne{ 
+
+                
+                .market-text{
+                    margin: 52px 356px;
+                    align-items: center;
+                    text-align: center;
+                    
+    
+                    h1{
+                        width: 278px;
+                        color: #0B132A;
+                        font-family: Rubik;
+                        font-size: 50px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 70px; 
+                        margin-left: 140px;
+                    }
+                    p{
+                        width: 555px;
+                        color: #4F5665;
+                        text-align: center;
+                        font-family: Rubik;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 30px; 
+                    }
+                }
+                .market-img{
+                    margin-left: 79px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    h1{
+                        width: 638px;
+                        color: var(--text-color, #252B42);
+                        font-family: Rubik;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 39px;
+                        letter-spacing: 0.1px;
+                         margin: 20px 16px;
+                    }
+                    h6{
+                        width: 653px;
+                        color: #000;
+                        font-family: Rubik;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 22.857px; 
+                        margin: 20px 16px;
+                       
+                    }
+                   
+                }
+                 
+    
+                
+            }
+            .modal{
+                position: relative;
+               &--content{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 999;
+                background: #000000ab;
+                backdrop-filter: blur(10px);
+                &__panel{
+                    width: 75%;
+                    height: 90%;
+                    background: #efecec;
+                
+                    &--general{
+                       
+                        &__top{
+                            display: flex;
+                            align-items: center;
+                            gap: 150px;
+                            background-color:  #C9E7FD;
+                            h1{
+                                font-size: 20px;
+                            }
+                        }
+                        &__inputs{
+                            padding: 30px 68px;
+                            display: flex;
+                            gap: 50px;
+                            button{
+                                background: #23A6F0;
+                                font-size: 16px;
+                                padding: 10px 55px;
+                                border: none;
+                                border-radius: 5px;
+                                color: white;
+                                transition: .4s;
+                                margin: 20px 0;
+                                cursor: pointer;
+                                &:hover{
+                                    background: #efecec;
+                                    color: #23A6F0;
+                                    border: 1px solid #23A6F0;
+                                }
+                            }
+                            input{
+                                width: 29rem;
+                                height: 3rem;
+                                border-radius: 5px;
+                                border: 1px solid rgba(0, 0, 0, 0.40);
+                                outline: none;
+                                padding: 0 10px;
+                            }
+                            p{
+                                padding: 14px 0;
+                            }
+                        }
+                    }
+                    
+                }
+               }
+            }
+            
+        }
+    }
+    .market-btn{
+        color: #FFF;
+        font-family: Rubik;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px; 
+        letter-spacing: 0.2px;
+        display: flex;
+        width: 335px;
+        height: 52px;
+        padding: 15px 100px;
+        align-items: center;
+        gap: 15px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        background: #23A6F0;
+        border: none;
+        margin: 100px 447px;
+    } 
+    
+}
+@media (max-width: 992px) {
+    #marketingOne{
+      
+        .container{
+            .h6 p{
+                width: 1153px ;
+                color : #000 ;
+                font-family: Rubik;
+                font-size: 16px;
+                font-style: normal ;
+                font-weight: 400 ;
+                margin: 0px -40px ;
+            }
+            .marketingOne{ 
+                
+                .market-text{
+                    margin: 52px 442px;
+                    align-items: center;
+                    text-align: center;
+                    
+    
+                    h1{
+                        width: 278px;
+                        color: #0B132A;
+                        font-family: Rubik;
+                        font-size: 50px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 70px; 
+                        margin-left: 140px;
+                    }
+                    p{
+                        width: 555px;
+                        color: #4F5665;
+                        text-align: center;
+                        font-family: Rubik;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 30px; 
+                    }
+                }
+                .market-img{
+                    margin-left: 126px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    h1{
+                        width: 638px;
+                        color: var(--text-color, #252B42);
+                        font-family: Rubik;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 39px;
+                        letter-spacing: 0.1px;
+                         margin: 20px 30px;
+                    }
+                    h6{
+                        width: 653px;
+                        color: #000;
+                        font-family: Rubik;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 22.857px; 
+                        margin: 20px 30px;
+                       
+                    }
+                   
+                }
+                 
+    
+                
+            }
+            .modal{
+                position: relative;
+               &--content{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 999;
+                background: #000000ab;
+                backdrop-filter: blur(10px);
+                &__panel{
+                    width: 75%;
+                    height: 90%;
+                    background: #efecec;
+                
+                    &--general{
+                       
+                        &__top{
+                            display: flex;
+                            align-items: center;
+                            gap: 150px;
+                            background-color:  #C9E7FD;
+                            h1{
+                                font-size: 20px;
+                            }
+                        }
+                        &__inputs{
+                            padding: 30px 68px;
+                            display: flex;
+                            gap: 50px;
+                            button{
+                                background: #23A6F0;
+                                font-size: 16px;
+                                padding: 10px 55px;
+                                border: none;
+                                border-radius: 5px;
+                                color: white;
+                                transition: .4s;
+                                margin: 20px 0;
+                                cursor: pointer;
+                                &:hover{
+                                    background: #efecec;
+                                    color: #23A6F0;
+                                    border: 1px solid #23A6F0;
+                                }
+                            }
+                            input{
+                                width: 29rem;
+                                height: 3rem;
+                                border-radius: 5px;
+                                border: 1px solid rgba(0, 0, 0, 0.40);
+                                outline: none;
+                                padding: 0 10px;
+                            }
+                            p{
+                                padding: 14px 0;
+                            }
+                        }
+                    }
+                    
+                }
+               }
+            }
+            
+        }
+    }
+    .market-btn{
+        color: #FFF;
+        font-family: Rubik;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px; 
+        letter-spacing: 0.2px;
+        display: flex;
+        width: 335px;
+        height: 52px;
+        padding: 15px 100px;
+        align-items: center;
+        gap: 15px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        background: #23A6F0;
+        border: none;
+        margin: 100px 530px;
+    }
+    
+}
+@media (max-width: 768px) {
+    #marketingOne{
+      
+        .container{
+            .h6 p{
+                // width: 1153px ;
+                // color : #000 ;
+                // font-family: Rubik;
+                // font-size: 16px;
+                // font-style: normal ;
+                // font-weight: 400 ;
+                // margin: 0px -40px ;
+                display: none;
+            }
+            .marketingOne{ 
+                
+                .market-text{
+                    margin: 52px 100px;
+                    align-items: center;
+                    text-align: center;
+                    
+    
+                    h1{
+                        width: 278px;
+                        color: #0B132A;
+                        font-family: Rubik;
+                        font-size: 50px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 70px; 
+                        margin-left: 140px;
+                    }
+                    p{
+                        width: 555px;
+                        color: #4F5665;
+                        text-align: center;
+                        font-family: Rubik;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 30px; 
+                    }
+                }
+                .market-img{
+                    margin-left: 145px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    h1{
+                        width: 538px;
+                        color: var(--text-color, #252B42);
+                        font-family: Rubik;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 39px;
+                        letter-spacing: 0.1px;
+                        margin: 20px 1px;
+                    }
+                    h6{
+                        width: 444px;
+                        color: #000;
+                        font-family: Rubik;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 22.857px;
+                        margin: 20px 27px
+                       
+                    }
+                   
+                }
+                 
+    
+                
+            }
+            .modal{
+                position: relative;
+               &--content{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 999;
+                background: #000000ab;
+                backdrop-filter: blur(10px);
+                &__panel{
+                    width: 75%;
+                    height: 90%;
+                    background: #efecec;
+                
+                    &--general{
+                       
+                        &__top{
+                            display: flex;
+                            align-items: center;
+                            gap: 150px;
+                            background-color:  #C9E7FD;
+                            h1{
+                                font-size: 20px;
+                            }
+                        }
+                        &__inputs{
+                            padding: 30px 68px;
+                            display: flex;
+                            gap: 50px;
+                            button{
+                                background: #23A6F0;
+                                font-size: 16px;
+                                padding: 10px 55px;
+                                border: none;
+                                border-radius: 5px;
+                                color: white;
+                                transition: .4s;
+                                margin: 20px 0;
+                                cursor: pointer;
+                                &:hover{
+                                    background: #efecec;
+                                    color: #23A6F0;
+                                    border: 1px solid #23A6F0;
+                                }
+                            }
+                            input{
+                                width: 29rem;
+                                height: 3rem;
+                                border-radius: 5px;
+                                border: 1px solid rgba(0, 0, 0, 0.40);
+                                outline: none;
+                                padding: 0 10px;
+                            }
+                            p{
+                                padding: 14px 0;
+                            }
+                        }
+                    }
+                    
+                }
+               }
+            }
+            
+        }
+    }
+    .market-btn{
+        color: #FFF;
+        font-family: Rubik;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px; 
+        letter-spacing: 0.2px;
+        display: flex;
+        width: 335px;
+        height: 52px;
+        padding: 15px 100px;
+        align-items: center;
+        gap: 15px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        background: #23A6F0;
+        border: none;
+        margin: 100px 232px;
+    }
+    
+}
+@media (max-width: 576px) {
+    #marketingOne{
+      
+        .container{
+            .h6 p{
+                // width: 1153px ;
+                // color : #000 ;
+                // font-family: Rubik;
+                // font-size: 16px;
+                // font-style: normal ;
+                // font-weight: 400 ;
+                // margin: 0px -40px ;
+                display: none;
+            }
+            .marketingOne{ 
+                
+                .market-text{
+                    margin: 52px 50px;
+                    align-items: center;
+                    text-align: center;
+                    
+    
+                    h1{
+                        width: 278px;
+                        color: #0B132A;
+                        font-family: Rubik;
+                        font-size: 50px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 70px; 
+                        margin-left: 140px;
+                    }
+                    p{
+                        width: 555px;
+                        color: #4F5665;
+                        text-align: center;
+                        font-family: Rubik;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 30px; 
+                    }
+                }
+                .market-img{
+                    margin-left: 102px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    h1{
+                        width: 538px;
+                        color: var(--text-color, #252B42);
+                        font-family: Rubik;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 39px;
+                        letter-spacing: 0.1px;
+                        margin: 20px 1px;
+                    }
+                    h6{
+                        width: 444px;
+                        color: #000;
+                        font-family: Rubik;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 22.857px;
+                        margin: 20px 1px
+                       
+                    }
+                   
+                }
+                 
+    
+                
+            }
+            .modal{
+                position: relative;
+               &--content{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 999;
+                background: #000000ab;
+                backdrop-filter: blur(10px);
+                &__panel{
+                    width: 75%;
+                    height: 90%;
+                    background: #efecec;
+                
+                    &--general{
+                       
+                        &__top{
+                            display: flex;
+                            align-items: center;
+                            gap: 150px;
+                            background-color:  #C9E7FD;
+                            h1{
+                                font-size: 20px;
+                            }
+                        }
+                        &__inputs{
+                            padding: 30px 68px;
+                            display: flex;
+                            gap: 50px;
+                            button{
+                                background: #23A6F0;
+                                font-size: 16px;
+                                padding: 10px 55px;
+                                border: none;
+                                border-radius: 5px;
+                                color: white;
+                                transition: .4s;
+                                margin: 20px 0;
+                                cursor: pointer;
+                                &:hover{
+                                    background: #efecec;
+                                    color: #23A6F0;
+                                    border: 1px solid #23A6F0;
+                                }
+                            }
+                            input{
+                                width: 29rem;
+                                height: 3rem;
+                                border-radius: 5px;
+                                border: 1px solid rgba(0, 0, 0, 0.40);
+                                outline: none;
+                                padding: 0 10px;
+                            }
+                            p{
+                                padding: 14px 0;
+                            }
+                        }
+                    }
+                    
+                }
+               }
+            }
+            
+        }
+    }
+    .market-btn{
+        color: #FFF;
+        font-family: Rubik;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px; 
+        letter-spacing: 0.2px;
+        display: flex;
+        width: 335px;
+        height: 52px;
+        padding: 15px 100px;
+        align-items: center;
+        gap: 15px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        background: #23A6F0;
+        border: none;
+        margin: 100px 126px;
+    }
+    
+}

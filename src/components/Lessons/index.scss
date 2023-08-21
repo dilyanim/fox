@@ -55,16 +55,39 @@
 }
 @media (max-width: 1400px ) {
     #lessons{
+        margin-top: 120px;
         .container{
             .lessons{
-                .lesson-text{
+                   
+                  .lesson-text{
+                    margin: 0 350px;
                     h1{
-
+                          width: 447.805px;
+                          color: #0B132A;
+                          text-align: center;
+                          font-family: Rubik;
+                          font-size: 35px;
+                          font-style: normal;
+                          font-weight: 500;
+                          line-height: 50px; 
+                          margin-left: 100px;
+                          bottom: 210px;
                     }
-                    p{
-                        
+                    p{ 
+                        margin: 20px 0;
+                        width: 555px;
+                        color: #4F5665;
+                        text-align: center;
+                        font-family: Rubik;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 30px;
+                        margin-right: 0px;
+                        margin-left: 50px;
+    
                     }
-                }
+                  }
             }
         }
     }
@@ -72,16 +95,39 @@
 }
 @media (max-width: 1200px ) {
     #lessons{
+        margin-top: 120px;
         .container{
             .lessons{
-                .lesson-text{
+                   
+                  .lesson-text{
+                    margin: 0 285px;
                     h1{
-
+                          width: 447.805px;
+                          color: #0B132A;
+                          text-align: center;
+                          font-family: Rubik;
+                          font-size: 30px;
+                          font-style: normal;
+                          font-weight: 500;
+                          line-height: 40px; 
+                          margin-left: 100px;
+                          bottom: 210px;
                     }
-                    p{
-                        
+                    p{ 
+                        margin: 20px 0;
+                        width: 555px;
+                        color: #4F5665;
+                        text-align: center;
+                        font-family: Rubik;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 30px;
+                        margin-right: 0px;
+                        margin-left: 50px;
+    
                     }
-                }
+                  }
             }
         }
     }
@@ -89,16 +135,38 @@
 }
 @media (max-width: 992px ) {
     #lessons{
+        margin-top: 100px;
         .container{
             .lessons{
-                .lesson-text{
+                   
+                  .lesson-text{
+                    margin: 0 244px;
                     h1{
-
+                        width: 362.805px;
+                        color: #0B132A;
+                        text-align: center;
+                        font-family: Rubik;
+                        font-size: 25px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 30px;
+                        margin-left: 115px;
                     }
-                    p{
-                        
+                    p{ 
+                        margin: 20px 0;
+                        width: 329px;
+                        color: #4F5665;
+                        text-align: center;
+                        font-family: Rubik;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 20px;
+                        margin-right: 0px;
+                        margin-left: 137px;
+    
                     }
-                }
+                  }
             }
         }
     }
@@ -106,33 +174,38 @@
 }
 @media (max-width: 768px ) {
     #lessons{
+        margin-top: 100px;
         .container{
             .lessons{
-                .lesson-text{
-                    margin-left: 65px;
+                   
+                  .lesson-text{
+                    margin: 0 93px;
                     h1{
-                        margin-left: 20px;
-                        width: 498px;
+                        width: 362.805px;
                         color: #0B132A;
+                        text-align: center;
                         font-family: Rubik;
-                        font-size: 40px;
+                        font-size: 25px;
                         font-style: normal;
-                        font-weight: 700;
-                        line-height: 70px;
-                     
+                        font-weight: 500;
+                        line-height: 30px;
+                        margin-left: 115px;
                     }
-                    p{
-                        margin: 12px 0;
-                        width: 555px;
+                    p{ 
+                        margin: 20px 0;
+                        width: 329px;
                         color: #4F5665;
+                        text-align: center;
                         font-family: Rubik;
-                        font-size: 16px;
+                        font-size: 12px;
                         font-style: normal;
                         font-weight: 400;
-                        line-height: 30px; 
-                        
+                        line-height: 20px;
+                        margin-right: 0px;
+                        margin-left: 137px;
+    
                     }
-                }
+                  }
             }
         }
     }
@@ -140,84 +213,77 @@
 }
 @media (max-width: 576px ) {
     #lessons{
+        margin-top: 90px;
         .container{
             .lessons{
-                .lesson-text{
-                    margin-left: 75px;
+                   
+                  .lesson-text{
+                    margin: 0 -5px;
                     h1{
-                        margin-left: 20px;
-                        width: 498px;
+                        width: 362.805px;
                         color: #0B132A;
+                        text-align: center;
                         font-family: Rubik;
-                        font-size: 40px;
+                        font-size: 25px;
                         font-style: normal;
-                        font-weight: 700;
-                        line-height: 70px;
-                     
+                        font-weight: 500;
+                        line-height: 30px;
+                        margin-left: 115px;
                     }
-                    p{
-                        margin: 12px 0;
-                        width: 555px;
+                    p{ 
+                        margin: 20px 0;
+                        width: 329px;
                         color: #4F5665;
+                        text-align: center;
                         font-family: Rubik;
-                        font-size: 16px;
+                        font-size: 12px;
                         font-style: normal;
                         font-weight: 400;
-                        line-height: 30px; 
-                        
+                        line-height: 20px;
+                        margin-right: 0px;
+                        margin-left: 137px;
+    
                     }
-                }
+                  }
             }
         }
     }
     
 }
-@media (max-width: 451px ) {
+@media (max-width: 400px ) {
     #lessons{
+        margin-top: -40px;
         .container{
             .lessons{
-                .lesson-text{
-                    margin-left: 45px;
+                   
+                  .lesson-text{
+                    margin: 0 -32px;
                     h1{
-                        margin-left: 20px;
-                        width: 498px;
+                        width: 362.805px;
                         color: #0B132A;
+                        text-align: center;
                         font-family: Rubik;
-                        font-size: 40px;
+                        font-size: 25px;
                         font-style: normal;
-                        font-weight: 700;
-                        line-height: 70px;
-                     
+                        font-weight: 500;
+                        line-height: 30px;
+                        margin-left: 115px;
                     }
-                    p{
-                        margin: 12px 0;
-                        width: 555px;
+                    p{ 
+                        margin: 20px 0;
+                        width: 329px;
                         color: #4F5665;
+                        text-align: center;
                         font-family: Rubik;
-                        font-size: 16px;
+                        font-size: 12px;
                         font-style: normal;
                         font-weight: 400;
-                        line-height: 30px; 
-                        
-                    }
-                }
-            }
-        }
-    }
+                        line-height: 20px;
+                        margin-right: 0px;
+                        margin-left: 137px;
     
-}
-@media (max-width: 376px ) {
-    #lessons{
-        .container{
-            .lessons{
-                .lesson-text{
-                    h1{
-
                     }
-                    p{
-                        
-                    }
-                }
+                  }
             }
         }
     }
@@ -225,16 +291,38 @@
 }
 @media (max-width: 320px ) {
     #lessons{
+        margin-top: -80px;
         .container{
             .lessons{
-                .lesson-text{
+                   
+                  .lesson-text{
+                    margin: 0 -32px;
                     h1{
-
+                        width: 362.805px;
+                        color: #0B132A;
+                        text-align: center;
+                        font-family: Rubik;
+                        font-size: 25px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 30px;
+                        margin-left: 115px;
                     }
-                    p{
-                        
+                    p{ 
+                        margin: 20px 0;
+                        width: 329px;
+                        color: #4F5665;
+                        text-align: center;
+                        font-family: Rubik;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 20px;
+                        margin-right: 0px;
+                        margin-left: 137px;
+    
                     }
-                }
+                  }
             }
         }
     }
