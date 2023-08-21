@@ -1,0 +1,324 @@
+#chat {
+  .container {
+    .chat {
+      display: flex;
+      border-top: 2px solid grey;
+      margin-left: 95px;
+      width: 1174px;
+      &--group {
+        border-right: 2px solid grey;
+        &__friends {
+          display: flex;
+          align-items: center;
+          width: 389px;
+          height: 100px;
+          border-bottom: 1px solid grey;
+          img {
+            margin-left: 20px;
+          }
+          &--text {
+            margin-left: 23px;
+            margin-right: 50px;
+            h1 {
+              color: #000;
+              font-family: Poppins;
+              font-size: 18px;
+              font-weight: 500;
+            }
+            p {
+              color: rgba(0, 0, 0, 0.75);
+              font-family: Poppins;
+              font-size: 14px;
+              font-weight: 500;
+            }
+          }
+          h6 {
+            color: rgba(0, 0, 0, 0.5);
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 20px;
+          }
+        }
+        &__odnodrupniki {
+          display: flex;
+          align-items: center;
+          width: 389px;
+          height: 100px;
+          border-bottom: 1px solid grey;
+          img {
+            margin-left: 20px;
+          }
+          &--text {
+            margin-left: 23px;
+            margin-right: 37px;
+            h1 {
+              color: #000;
+              font-family: Poppins;
+              font-size: 18px;
+              font-weight: 500;
+            }
+            p {
+              color: rgba(0, 0, 0, 0.75);
+              font-family: Poppins;
+              font-size: 14px;
+              font-weight: 500;
+            }
+          }
+          h6 {
+            color: rgba(0, 0, 0, 0.5);
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 20px;
+          }
+        }
+        &__girls {
+          display: flex;
+          align-items: center;
+          width: 389px;
+          height: 100px;
+          border-bottom: 1px solid grey;
+          img {
+            margin-left: 20px;
+          }
+          &--text {
+            margin-left: 23px;
+            margin-right: 21px;
+            h1 {
+              color: #000;
+              font-family: Poppins;
+              font-size: 18px;
+              font-weight: 500;
+            }
+            p {
+              color: rgba(0, 0, 0, 0.75);
+              font-family: Poppins;
+              font-size: 14px;
+              font-weight: 500;
+            }
+          }
+          h6 {
+            color: rgba(0, 0, 0, 0.5);
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 20px;
+          }
+        }
+        &__beka {
+          display: flex;
+          align-items: center;
+          width: 389px;
+          height: 100px;
+          border-bottom: 1px solid grey;
+          img {
+            margin-left: 20px;
+          }
+          &--text {
+            margin-left: 23px;
+            margin-right: 120px;
+            h1 {
+              color: #000;
+              font-family: Poppins;
+              font-size: 18px;
+              font-weight: 500;
+            }
+            p {
+              color: rgba(0, 0, 0, 0.75);
+              font-family: Poppins;
+              font-size: 14px;
+              font-weight: 500;
+            }
+          }
+          h6 {
+            color: rgba(0, 0, 0, 0.5);
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 20px;
+          }
+        }
+        &__Ira {
+          display: flex;
+          align-items: center;
+          width: 389px;
+          height: 100px;
+          border-bottom: 1px solid grey;
+          background: #dadada;
+          img {
+            margin-left: 20px;
+          }
+          &--text {
+            margin-left: 23px;
+            margin-right: 117px;
+            h1 {
+              color: #000;
+              font-family: Poppins;
+              font-size: 18px;
+              font-weight: 500;
+            }
+            p {
+              color: rgba(0, 0, 0, 0.75);
+              font-family: Poppins;
+              font-size: 14px;
+              font-weight: 500;
+            }
+          }
+          h6 {
+            color: rgba(0, 0, 0, 0.5);
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 20px;
+          }
+        }
+        &__azamat {
+          display: flex;
+          align-items: center;
+          width: 389px;
+          height: 100px;
+          border-bottom: 1px solid grey;
+          img {
+            margin-left: 20px;
+          }
+          &--text {
+            margin-left: 23px;
+            margin-right: 117px;
+            h1 {
+              color: #000;
+              font-family: Poppins;
+              font-size: 18px;
+              font-weight: 500;
+            }
+            p {
+              color: rgba(0, 0, 0, 0.75);
+              font-family: Poppins;
+              font-size: 14px;
+              font-weight: 500;
+            }
+          }
+          h6 {
+            color: rgba(0, 0, 0, 0.5);
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 20px;
+          }
+        }
+        &__begimai {
+          display: flex;
+          align-items: center;
+          width: 389px;
+          height: 100px;
+          border-bottom: 1px solid grey;
+          img {
+            margin-left: 20px;
+          }
+          &--text {
+            margin-left: 23px;
+            margin-right: 74px;
+            h1 {
+              color: #000;
+              font-family: Poppins;
+              font-size: 18px;
+              font-weight: 500;
+            }
+            p {
+              color: rgba(0, 0, 0, 0.75);
+              font-family: Poppins;
+              font-size: 14px;
+              font-weight: 500;
+            }
+          }
+          h6 {
+            color: rgba(0, 0, 0, 0.5);
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 20px;
+          }
+        }
+      }
+      &--ira {
+        &__prof {
+          width: 766px;
+          height: 105px;
+          border-bottom: 1px solid grey;
+          display: flex;
+          align-items: center;
+          img {
+            margin-left: 20px;
+            margin-right: 30px;
+          }
+          &--text {
+            h1 {
+              color: #000;
+              font-family: Poppins;
+              font-size: 24px;
+              font-weight: 600;
+            }
+            p {
+              color: rgba(0, 0, 0, 0.85);
+              font-family: Poppins;
+              font-size: 14px;
+              font-weight: 400;
+            }
+          }
+          &--phoneIcon {
+            fill: #23a6f0;
+            font-size: 20px;
+            margin-left: 461px;
+            cursor: pointer;
+          }
+          &--cameraIcon {
+            fill: #23a6f0;
+            font-size: 25px;
+            margin-left: 39px;
+            margin-right: 23px;
+            cursor: pointer;
+          }
+        }
+        &__message {
+          position: relative;
+          &--hello1 {
+            position: absolute;
+            top: 106px;
+            left: 10px;
+          }
+          &--hello2 {
+            position: absolute;
+            top: 181px;
+          }
+          &--howAreYou {
+            position: absolute;
+            top: 304px;
+            left: 634px;
+          }
+          &--good {
+            position: absolute;
+            top: 394px;
+            left: 578px;
+          }
+        }
+        &__getMessage {
+          display: flex;
+          &--vot {
+            display: flex;
+            width: 664px;
+            height: 53px;
+            align-items: center;
+            margin-left: 28px;
+            gap: 547px;
+            border-radius: 12px;
+            background: #dadada;
+            margin-top: 536px;
+            img {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

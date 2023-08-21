@@ -6,7 +6,7 @@ import { RxCross2 } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setUser } from "../../store/userSlice/userSlice";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword, } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 const Reg = () => {
   const [email, setEmail] = useState("");
