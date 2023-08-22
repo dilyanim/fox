@@ -3,7 +3,8 @@ import { NavLink } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { useAuth } from "../../hooks/use-auth";
 import imgAva from "../../img/AvatarUser.png";
-
+import line from '../../img/fixed.png'
+import {TbPointFilled} from 'react-icons/tb'
 
 
 
@@ -31,10 +32,17 @@ const Header = () => {
     </label>
        
     <ul class="menu__box">
-      <NavLink  to={"/"} className="menu__item" href="#">Главная</NavLink>
-			<NavLink  to={"/aboutUs"} className="menu__item" href="#"> О нас</NavLink>
-			<NavLink  to={"/aboutCourse"} className="menu__item" href="#">Курсы</NavLink>
-			<NavLink className="menu__item" href="#">Контакты</NavLink>
+      <NavLink  to={"/"} className="menu__item" href="#"> <TbPointFilled/> Главная</NavLink>
+      <div className="fix" src={line}></div>
+			<NavLink  to={"/aboutUs"} className="menu__item" href="#"> <TbPointFilled/> О нас</NavLink>
+      <div className="fix" src={line}></div>
+
+			<NavLink  to={"/aboutCourse"} className="menu__item" href="#"> <TbPointFilled/> Курсы</NavLink>
+      <div className="fix" src={line}></div>
+
+			<NavLink className="menu__item" href="#"> <TbPointFilled/> Контакты</NavLink>
+      <div className="fix" src={line}></div>
+
       <div className="header-burger">
             {isAuth ? (
               <NavLink to={"/profile"}>
