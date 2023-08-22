@@ -29,7 +29,7 @@ const Main = () => {
         </div>
       </div>
         <Blocks /> 
-        {/* <Course />  */}
+        <Course /> 
         <CoursesMain/>
         {/* <Lessons/>  */}
         {/* <Review/>  */}

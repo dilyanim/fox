@@ -1,5 +1,5 @@
 import React from 'react';
-import  {RiArrowRightSLine} from 'react-icons/ri'
+import {RiArrowRightSLine} from 'react-icons/ri'
 import { NavLink } from 'react-router-dom';
 import Clock from '../../img/clock.svg'
 import Chart from '../../img/chart.svg'
@@ -7,7 +7,8 @@ import IMG from '../../img/IMG.svg'
 import main1 from '../../img/main1.png'
 import main2 from '../../img/main2.png'
 import main3 from '../../img/main3.png'
-
+import {BsFillCircleFill} from 'react-icons/bs'
+import {FaRegHeart} from 'react-icons/fa'
 
 const CoursesMain = () => {
     return (
@@ -27,7 +28,14 @@ const CoursesMain = () => {
                 <div className="ann">
                     <div className='ann1'>
                     <div className='topM'>
-                           <img className='top-imgM' src={main1}></img>
+                            <div><img className='top-imgM'  src={main1}></img>
+                            {/* <div className='c-icon'>
+                                <BsFillCircleFill className='circle' />
+                                <FaRegHeart className='heart' />
+                            </div>  */}
+
+                                </div>     
+                           
                             <div className='top-textM'>
                             <h4>Как ставить о оценивать задачи</h4>
                             <p className='top-pM' >   Мы ориентируемся на эргономику и ты где работаешь. Это всего лишь нажатие клавиши.</p>
@@ -59,6 +67,8 @@ const CoursesMain = () => {
                                 <h6>64 уроков</h6>
                                 <img src={IMG} alt=""/>
                                 <h6>Прогресс</h6>
+                             
+                              
                                
                                 
                             </div> 
