@@ -13,11 +13,14 @@ import Chat from "./Chat/Chat";
 import { removeUser } from "../../store/userSlice/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import Stars from "./Stars/Stars";
+
 
 const Profile = () => {
   const dispatch = useDispatch();
   const userState = useSelector((state) => state.user);
+  const storedName = localStorage.getItem("userName");
+  const storedEmail = localStorage.getItem("userEmail");
+
   const Navigate = useNavigate();
   const [activeSection, setActiveSection] = useState("profile");
   const handleSectionClick = (section) => {
@@ -31,6 +34,9 @@ const Profile = () => {
     localStorage.removeItem("id");
     localStorage.removeItem("name");
     localStorage.removeItem("userImage");
+    localStorage.removeItem("userName");
+    localStorage.removeItem("userEmail");
+
     Navigate("/");
   };
   return (
@@ -41,7 +47,7 @@ const Profile = () => {
             <div
               className={`profile--nav__prof ${
                 activeSection === "profile" ? "active" : ""
-              }`}
+              }`} 
               onClick={() => handleSectionClick("profile")}
             >
               <img
