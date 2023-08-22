@@ -86,14 +86,31 @@
                     &__top{
                         display: flex;
                         align-items: center;
-                        gap: 150px;
+                        gap: 240px;
                         background-color:  #C9E7FD;
                         h1{
-                            font-size: 20px;
+                            font-size: 25px;
                         }
+                        
+                     &--opshn{
+                    p{
+                        margin-left: 74px;
+                        padding: 20px 0;
+                    }
+                        &__input{
+                            width: 63.6rem;
+                            height: 3.3rem;
+                            background: #fafafa;
+                            border-radius: 5px;
+                            margin-left: 69px;
+                            border: 0.5px solid rgb(88, 87, 87);
+
+                        }
+                     }
                     }
                     &__inputs{
-                        padding: 30px 68px;
+                        
+                        padding: 10px 68px;
                         display: flex;
                         gap: 50px;
                         button{
@@ -122,6 +139,76 @@
                         }
                         p{
                             padding: 14px 0;
+                        }
+                        &--right{
+                            position: relative;
+                            &__modules{
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: start;
+                                z-index: 999;
+                            
+                               
+                                
+                                &--arrow{
+                                    margin-top: 50px;
+                                    animation: myAnim 2s ease 0s 1 normal forwards;
+                                    @keyframes myAnim {
+                                        0% {
+                                            animation-timing-function: ease-in;
+                                            opacity: 1;
+                                            transform: translateY(-45px);
+                                        }
+                                    
+                                        24% {
+                                            opacity: 1;
+                                        }
+                                    
+                                        40% {
+                                            animation-timing-function: ease-in;
+                                            transform: translateY(-24px);
+                                        }
+                                    
+                                        65% {
+                                            animation-timing-function: ease-in;
+                                            transform: translateY(-12px);
+                                        }
+                                    
+                                        82% {
+                                            animation-timing-function: ease-in;
+                                            transform: translateY(-6px);
+                                        }
+                                    
+                                        93% {
+                                            animation-timing-function: ease-in;
+                                            transform: translateY(-4px);
+                                        }
+                                    
+                                        25%,
+                                        55%,
+                                        75%,
+                                        87% {
+                                            animation-timing-function: ease-out;
+                                            transform: translateY(0px);
+                                        }
+                                    
+                                        100% {
+                                            animation-timing-function: ease-out;
+                                            opacity: 1;
+                                            transform: translateY(0px);
+                                        }
+                                    }
+                                    span{
+                                        font-size: 100px;
+                                        color: rgb(44, 195, 17);
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -153,3 +240,5 @@
     border: none;
     margin: 100px 582px;
 }
+
+

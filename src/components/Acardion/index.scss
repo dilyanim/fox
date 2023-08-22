@@ -24,7 +24,6 @@
         &__left {
           width: 1140px;
           cursor: pointer;
-          height: 20px;
           overflow: hidden;
           border-bottom: 1px solid rgb(232, 232, 232);
           transition: .4s;
@@ -33,14 +32,16 @@
           &--title {
             display: flex;
             justify-content: space-between;
+           
+           
             
   
             &__accord {
+              height: 300px;
               margin: 1.4rem 0;
               font-size: 1.2rem;
               font-weight: 500;
               color: white;
-  
               &--btn {
                  background: none;
                  border: none;
@@ -63,8 +64,14 @@
                 }
   
                 &__answer {
-                    
-                  
+                   display: flex;
+                   align-items: center;
+                 &--vid{
+                  padding-top: 100px;
+                  iframe{
+                    border-radius: 20px;
+                  }
+                 }
                  
                   p{
                     width: 800px;
