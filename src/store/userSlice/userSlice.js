@@ -24,7 +24,7 @@ const userSlice = createSlice({
       localStorage.setItem("id", JSON.stringify(id));
       localStorage.setItem("name", JSON.stringify(name));
       localStorage.setItem("userImage", userImage);
-    },
+    },  
     removeUser(state, action) {
       state.email = null;
       state.token = null;
