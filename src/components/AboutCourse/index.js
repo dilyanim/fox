@@ -185,7 +185,7 @@ const AboutCourse = () => {
             
         </div>
         <Lessons/>
-        {/* <ReviewTwo/>  */}
+        <ReviewTwo/> 
         
        </>
     
