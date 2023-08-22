@@ -1,26 +1,45 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import imgProf from "../../../img/profileUser.png";
-import imgAvatar from "../../../img/AvatarUser.png";
+import AvatarUser from "../../../img/AvatarUser.png";
 import Curs from "../MyCurs/MyCurs";
-
+import { useDispatch, useSelector } from "react-redux";
+import {
+  updateUserImage,
+  updateName,
+} from "../../../store/userSlice/userSlice";
 const ProfileUser = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [activeTab, setActiveTab] = useState("Curs");
-  const [name, setName] = useState("Имя пользователя"); //! Имя пользователя
-  const [selectedImage, setSelectedImage] = useState(null);
+
   const handleEditClick = () => {
     setIsEditing(!isEditing);
   };
   const handleSaveClick = () => {
-  
     setIsEditing(false);
   };
+  const dispatch = useDispatch();
+  const userImage = useSelector((state) => state.user.userImage);
+  const userName = useSelector((state) => state.user.name);
+  useEffect(() => {
+    const storedImage = localStorage.getItem("userImage");
+    if (storedImage) {
+      dispatch(updateUserImage(storedImage));
+    }
+  });
 
-  const handleImageChange = (event) => {
-    const file = event.target.files[0];
-    setSelectedImage(file);
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        dispatch(updateUserImage(reader.result));
+        localStorage.setItem("userImage", reader.result);
+      };
+      reader.readAsDataURL(file);
+    }
   };
-  
+
+
   return (
     <div id="user">
       <div className="container">
@@ -33,20 +52,23 @@ const ProfileUser = () => {
                 alt="img"
               />
               <div className="user--blocks__block1--userInfo">
-                <img
-                  className="user--blocks__block1--userInfo__imgAva"
-                  src={imgAvatar}
-                  alt="img"
-                />
+                {userImage ? (
+                  <img
+                    className="user--blocks__block1--userInfo__imgAva"
+                    src={userImage}
+                    alt=""
+                  />
+                ) : (
+                  <>
+                    <img src={AvatarUser} alt="" />
+                  </>
+                )}
+
                 <div className="user--blocks__block1--userInfo__name">
                   {isEditing ? (
-                    <input
-                      type="text"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                    />
+                    <input type="text" value={userName} />
                   ) : (
-                    <h1>{name}</h1>
+                    <h1>{userName}</h1>
                   )}
                   <p>Студент</p>
                 </div>
@@ -60,8 +82,13 @@ const ProfileUser = () => {
               {isEditing && (
                 <div className="user--blocks__block1--redac">
                   <div className="user--blocks__block1--redac__input">
-                    <input type="file" />
-                    <input type="text" placeholder="Name" />
+                    <input
+                      type="file"
+                      accept="image/*"
+                      onChange={handleImageChange}
+                      style={{ display: "block" }}
+                    />
+                    <input value={userName} type="text" placeholder="Name" />
                   </div>
                   <button
                     onClick={handleSaveClick}
@@ -74,7 +101,6 @@ const ProfileUser = () => {
             </div>
             <div className="user--blocks__block2">
               <div className="user--blocks__block2--btns">
-                
                 <button
                   className={`user--blocks__block2--btns__btn1 ${
                     activeTab === "Curs" ? "active" : ""

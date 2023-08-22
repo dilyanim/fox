@@ -14,7 +14,6 @@ import { removeUser } from "../../store/userSlice/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
-
 const Profile = () => {
   const dispatch = useDispatch();
   const userState = useSelector((state) => state.user);
@@ -47,7 +46,7 @@ const Profile = () => {
             <div
               className={`profile--nav__prof ${
                 activeSection === "profile" ? "active" : ""
-              }`} 
+              }`}
               onClick={() => handleSectionClick("profile")}
             >
               <img
