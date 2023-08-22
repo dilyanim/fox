@@ -72,7 +72,7 @@ const AboutUs = () => {
             </div>
             <div className="about--block3__content">
               <div className="about--block3__content--image">
-                <img src={imgMan} alt="img" />
+                <img className="a-img" src={imgMan} alt="img" />
               </div>
                 <div className="about--block3__content--text1">
                   <p>

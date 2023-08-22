@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import imageGoogle from "../../../img/google.svg";
 import imageFacebook from "../../../img/fasebook.svg";
-import { AiOutlineEye } from "react-icons/ai";
+// import { AiOutlineEye } from "react-icons/ai";
 import { AiOutlineEyeInvisible } from "react-icons/ai";
 
 import { useDispatch } from "react-redux";

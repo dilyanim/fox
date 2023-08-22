@@ -28,11 +28,11 @@ const Main = () => {
           </div>
         </div>
       </div>
-       <Blocks />
-      {/* <Course /> */}
-    {/*   <CoursesMain/>
-       <Lessons/>  */}
-       {/* <Review/>  */}
+        <Blocks /> 
+        {/* <Course />  */}
+        <CoursesMain/>
+        {/* <Lessons/>  */}
+        {/* <Review/>  */}
     </>
   );
 };
