@@ -6,7 +6,7 @@ import { RxCross2 } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setUser } from "../../store/userSlice/userSlice";
-import { getAuth, signInWithEmailAndPassword, } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 const Reg = () => {
   const [email, setEmail] = useState("");
@@ -16,7 +16,7 @@ const Reg = () => {
   const Navigate = useNavigate();
   const handleLogin = (email, password, name) => {
     const auth = getAuth();
-    signInWithEmailAndPassword(auth, email, password,name)
+    signInWithEmailAndPassword(auth, email, password, name)
       .then(({ user }) => {
         console.log(user);
         dispatch(
@@ -24,7 +24,7 @@ const Reg = () => {
             email: user.email,
             id: user.uid,
             token: user.accessToken,
-            name: user.displayName
+            name: user.displayName,
           })
         );
         Navigate("/");
@@ -35,10 +35,11 @@ const Reg = () => {
     <div id="reg">
       <div className="container">
         <div className="reg">
-          <img src={image} alt="img" />
+          <img className="reg--imgRight" src={image} alt="img" />
           <div className="reg--content">
             <NavLink to={"/"}>
               <RxCross2
+                className="reg--content__icon"
                 style={{
                   cursor: "pointer",
                   marginTop: "80px",

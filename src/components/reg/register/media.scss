@@ -1,0 +1,100 @@
+@media (max-width: 992px) {
+  #register {
+    .container {
+      .register {
+        margin-left: 118px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #register {
+    .container {
+      .register {
+        margin-left: 58px;
+      }
+    }
+  }
+}
+@media (max-width: 451px) {
+  #register {
+    .container {
+      .register {
+        &--text {
+          h1 {
+            font-size: 35px;
+          }
+        }
+        &--content {
+          &__blockInp {
+            margin-left: 22px;
+            &--inp1 {
+              input {
+                width: 307.23800000000006px;
+                height: 44.594px;
+              }
+            }
+            &--inp2 {
+              input {
+                width: 307.23800000000006px;
+                height: 44.594px;
+              }
+            }
+            &--inp3 {
+              input {
+                width: 307.23800000000006px;
+                height: 44.594px;
+              }
+              &__inpPassword {
+                &--icon {
+                  font-size: 20px;
+                  top: 14px;
+                  right: 31px;
+                }
+              }
+            }
+          }
+          &__checkbox {
+            margin: 20px 0 29px 24px;
+          }
+          button {
+            padding: 9px 75px;
+            margin-left: 37px;
+            font-size: 20px;
+            margin-top: -10px;
+          }
+          &__or {
+            h6 {
+              margin: 17px 9px 20px 6px;
+              font-size: 20px;
+            }
+            &--linea {
+              width: 98.96199999999999px;
+            }
+          }
+          &__googleAndFacebook {
+            &--google {
+              width: 173px;
+              height: 42px;
+              margin-right: 10px;
+            }
+            &--facebook {
+              width: 173px;
+              height: 42px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 376px) {
+  #register {
+    .container {
+      .register {
+        margin-left: 119px;
+      }
+    }
+  }
+}
