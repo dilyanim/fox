@@ -1,32 +1,56 @@
-import {createSlice} from '@reduxjs/toolkit'
+import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-    email:null,
-    token:null,
-    id:null,
-    name:null,
-}
+const userSlice = createSlice({
+  name: "user",
+  initialState: {
+    email: JSON.parse(localStorage.getItem("email")) || null,
+    token: JSON.parse(localStorage.getItem("token")) || null,
+    id: JSON.parse(localStorage.getItem("id")) || null,
+    name: JSON.parse(localStorage.getItem("name")) || null,
+    userImage: localStorage.getItem("userImage") || null, // Store the image data as a string
+  },
+  reducers: {
+    setUser(state, action) {
+      const { email, token, id, name, userImage } = action.payload;
 
-const userSlice = createSlice ({
-    name:'user',
-    initialState,
-    reducers:{
-        setUser(state, action) {
-            state.email = action.payload.email;
-            state.token = action.payload.token;
-            state.id = action.payload.id;
-            state.name = action.payload.name;
+      state.email = email;
+      state.token = token;
+      state.id = id;
+      state.name = name;
+      state.userImage = userImage;
 
-        },
-        removeUser(state) {
-            state.email = null;
-            state.token = null;
-            state.id = null;
-            state.name = null;
-        },
+      localStorage.setItem("email", JSON.stringify(email));
+      localStorage.setItem("token", JSON.stringify(token));
+      localStorage.setItem("id", JSON.stringify(id));
+      localStorage.setItem("name", JSON.stringify(name));
+      localStorage.setItem("userImage", userImage);
+    },  
+    removeUser(state, action) {
+      state.email = null;
+      state.token = null;
+      state.id = null;
+      state.name = null;
+      state.userImage = null;
+      localStorage.removeItem("email");
+      localStorage.removeItem("token");
+      localStorage.removeItem("id");
+      localStorage.removeItem("name");
+      localStorage.removeItem("userImage");
     },
-})
-
-export const {setUser,removeUser} = userSlice.actions
-
+    updateName(state, action) {
+      state.name = action.payload;
+      localStorage.setItem("name", JSON.stringify(action.payload));
+    },
+    updateEmail(state, action) {
+      state.email = action.payload;
+      localStorage.setItem("email", JSON.stringify(action.payload));
+    },
+    updateUserImage(state, action) {
+      state.userImage = action.payload;
+      localStorage.setItem("userImage", action.payload);
+    },
+  },
+});
+export const { setUser, removeUser, updateName, updateEmail, updateUserImage } =
+  userSlice.actions;
 export default userSlice.reducer;

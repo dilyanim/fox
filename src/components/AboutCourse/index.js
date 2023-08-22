@@ -37,6 +37,7 @@ const AboutCourse = () => {
 
                     </div>
                     <div  className="popular-blocks">
+                        
                         <button className='btn-1' >Все курсы</button>
                         <button className='btn-2'>Управление компанией</button>
                         <button className='btn-2' >Командаобразование</button>
@@ -63,10 +64,10 @@ const AboutCourse = () => {
                                
                                 
                             </div> 
-                          <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
+                            <NavLink to={"/marketing1"}>  <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
                                  width: '30px' ,
                                  height: '20px'
-                            }} /> </button> 
+                            }} /> </button> </NavLink>
                               </div>
                         </div>
                         <div className='top'>
@@ -83,10 +84,10 @@ const AboutCourse = () => {
                                 <h6>Прогресс</h6>
                                 
                             </div> 
-                          <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
+                            <NavLink to={"/marketing1"}>  <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
                                  width: '30px' ,
                                  height: '20px'
-                            }} /> </button> 
+                            }} /> </button> </NavLink>
                               </div>
                         </div>
                         <div className='top'>
@@ -104,10 +105,10 @@ const AboutCourse = () => {
                                
                                 
                             </div> 
-                          <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
+                            <NavLink to={"/marketing1"}>  <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
                                  width: '30px' ,
                                  height: '20px'
-                            }} /> </button> 
+                            }} /> </button> </NavLink>
                               </div>
                         </div>
                     </div>
@@ -127,10 +128,10 @@ const AboutCourse = () => {
                                
                                 
                             </div> 
-                          <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
+                            <NavLink to={"/marketing1"}>  <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
                                  width: '30px' ,
                                  height: '20px'
-                            }} /> </button> 
+                            }} /> </button> </NavLink>
                               </div>
                         </div>
                         <div className='top'>
@@ -148,10 +149,10 @@ const AboutCourse = () => {
                                
                                 
                             </div> 
-                          <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
+                            <NavLink to={"/marketing1"}>  <button className='top-btn'>Узнать больше <RiArrowRightSLine style={{
                                  width: '30px' ,
                                  height: '20px'
-                            }} /> </button> 
+                            }} /> </button> </NavLink>
                               </div>
                         </div>
                         <div className='top'>
@@ -184,7 +185,7 @@ const AboutCourse = () => {
             
         </div>
         <Lessons/>
-        <ReviewTwo/>
+        {/* <ReviewTwo/>  */}
         
        </>
     

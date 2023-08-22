@@ -2,9 +2,10 @@ import React from "react";
 import main from "../../img/main.png";
 import Blocks from "../Blocks";
 import Course from "../Course";
-import Courses from "../Courses/Courses";
+
 import Review from "../Review/Review";
 import Lessons from '../Lessons'
+import CoursesMain from "../CoursesMain/Courses";
 
 const Main = () => {
   return (
@@ -22,16 +23,16 @@ const Main = () => {
               <button className="btn">Начать</button>
             </div>
             <div>
-              <img src={main}></img>
+              <img className="main-img" src={main}></img>
             </div>
           </div>
         </div>
       </div>
-      <Blocks />
-      <Course />
-      <Courses/>
-      <Lessons/>
-       <Review/>
+        <Blocks /> 
+        <Course /> 
+        <CoursesMain/>
+        {/* <Lessons/>  */}
+        {/* <Review/>  */}
     </>
   );
 };

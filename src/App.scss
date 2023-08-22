@@ -1,28 +1,29 @@
-  
-  @import "./components/reg/style.scss";
-  @import "./components/Header/index.scss";
-  @import "./components/Main/index.scss";
-  @import "./components/Blocks/index.scss";
-  @import "./components/Course/index.scss";
-  @import "../src/components/aboutUs/style.scss";
-  @import "../src/components/Footer/style.scss";
-  @import './components/AboutCourse/index.scss';
-  @import './components/Lessons/index.scss';
-  @import './components/Marceting1/index.scss';
-  @import  './components/Courses/Courses.scss';
-  @import  './components/Review/Review.scss';
-  @import  './components/ReviewTwo/index.scss';
-  @import '../src/components/reg/register/style.scss';
-  @import './components/Acardion/index.scss';
-  
- 
-
- 
- *{
+@import "./components/reg/style.scss";
+@import "./components/Header/index.scss";
+@import "./components/Main/index.scss";
+@import "./components/Blocks/index.scss";
+@import "./components/Course/index.scss";
+@import "../src/components/aboutUs/style.scss";
+@import "../src/components/Footer/style.scss";
+@import "./components/AboutCourse/index.scss";
+@import "./components/Lessons/index.scss";
+@import "./components/Marceting1/index.scss";
+@import "./components/CoursesMain/Courses.scss";
+@import "./components/Review/Review.scss";
+@import "./components/ReviewTwo/index.scss";
+@import "../src/components/reg/register/style.scss";
+@import "./components/Marceting1/index.scss";
+@import "./components/Acardion/index.scss";
+@import "./components/Profile/style.scss";
+@import "./components/Profile/ProfileUser/style.scss";
+@import "./components/Profile/MyCurs/style.scss";
+@import "./components/Profile/AllCurs/style.scss";
+@import "./components/Profile/Stars/style.scss";
+@import "./components/Profile/Chat/style.scss";
+* {
   margin: 0;
   padding: 0;
 }
 .container {
   width: 90%;
 }
-

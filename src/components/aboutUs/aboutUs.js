@@ -6,6 +6,10 @@ import img2 from "../../img/Rectangle 29876.png";
 import img3 from "../../img/Rectangle 29877.png";
 import img4 from "../../img/Rectangle 29878.png";
 import imgMan from "../../img/image 1708.png";
+
+
+
+
 const AboutUs = () => {
   return (
     <div id="about">
@@ -31,7 +35,10 @@ const AboutUs = () => {
               />
             </div>
           </div>
-          <div className="about--block2">
+   
+
+
+           <div className="about--block2">
             <div className="about--block2__image">
               <img
                 className="about--block2__image--img1"
@@ -53,9 +60,11 @@ const AboutUs = () => {
                 src={img4}
                 alt="img"
               />
-            </div>
-          </div>
-          <div className="about--block3">
+            </div> 
+           </div>
+
+
+         <div className="about--block3">
             <div className="about--block3__zag">
               <center>
                 <h1>Наш основатель</h1>
@@ -63,7 +72,7 @@ const AboutUs = () => {
             </div>
             <div className="about--block3__content">
               <div className="about--block3__content--image">
-                <img src={imgMan} alt="img" />
+                <img className="a-img" src={imgMan} alt="img" />
               </div>
                 <div className="about--block3__content--text1">
                   <p>
