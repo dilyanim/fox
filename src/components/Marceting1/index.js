@@ -67,8 +67,7 @@ const Marketing1 = () => {
       } else {
           return false;
       }
-  };
-  
+  };  
   
   
 
