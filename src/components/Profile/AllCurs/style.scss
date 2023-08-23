@@ -5,8 +5,49 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: -103px;
+      margin-top: -123px;
       border-top: 2px solid grey;
+      .popular-blocks {
+        display: flex;
+        margin-left: 160px;
+      }
+      .btn-1 {
+        display: flex;
+
+        padding: 10.882px 16.765px;
+        align-items: flex-start;
+        gap: 10.882px;
+        color: #fff;
+        font-family: Rubik;
+        font-size: 13.059px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+        border-radius: 5.441px;
+        background: #23a6f0;
+        border: none;
+        margin-right: 14px;
+      }
+      .btn-2 {
+        color: #818c96;
+        font-family: Rubik;
+        font-size: 13.059px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+        display: flex;
+
+        padding: 10.882px 16.765px;
+        align-items: flex-start;
+        gap: 10.882px;
+        border-radius: 5.441px;
+        border: 1.088px solid #c4c4c4;
+        margin: 0 16px;
+        background: none;
+      }
+
       h1 {
         width: 682px;
         color: #0b132a;
