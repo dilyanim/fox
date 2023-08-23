@@ -32,7 +32,7 @@ const Main = () => {
         <Course /> 
         <CoursesMain/>
         {/* <Lessons/>  */}
-        {/* <Review/>  */}
+        <Review/> 
     </>
   );
 };

@@ -2,7 +2,6 @@
   margin: 120px 150px;
   .container {
     .abCourse {
-     
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -110,7 +109,7 @@
 
     .lessons {
       margin-left: -36px;
-      .topic1{
+      .topic1 {
         display: flex;
         margin-top: 30px;
       }
@@ -126,17 +125,17 @@
         height: 580px;
         box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
-        .top-text{
+        position: relative;
+        .top-text {
           margin: 10px 20px;
-          h6{
+          h6 {
             color: var(--second-text-color, #737373);
             font-family: Montserrat;
             font-size: 11px;
             font-style: normal;
             font-weight: 400;
-            line-height: 16px; 
+            line-height: 16px;
             letter-spacing: 0.2px;
-           
           }
         }
         h4 {
@@ -159,7 +158,6 @@
           line-height: 20px; /* 142.857% */
           letter-spacing: 0.2px;
           width: 280px;
-          
         }
         .top-img {
           width: 329px;
@@ -168,6 +166,22 @@
           background: lightgray 50% / cover no-repeat;
           border-radius: 5px;
         }
+        .top--img__blockIcon {
+          position: absolute;
+          top: 235px;
+          left: 133px;
+        }
+        .top--img__blockIcon--icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          background: #fff;
+          
+        }
+
         .top-btn {
           margin-top: 15px;
           color: var(--primary-color, #23a6f0);
@@ -189,11 +203,9 @@
           }
         }
       }
-    
-    
     }
-    .slider-btn{
-      color: rgba(0, 0, 0, 0.40);
+    .slider-btn {
+      color: rgba(0, 0, 0, 0.4);
       font-family: Rubik;
       font-size: 18px;
       font-style: normal;
@@ -203,21 +215,17 @@
       text-transform: capitalize;
       border: none;
       background: none;
-     
-      margin: 100px  448px;
+
+      margin: 100px 448px;
+    }
   }
 }
-}
 
-
-
-
-@media (max-width : 1400px) {
+@media (max-width: 1400px) {
   #abCourse {
     margin: 120px 150px;
     .container {
       .abCourse {
-       
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -322,10 +330,10 @@
           margin-left: 60px;
         }
       }
-  
+
       .lessons {
         margin-left: -36px;
-        .topic1{
+        .topic1 {
           display: flex;
           margin-top: 30px;
         }
@@ -341,17 +349,16 @@
           height: 580px;
           box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.15);
           border-radius: 10px;
-          .top-text{
+          .top-text {
             margin: 10px 20px;
-            h6{
+            h6 {
               color: var(--second-text-color, #737373);
               font-family: Montserrat;
               font-size: 11px;
               font-style: normal;
               font-weight: 400;
-              line-height: 16px; 
+              line-height: 16px;
               letter-spacing: 0.2px;
-             
             }
           }
           h4 {
@@ -374,7 +381,6 @@
             line-height: 20px; /* 142.857% */
             letter-spacing: 0.2px;
             width: 280px;
-            
           }
           .top-img {
             width: 329px;
@@ -404,11 +410,9 @@
             }
           }
         }
-      
-      
       }
-      .slider-btn{
-        color: rgba(0, 0, 0, 0.40);
+      .slider-btn {
+        color: rgba(0, 0, 0, 0.4);
         font-family: Rubik;
         font-size: 15px;
         font-style: normal;
@@ -418,19 +422,17 @@
         text-transform: capitalize;
         border: none;
         background: none;
-       
-        margin: 100px  430px;
+
+        margin: 100px 430px;
+      }
     }
   }
-  }
-  
 }
-@media (max-width : 1200px) {
+@media (max-width: 1200px) {
   #abCourse {
     margin: 120px 150px;
     .container {
       .abCourse {
-       
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -459,7 +461,7 @@
           gap: 10px;
           border-radius: 10px;
           background: #23a6f0;
-          box-shadow: 0px 4px 29px 0px rgba(35, 166, 240, 0.7)
+          box-shadow: 0px 4px 29px 0px rgba(35, 166, 240, 0.7);
         }
         .img {
           width: 350px;
@@ -535,10 +537,10 @@
           margin-left: 60px;
         }
       }
-  
+
       .lessons {
         margin-left: -3px;
-        .topic1{
+        .topic1 {
           display: flex;
           margin-top: 30px;
         }
@@ -554,17 +556,16 @@
           height: 540px;
           box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.15);
           border-radius: 10px;
-          .top-text{
+          .top-text {
             margin: 10px 20px;
-            h6{
+            h6 {
               color: var(--second-text-color, #737373);
               font-family: Montserrat;
               font-size: 9px;
               font-style: normal;
               font-weight: 400;
-              line-height: 16px; 
+              line-height: 16px;
               letter-spacing: 0.2px;
-             
             }
           }
           h4 {
@@ -587,7 +588,6 @@
             line-height: 16px;
             letter-spacing: 0.2px;
             width: 215px;
-            
           }
           .top-img {
             width: 260px;
@@ -617,10 +617,8 @@
             }
           }
         }
-      
-      
       }
-      .slider-btn{
+      .slider-btn {
         color: rgba(0, 0, 0, 0.4);
         font-family: Rubik;
         font-size: 9px;
@@ -632,17 +630,15 @@
         border: none;
         background: none;
         margin: 42px 398px;
+      }
     }
   }
-  }
-  
 }
-@media (max-width : 1000px) {
+@media (max-width: 1000px) {
   #abCourse {
     margin: 120px 150px;
     .container {
       .abCourse {
-       
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -747,10 +743,10 @@
           margin-left: -60px;
         }
       }
-  
+
       .lessons {
         margin-left: -36px;
-        .topic1{
+        .topic1 {
           display: flex;
           margin-top: 30px;
         }
@@ -766,17 +762,16 @@
           height: 580px;
           box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.15);
           border-radius: 10px;
-          .top-text{
+          .top-text {
             margin: 10px 20px;
-            h6{
+            h6 {
               color: var(--second-text-color, #737373);
               font-family: Montserrat;
               font-size: 11px;
               font-style: normal;
               font-weight: 400;
-              line-height: 16px; 
+              line-height: 16px;
               letter-spacing: 0.2px;
-             
             }
           }
           h4 {
@@ -799,7 +794,6 @@
             line-height: 20px; /* 142.857% */
             letter-spacing: 0.2px;
             width: 280px;
-            
           }
           .top-img {
             width: 329px;
@@ -829,11 +823,9 @@
             }
           }
         }
-      
-      
       }
-      .slider-btn{
-        color: rgba(0, 0, 0, 0.40);
+      .slider-btn {
+        color: rgba(0, 0, 0, 0.4);
         font-family: Rubik;
         font-size: 18px;
         font-style: normal;
@@ -843,19 +835,17 @@
         text-transform: capitalize;
         border: none;
         background: none;
-       
-        margin: 100px  448px;
+
+        margin: 100px 448px;
+      }
     }
   }
-  }
-  
 }
-@media (max-width : 992px) {
+@media (max-width: 992px) {
   #abCourse {
     margin: 120px 150px;
     .container {
       .abCourse {
-       
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -960,10 +950,10 @@
           margin-left: -20px;
         }
       }
-  
+
       .lessons {
         margin-left: -85px;
-        .topic1{
+        .topic1 {
           display: flex;
           margin-top: 30px;
         }
@@ -979,17 +969,16 @@
           height: 490px;
           box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.15);
           border-radius: 10px;
-          .top-text{
+          .top-text {
             margin: 10px 20px;
-            h6{
+            h6 {
               color: var(--second-text-color, #737373);
               font-family: Montserrat;
               font-size: 9px;
               font-style: normal;
               font-weight: 400;
-              line-height: 16px; 
+              line-height: 16px;
               letter-spacing: 0.2px;
-             
             }
           }
           h4 {
@@ -1012,7 +1001,6 @@
             line-height: 10px;
             letter-spacing: 0.2px;
             width: 217px;
-            
           }
           .top-img {
             width: 263px;
@@ -1042,10 +1030,8 @@
             }
           }
         }
-      
-      
       }
-      .slider-btn{
+      .slider-btn {
         color: rgba(0, 0, 0, 0.4);
         font-family: Rubik;
         font-size: 12px;
@@ -1058,12 +1044,11 @@
         background: none;
         margin: 60px 336px;
         width: 102px;
+      }
     }
   }
-  }
-  
 }
-@media (max-width : 768px) {
+@media (max-width: 768px) {
   #abCourse {
     margin: 120px 150px;
     .container {
@@ -1073,15 +1058,14 @@
         text-align: center;
         margin: 110px 0;
         h1 {
-         
-    width: 496px;
-    color: #0b132a;
-    font-family: Rubik;
-    font-size: 27px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 36px;
-    margin: 35px 0;
+          width: 496px;
+          color: #0b132a;
+          font-family: Rubik;
+          font-size: 27px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 36px;
+          margin: 35px 0;
         }
         .abBtn {
           margin: 11px 0;
@@ -1099,7 +1083,7 @@
           gap: 10px;
           border-radius: 9px;
           background: #23a6f0;
-          box-shadow: 0px 4px 29px 0px rgba(35, 166, 240, 0.7)
+          box-shadow: 0px 4px 29px 0px rgba(35, 166, 240, 0.7);
         }
         .img {
           width: 265px;
@@ -1175,13 +1159,13 @@
           margin-left: -105px;
         }
       }
-  
+
       .lessons {
-        margin-left: -77px  ;  
-         display: flex;
-        width: 340px ;
-        
-        .topic1{
+        margin-left: -77px;
+        display: flex;
+        width: 340px;
+
+        .topic1 {
           display: flex;
           margin-top: 30px;
         }
@@ -1191,29 +1175,27 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          margin: 70px    160px ;    
-          width: 7px ;   
-      
+          margin: 70px 160px;
+          width: 7px;
         }
         .top {
-          flex-basis: calc(50% - 10px  );
-          margin-bottom: 20px; 
+          flex-basis: calc(50% - 10px);
+          margin-bottom: 20px;
           width: 271px;
-          height: 48px ;   
+          height: 48px;
           box-shadow: 0px 12px 6px 0px rgba(0, 0, 0, 0.15);
           border-radius: 10px;
-          
-          .top-text{
+
+          .top-text {
             margin: 10px 20px;
-            h6{
+            h6 {
               color: var(--second-text-color, #737373);
               font-family: Montserrat;
               font-size: 11px;
               font-style: normal;
               font-weight: 400;
-              line-height: 16px; 
+              line-height: 16px;
               letter-spacing: 0.2px;
-             
             }
           }
           h4 {
@@ -1241,7 +1223,7 @@
             width: 266px;
             height: 260px;
             flex-shrink: 0;
-            background: lightgray 50%/cover no-repeat;
+            background: lightgray 50% / cover no-repeat;
             border-radius: 5px;
           }
           .top-btn {
@@ -1265,10 +1247,8 @@
             }
           }
         }
-      
-      
       }
-      .slider-btn{
+      .slider-btn {
         color: rgba(0, 0, 0, 0.4);
         font-family: Rubik;
         font-size: 10px;
@@ -1280,13 +1260,12 @@
         border: none;
         background: none;
         margin: 48px 160px;
+      }
     }
   }
-  }
-  
 }
 
-@media (max-width : 576px) {
+@media (max-width: 576px) {
   #abCourse {
     margin: 120px 150px;
     .container {
@@ -1296,15 +1275,14 @@
         text-align: center;
         margin: 110px 0;
         h1 {
-         
-    width: 496px;
-    color: #0b132a;
-    font-family: Rubik;
-    font-size: 27px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 36px;
-    margin: 35px 0;
+          width: 496px;
+          color: #0b132a;
+          font-family: Rubik;
+          font-size: 27px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 36px;
+          margin: 35px 0;
         }
         .abBtn {
           margin: 11px 0;
@@ -1322,7 +1300,7 @@
           gap: 10px;
           border-radius: 9px;
           background: #23a6f0;
-          box-shadow: 0px 4px 29px 0px rgba(35, 166, 240, 0.7)
+          box-shadow: 0px 4px 29px 0px rgba(35, 166, 240, 0.7);
         }
         .img {
           width: 265px;
@@ -1398,13 +1376,13 @@
           flex-wrap: wrap;
         }
       }
-  
+
       .lessons {
-        margin-left: -120px  ;  
-         display: flex;
-        width: 340px ;
-        
-        .topic1{
+        margin-left: -120px;
+        display: flex;
+        width: 340px;
+
+        .topic1 {
           display: flex;
           margin-top: 20px;
         }
@@ -1414,28 +1392,26 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          margin: 70px    123px ;    
-          width: 7px ;   
-      
+          margin: 70px 123px;
+          width: 7px;
         }
         .top {
-          margin-bottom: 20px; 
+          margin-bottom: 20px;
           width: 220px;
-          height: 48px ;   
+          height: 48px;
           box-shadow: 0px 12px 6px 0px rgba(0, 0, 0, 0.15);
           border-radius: 10px;
-          
-          .top-text{
+
+          .top-text {
             margin: 10px 20px;
-            h6{
+            h6 {
               color: var(--second-text-color, #737373);
               font-family: Montserrat;
               font-size: 8px;
               font-style: normal;
               font-weight: 400;
-              line-height: 16px; 
+              line-height: 16px;
               letter-spacing: 0.2px;
-             
             }
           }
           h4 {
@@ -1463,7 +1439,7 @@
             width: 220px;
             height: 210px;
             flex-shrink: 0;
-            background: lightgray 50%/cover no-repeat;
+            background: lightgray 50% / cover no-repeat;
             border-radius: 5px;
           }
           .top-btn {
@@ -1488,10 +1464,8 @@
             }
           }
         }
-      
-      
       }
-      .slider-btn{
+      .slider-btn {
         color: rgba(0, 0, 0, 0.4);
         font-family: Rubik;
         font-size: 10px;
@@ -1503,12 +1477,11 @@
         border: none;
         background: none;
         margin: 10px 125px;
+      }
     }
   }
-  }
-  
 }
-@media (max-width : 400px) {
+@media (max-width: 400px) {
   #abCourse {
     margin: 120px 150px;
     .container {
@@ -1526,7 +1499,6 @@
           font-weight: 700;
           line-height: 26px;
           margin: 35px 96px;
-   
         }
         .abBtn {
           margin: 11px 0;
@@ -1544,7 +1516,7 @@
           gap: 10px;
           border-radius: 9px;
           background: #23a6f0;
-          box-shadow: 0px 4px 29px 0px rgba(35, 166, 240, 0.7)
+          box-shadow: 0px 4px 29px 0px rgba(35, 166, 240, 0.7);
         }
         .img {
           width: 265px;
@@ -1620,13 +1592,13 @@
           flex-wrap: wrap;
         }
       }
-  
+
       .lessons {
-        margin-left: -145px  ;  
-         display: flex;
-        width: 340px ;
-        
-        .topic1{
+        margin-left: -145px;
+        display: flex;
+        width: 340px;
+
+        .topic1 {
           display: flex;
           margin-top: 20px;
         }
@@ -1636,28 +1608,26 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          margin: 70px    125px ;    
-          width: 7px ;   
-      
+          margin: 70px 125px;
+          width: 7px;
         }
         .top {
-          margin-bottom: 20px; 
+          margin-bottom: 20px;
           width: 220px;
-          height: 48px ;   
+          height: 48px;
           box-shadow: 0px 12px 6px 0px rgba(0, 0, 0, 0.15);
           border-radius: 10px;
-          
-          .top-text{
+
+          .top-text {
             margin: 10px 20px;
-            h6{
+            h6 {
               color: var(--second-text-color, #737373);
               font-family: Montserrat;
               font-size: 8px;
               font-style: normal;
               font-weight: 400;
-              line-height: 16px; 
+              line-height: 16px;
               letter-spacing: 0.2px;
-             
             }
           }
           h4 {
@@ -1685,7 +1655,7 @@
             width: 220px;
             height: 210px;
             flex-shrink: 0;
-            background: lightgray 50%/cover no-repeat;
+            background: lightgray 50% / cover no-repeat;
             border-radius: 5px;
           }
           .top-btn {
@@ -1710,10 +1680,8 @@
             }
           }
         }
-      
-      
       }
-      .slider-btn{
+      .slider-btn {
         color: rgba(0, 0, 0, 0.4);
         font-family: Rubik;
         font-size: 10px;
@@ -1725,8 +1693,7 @@
         border: none;
         background: none;
         margin: 10px 94px;
+      }
     }
   }
-  }
-  
 }

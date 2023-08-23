@@ -1,0 +1,170 @@
+@media (max-width: 1200px) {
+  #reg {
+    .container {
+      .reg {
+        &--imgRight {
+          width: 426px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  #reg {
+    .container {
+      .reg {
+        &--imgRight {
+          width: 426px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  #reg {
+    .container {
+      .reg {
+        &--imgRight {
+          display: none;
+        }
+        &--content {
+          margin-left: 278px;
+          &__icon {
+            margin-left: 387px !important;
+          }
+          &__welcome {
+            h1 {
+              font-size: 40px;
+            }
+          }
+          &__inp {
+            margin-left: 38px;
+            width: 391px;
+            &--input1 {
+              margin-left: -29px;
+              height: 47px;
+              margin-top: 78px;
+              width: 407px;
+              border: 1px solid gray;
+              border-radius: 5px;
+              padding-left: 10px;
+            }
+            &--input2 {
+              margin-left: -29px;
+              height: 47px;
+
+              width: 407px;
+              border: 1px solid gray;
+              border-radius: 5px;
+              padding-left: 10px;
+            }
+            &--input3 {
+              margin-left: -29px;
+              height: 47px;
+              width: 407px;
+              border: 1px solid gray;
+              border-radius: 5px;
+              padding-left: 10px;
+            }
+
+            button {
+              width: 10px;
+              padding: 12px 167px;
+              margin-bottom: 21px;
+            }
+            h5 {
+              margin-left: 10px;
+            }
+            &--gAndf {
+              margin-left: 26px;
+            }
+            &--googleAndFasebook {
+              &__google {
+                width: 175px;
+                margin-right: 9px;
+              }
+              &__fasebook {
+                width: 175px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  #reg {
+    .container {
+      .reg {
+        margin-left: -99px;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  #reg {
+    .container {
+      .reg {
+        margin-left: -196px;
+      }
+    }
+  }
+}
+@media (max-width: 451px) {
+  #reg {
+    .container {
+      .reg {
+        margin-left: -249px;
+        &--content {
+          &__welcome {
+            h1 {
+              font-size: 38px;
+            }
+          }
+        }
+        &__inp {
+          width: 340px;
+          &--input1 {
+            margin-left: -16px;
+            width: 361px;
+            margin-left: 0px;
+            height: 47px;
+            margin-top: 65px;
+          }
+          &--input2 {
+            margin-left: -16px;
+            width: 361px;
+            margin-left: 0px;
+            height: 47px;
+            margin-top: 65px;
+          }
+          &--input3 {
+            margin-left: -16px;
+            width: 361px;
+            margin-left: 0px;
+            height: 47px;
+            margin-top: 65px;
+          }
+
+          &--googleAndFasebook {
+            margin-left: -13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #reg {
+    .container {
+      .reg {
+        &--content {
+          &__inp {
+          }
+        }
+      }
+    }
+  }
+}
