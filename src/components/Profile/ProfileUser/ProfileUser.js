@@ -7,6 +7,7 @@ import {
   updateUserImage,
   updateName,
 } from "../../../store/userSlice/userSlice";
+import Favorite from "../Favorite/Favorite";
 const ProfileUser = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [activeTab, setActiveTab] = useState("Curs");
@@ -38,7 +39,6 @@ const ProfileUser = () => {
       reader.readAsDataURL(file);
     }
   };
-
 
   return (
     <div id="user">
