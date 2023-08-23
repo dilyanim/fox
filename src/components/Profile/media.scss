@@ -1,0 +1,13 @@
+@media (max-width:576px){
+  
+    #profile{
+        .container{
+            .profile{
+                width: 0;
+                &--nav{
+                    display: none;
+                }
+            }
+        }
+    }
+}
