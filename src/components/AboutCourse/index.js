@@ -14,10 +14,10 @@ import Clock from "../../img/clock.svg";
 import Chart from "../../img/chart.svg";
 import IMG from "../../img/IMG.svg";
 import { AiOutlineHeart } from "react-icons/ai";
-import { useSelector,useDispatch } from "react-redux";
-import { addToFavorite } from "../../store/userSlice/Reducer";
+import { useDispatch } from "react-redux";
+import { addToFavorite } from "../../store/Reducer/Reducer";
 const AboutCourse = () => {
-  const dispatch = useDispatch()
+  const dispatsh = useDispatch()
   return (
     <>
       <div id="abCourse">
@@ -59,7 +59,7 @@ const AboutCourse = () => {
                 <div className="top--img__blockIcon">
                   <div className="top--img__blockIcon--icon">
                     <AiOutlineHeart
-                    onClick={()=> dispatch(addToFavorite({lesson1}))}
+                    onClick={()=> dispatsh(addToFavorite({lesson1}))}
                       style={{
                         fontSize: "30px",
                         cursor: "pointer",

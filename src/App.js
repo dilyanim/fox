@@ -10,6 +10,7 @@ import Register from "./components/reg/register/Register";
 import AboutCourse from "./components/AboutCourse";
 import Marketing1 from "./components/Marceting1";
 import Profile from "./components/Profile/Profile";
+import Video from "./components/Acardion/VideaoDetail/Video";
 
 function App() {
   return (
@@ -18,12 +19,13 @@ function App() {
       <Routes>
         <Route path="/register" element={<Register />} />
         <Route path="/reg" element={<Reg />} />
-         <Route path="/" element={<Main />} />
+        <Route path="/" element={<Main />} />
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/zapylParol" element={<ZapylParol />} />
         <Route path="/aboutCourse" element={<AboutCourse />} />
         <Route path="/marketing1" element={<Marketing1 />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/video" element={<Video />} />
       </Routes>
       <Footer />
     </div>

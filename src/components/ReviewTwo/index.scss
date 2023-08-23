@@ -1,97 +1,92 @@
 #review2 {
-    padding: 20px 0 50px 0;
-    margin: 0 0 0  150px ;
-   
-    .container {
-      .review2 {
-        .arrow{
-          display: flex;
+  padding: 20px 0 120px 0;
+  margin: 0 0 0 25px;
+  width: 504px;
+  .container {
+    .review2 {
+      .arrow {
+        display: flex;
+      }
+
+      overflow-x: scroll;
+      display: flex;
+      margin: 30px 1px;
+      gap: 30px;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      &--text {
+        h2 {
+          width: 447.805px;
+          color: #0b132a;
+          text-align: center;
+          font-family: Rubik;
+          font-size: 35px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 50px;
         }
-       
-    
-          overflow-x: scroll; 
-          display: flex;
-          margin: 30px 1px ;
-          gap: 30px;
-                &::-webkit-scrollbar{
-                  display: none;
-                }
-          
-   
-      
-  
-        &--text {
-          h2 {
-            width: 447.805px;
-            color: #0B132A;
-            text-align: center;
-            font-family: Rubik;
-            font-size: 35px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 50px;
-          }
-  
-          p {
-            padding: 20px 0 60px 0;
-            width: 555px;
-            color: #4F5665;
-            text-align: center;
+
+        p {
+          padding: 20px 0 60px 0;
+          width: 555px;
+          color: #4f5665;
+          text-align: center;
+          font-family: Rubik;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 30px;
+        }
+      }
+
+      &--cards {
+        display: flex;
+        gap: 2%;
+
+        &__card {
+          padding: 30px;
+          width: 400px;
+          height: 200px;
+          border-radius: 10px;
+          border: 2px solid #ddd;
+          background: #fff;
+          &--p {
+            color: #0b132a;
             font-family: Rubik;
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: 30px;
+            width: 340px;
+            height: 100px;
+            margin-top: 20px;
           }
-        }
-  
-        &--cards {
-          display: flex;
-          gap: 2%;
-  
-          &__card {
-            padding: 30px;
-            width: 400px;
-            height: 200px;
-            border-radius: 10px;
-            border: 2px solid #DDD;
-            background: #FFF;
-            &--p {
-              color: #0B132A;
-              font-family: Rubik;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 30px;
-              width: 340px;
-              height: 100px;
-              margin-top: 20px;
-            }
-  
-            &--block {
+
+          &--block {
+            display: flex;
+            text-align: center;
+
+            &__icon {
               display: flex;
-              text-align: center;
-  
-              &__icon {
-                display: flex;
-                align-items: center;
-  
-                img {
-                  margin: 0 0 0 10px;
-                }
+              align-items: center;
+
+              img {
+                margin: 0 0 0 10px;
               }
-  
-              &__text {
-                margin: 5px 118px 0 20px;
-  
-                p {
-                  color: #4F5665;
-                  font-family: Rubik;
-                  font-size: 14px;
-                  font-style: normal;
-                  font-weight: 400;
-                  line-height: 30px;
-                }
+            }
+
+            &__text {
+              margin: 5px 118px 0 20px;
+
+              p {
+                color: #4f5665;
+                font-family: Rubik;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
               }
             }
           }
@@ -99,3 +94,4 @@
       }
     }
   }
+}
