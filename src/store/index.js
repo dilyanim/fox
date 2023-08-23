@@ -1,7 +1,9 @@
-import {combineReducers, configureStore } from "@reduxjs/toolkit";
-import userReducer from "./userSlice/userSlice"
-export const store = configureStore({
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
+import userReducer from "./userSlice/userSlice";
+import { todoSlice } from "./userSlice/Reducer";
+export  const store = configureStore({
   reducer: {
-    user:userReducer
+    favorite: todoSlice,
+    user: userReducer,
   },
 });

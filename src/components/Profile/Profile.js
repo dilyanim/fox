@@ -13,6 +13,7 @@ import Chat from "./Chat/Chat";
 import { removeUser } from "../../store/userSlice/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import Favorite from "./Favorite/Favorite";
 
 const Profile = () => {
   const dispatch = useDispatch();
@@ -119,6 +120,7 @@ const Profile = () => {
             {activeSection === "profile" && <ProfileUser />}
             {activeSection === "AllCurs" && <AllCurs />}
             {activeSection === "Chat" && <Chat />}
+            
           </div>
         </div>
       </div>
