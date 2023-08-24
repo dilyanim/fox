@@ -110,6 +110,58 @@
   height: 364px;
   margin-top: 85px;
   width: 620px !important;
+  zoom: 80%;
 }
+#user.container.user--blocks__block1--userInfo__imgAva{
+  top: -90px;
+  left: 223px;
+}
+#user.container.user--blocks__block1--userInfo{
+  flex-direction: column;
+}
+#user.container.user--blocks__block1--userInfo__name h1{
+  margin-top: 4em;
+  margin-left: -7em;
+}
+#user.container.user--blocks__block1--userInfo__name p{
+  margin-left: -10em;
+}
+#user.container.user--blocks__block1{
+  height: 451px;
+  margin-left: -2em;
+}
+#user.container.user--blocks__block1--imgProf{
+  height: 14em;
+}
+#user.container.user--blocks__block1--userInfo_btn{
+  margin-top: 13px;
+  margin-right: 6px;
+}
+#user.container.user--blocks__block2{
+  height: 48em !important;
+  margin-left: -2em;
+}
+#user.container.user--blocks{
+  border-top: 0;
 }
 
+}
+@media (max-width:425px){
+  #user.container.user--blocks__block1{
+    margin-left:-1em ;
+    zoom: 80%;
+  }
+  #user.container.user--blocks__block2{
+    margin-left: -1em;
+    zoom: 80%;
+  }
+}
+@media (max-width:576px){
+  #user.container.user--blocks__block1{
+    zoom: 84%;
+  
+  }
+  #user.container.user--blocks__block2{
+    zoom: 84%;
+  }
+}
