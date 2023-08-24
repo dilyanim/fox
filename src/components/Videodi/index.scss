@@ -1,0 +1,55 @@
+#video{
+    .container{
+        .video{
+            .video-if{
+                margin-left: 168px;
+                margin-top: 80px;
+            }
+            .video1{
+                display: flex;
+                margin-left: 168px;
+                h3{
+                    width: 367px;
+                    color: var(--base-black, #000);
+                    font-family: Rubik;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px; /* 108.333% */
+                    letter-spacing: -0.4px;
+                    margin: 10px 0;
+                }
+                button{
+                    display: flex;
+                    padding: 11px 40px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    border-radius: 6px;
+                    background: #23A6F0;
+                    border: none;
+                    color: #FFF;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-left: 320px;
+                }
+            }
+            .video2{
+                display: flex;
+                margin: 35px  0 0 140px;
+                p{
+                    color: rgba(0, 0, 0, 0.50);
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin: 0 30px;
+                }
+            }
+        }
+    }
+}
