@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { IoIosArrowDropdownCircle}  from 'react-icons/io'
 import { IoIosArrowDropupCircle } from 'react-icons/io'
+import { NavLink } from 'react-router-dom';
 
 const Acardion = () => {
     const [question1, setQuestion1] = useState(false)
@@ -32,9 +33,9 @@ const Acardion = () => {
 
                         }} style={{height: question1 ? "410px" : ""}} className="pages--we__left">
                             <div className="pages--we__left--title">
-                                <h3 className="pages--weleft--titleaccord">
+                             <h3 className="pages--weleft--titleaccord">
                                 Урок 1 : Ознакомление
-                                </h3>
+                                </h3> 
                                 <button className="pages--weleft--titleaccord--btn">
                                     { question1 ? <span className="accordion--weleft--titleaccord--btn__icon">
                                 <IoIosArrowDropupCircle/>
@@ -48,12 +49,12 @@ const Acardion = () => {
                              <div style={{paddingTop:"80px"}} className='pages--weleft--title__accord--btn__answer--vid'>
                              <iframe width="350px" height="200px" src="https://www.youtube.com/embed/UIKyAKC0ab8" ></iframe>
                              <p>1. Ознакомление</p>
-                             <h4 >Как ставить о оценивать задачи</h4>
+                           <h4 >Как ставить о оценивать задачи</h4>  
                              </div>
                              <div  style={{paddingTop:"80px"}} >
                              <iframe  width="350px" height="200px" src="https://www.youtube.com/embed/UIKyAKC0ab8" ></iframe>
                              <p>1. Ознакомление</p>
-                             <h4>Как ставить о оценивать задачи</h4>
+                             <NavLink to={'/videodi'}>  <h4>Как ставить о оценивать задачи</h4></NavLink> 
                              </div>
                              <div  style={{paddingTop:"80px"}} >
                              <iframe  width="350px" height="200px" src="https://www.youtube.com/embed/UIKyAKC0ab8" ></iframe>
