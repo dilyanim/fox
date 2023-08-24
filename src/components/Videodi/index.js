@@ -14,11 +14,10 @@ const videodi = () => {
                             <button>Поделиться</button>
                          </div>
                          <div className='video2'>
-                                <p>1 месяц назад</p>
+                                  <p>1 месяц назад</p>
                                 <p>1430 просмотров</p>
                          </div>
                     </div>
-
                 </div>
             </div>
             
