@@ -79,39 +79,64 @@
             background: #000000ab;
             backdrop-filter: blur(10px);
             &__panel{
-                width: 75%;
+                width: 100%;
                 height: 90%;
-                background: #efecec;
+                background: #ffffff;
             
                 &--general{
                    
+                  
+                   
+                  
                     &__top{
                         display: flex;
                         align-items: center;
                         gap: 240px;
                         background-color:  #C9E7FD;
+                        .cardsImg{
+                            margin-left: 115px;
+                        }
                         h1{
                             font-size: 25px;
+                            width: 567px;
+                            height: 32px;
+                            flex-shrink: 0;
+                            color: #348BCA;
+                            text-align: center;
+                            font-family: Roboto;
+                            font-size: 34.952px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
                         }
                         
                      &--opshn{
                     p{
-                        margin-left: 74px;
+                        margin-left: 90px;
                         padding: 20px 0;
+                        width: 276px;
+                        height: 21px;
+                        color: #000;
+                        text-align: center;
+                        font-family: Roboto;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
                     }
                         &__input{
-                            width: 63.6rem;
+                            width: 80.2rem;
                             height: 3.3rem;
                             background: #fafafa;
                             border-radius: 5px;
-                            margin-left: 69px;
+                            margin-left: 92px;
                             border: 0.5px solid rgb(88, 87, 87);
 
                         }
                      }
                     }
                     &__inputs{
-                        
+                        margin-left: 30px ;
                         padding: 10px 68px;
                         display: flex;
                         gap: 50px;
@@ -125,6 +150,8 @@
                             transition: .4s;
                             margin: 20px 0;
                             cursor: pointer;
+                            margin-left: 441px;
+
                             &:hover{
                                 background: #efecec;
                                 color: #23A6F0;
@@ -132,7 +159,7 @@
                             }
                         }
                         input{
-                            width: 29rem;
+                            width: 37rem;
                             height: 3rem;
                             border-radius: 5px;
                             border: 1px solid rgba(0, 0, 0, 0.40);
@@ -140,10 +167,51 @@
                             padding: 0 10px;
                         }
                         p{
-                            padding: 14px 0;
+                            padding: 20px 0;
+                        }
+                        &--left{
+                            button{
+                                margin-left: 457px;
+                            }
+                            p{
+                                color: #000;
+                                font-family: Montserrat;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                                width: 360px;
+                                height: 19px;
+                               
+                            }
                         }
                         &--right{
                             position: relative;
+                            .op-btn{
+                                display: none;
+                            }
+                            button{
+                                background: #23A6F0;
+                                font-size: 16px;
+                                padding: 10px 55px;
+                                border: none;
+                                border-radius: 5px;
+                                color: white;
+                                transition: .4s;
+                                margin: 20px 0;
+                                cursor: pointer;
+                                
+                            }
+                            p{
+                                color: #000;
+                                font-family: Montserrat;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                                width: 360px;
+                                height: 19px;
+                            }
                             &__modules{
                                 position: fixed;
                                 top: 0;
@@ -310,73 +378,7 @@
     
                 
             }
-            .modal{
-                position: relative;
-               &--content{
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 999;
-                background: #000000ab;
-                backdrop-filter: blur(10px);
-                &__panel{
-                    width: 75%;
-                    height: 90%;
-                    background: #efecec;
-                
-                    &--general{
-                       
-                        &__top{
-                            display: flex;
-                            align-items: center;
-                            gap: 150px;
-                            background-color:  #C9E7FD;
-                            h1{
-                                font-size: 20px;
-                            }
-                        }
-                        &__inputs{
-                            padding: 30px 68px;
-                            display: flex;
-                            gap: 50px;
-                            button{
-                                background: #23A6F0;
-                                font-size: 16px;
-                                padding: 10px 55px;
-                                border: none;
-                                border-radius: 5px;
-                                color: white;
-                                transition: .4s;
-                                margin: 20px 0;
-                                cursor: pointer;
-                                &:hover{
-                                    background: #efecec;
-                                    color: #23A6F0;
-                                    border: 1px solid #23A6F0;
-                                }
-                            }
-                            input{
-                                width: 29rem;
-                                height: 3rem;
-                                border-radius: 5px;
-                                border: 1px solid rgba(0, 0, 0, 0.40);
-                                outline: none;
-                                padding: 0 10px;
-                            }
-                            p{
-                                padding: 14px 0;
-                            }
-                        }
-                    }
-                    
-                }
-               }
-            }
+         
             
         }
     }
@@ -493,23 +495,65 @@
                 background: #000000ab;
                 backdrop-filter: blur(10px);
                 &__panel{
-                    width: 75%;
+                    width: 100%;
                     height: 90%;
-                    background: #efecec;
+                    background: #ffffff;
                 
                     &--general{
                        
+                      
+                       
+                      
                         &__top{
                             display: flex;
                             align-items: center;
-                            gap: 150px;
+                            gap: 240px;
                             background-color:  #C9E7FD;
-                            h1{
-                                font-size: 20px;
+                            .cardsImg{
+                                margin-left: 73px;
                             }
+                            h1{
+                                font-size: 25px;
+                                width: 567px;
+                                height: 32px;
+                                flex-shrink: 0;
+                                color: #348BCA;
+                                text-align: center;
+                                font-family: Roboto;
+                                font-size: 34.952px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+                            
+                         &--opshn{
+                        p{
+                            margin-left: 90px;
+                            padding: 20px 0;
+                            width: 276px;
+                            height: 21px;
+                            color: #000;
+                            text-align: center;
+                            font-family: Roboto;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                            &__input{
+                                width: 78rem;
+                                height: 3.3rem;
+                                background: #fafafa;
+                                border-radius: 5px;
+                                margin-left: 92px;
+                                border: 0.5px solid rgb(88, 87, 87);
+    
+                            }
+                         }
                         }
                         &__inputs{
-                            padding: 30px 68px;
+                            margin-left: 30px ;
+                            padding: 10px 68px;
                             display: flex;
                             gap: 50px;
                             button{
@@ -522,6 +566,7 @@
                                 transition: .4s;
                                 margin: 20px 0;
                                 cursor: pointer;
+                                margin-left: 450px;
                                 &:hover{
                                     background: #efecec;
                                     color: #23A6F0;
@@ -529,7 +574,7 @@
                                 }
                             }
                             input{
-                                width: 29rem;
+                                width: 36rem;
                                 height: 3rem;
                                 border-radius: 5px;
                                 border: 1px solid rgba(0, 0, 0, 0.40);
@@ -537,7 +582,114 @@
                                 padding: 0 10px;
                             }
                             p{
-                                padding: 14px 0;
+                                padding: 20px 0;
+                            }
+                            &--left{
+                                button{
+                                    margin-left: 440px;
+                                }
+                                p{
+                                    color: #000;
+                                    font-family: Montserrat;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    width: 360px;
+                                    height: 19px;
+                                }
+                            }
+                            &--right{
+                                position: relative;
+                                button{
+                                    background: #23A6F0;
+                                    font-size: 16px;
+                                    padding: 10px 55px;
+                                    border: none;
+                                    border-radius: 5px;
+                                    color: white;
+                                    transition: .4s;
+                                    margin: 20px 0;
+                                    cursor: pointer;
+                                    margin-left: 1px;
+                                }
+                                p{
+                                    color: #000;
+                                    font-family: Montserrat;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    width: 360px;
+                                    height: 19px;
+                                }
+                                &__modules{
+                                    position: fixed;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: start;
+                                    z-index: 999;
+                                
+                                   
+                                    
+                                    &--arrow{
+                                        margin-top: 50px;
+                                        animation: myAnim 2s ease 0s 1 normal forwards;
+                                        @keyframes myAnim {
+                                            0% {
+                                                animation-timing-function: ease-in;
+                                                opacity: 1;
+                                                transform: translateY(-45px);
+                                            }
+                                        
+                                            24% {
+                                                opacity: 1;
+                                            }
+                                        
+                                            40% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-24px);
+                                            }
+                                        
+                                            65% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-12px);
+                                            }
+                                        
+                                            82% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-6px);
+                                            }
+                                        
+                                            93% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-4px);
+                                            }
+                                        
+                                            25%,
+                                            55%,
+                                            75%,
+                                            87% {
+                                                animation-timing-function: ease-out;
+                                                transform: translateY(0px);
+                                            }
+                                        
+                                            100% {
+                                                animation-timing-function: ease-out;
+                                                opacity: 1;
+                                                transform: translateY(0px);
+                                            }
+                                        }
+                                        span{
+                                            font-size: 100px;
+                                            color: rgb(44, 195, 17);
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -545,6 +697,7 @@
                 }
                }
             }
+           
             
         }
     }
@@ -661,43 +814,70 @@
                 background: #000000ab;
                 backdrop-filter: blur(10px);
                 &__panel{
-                    width: 75%;
+                    width: 100%;
                     height: 90%;
-                    background: #efecec;
+                    background: #ffffff;
                 
                     &--general{
                        
+                      
+                       
+                      
                         &__top{
                             display: flex;
                             align-items: center;
-                            gap: 150px;
+                            gap: 240px;
                             background-color:  #C9E7FD;
-                            h1{
-                                font-size: 20px;
+                            .cardsImg{
+                                margin-left: -20px;
                             }
+                            h1{
+                                font-size: 25px;
+                                width: 567px;
+                                height: 32px;
+                                flex-shrink: 0;
+                                color: #348BCA;
+                                text-align: center;
+                                font-family: Roboto;
+                                font-size: 34.952px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+                            
+                         &--opshn{
+                        p{
+                            margin-left: 90px;
+                            padding: 20px 0;
+                            width: 276px;
+                            height: 21px;
+                            color: #000;
+                            text-align: center;
+                            font-family: Roboto;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                            &__input{
+                                width: 71.3rem;
+                                height: 3.3rem;
+                                background: #fafafa;
+                                border-radius: 5px;
+                                margin-left: 92px;
+                                border: 0.5px solid rgb(88, 87, 87);
+    
+                            }
+                         }
                         }
                         &__inputs{
-                            padding: 30px 68px;
+                            margin-left: 30px ;
+                            padding: 10px 68px;
                             display: flex;
                             gap: 50px;
-                            button{
-                                background: #23A6F0;
-                                font-size: 16px;
-                                padding: 10px 55px;
-                                border: none;
-                                border-radius: 5px;
-                                color: white;
-                                transition: .4s;
-                                margin: 20px 0;
-                                cursor: pointer;
-                                &:hover{
-                                    background: #efecec;
-                                    color: #23A6F0;
-                                    border: 1px solid #23A6F0;
-                                }
-                            }
+                          
                             input{
-                                width: 29rem;
+                                width: 32.3rem;
                                 height: 3rem;
                                 border-radius: 5px;
                                 border: 1px solid rgba(0, 0, 0, 0.40);
@@ -705,7 +885,128 @@
                                 padding: 0 10px;
                             }
                             p{
-                                padding: 14px 0;
+                                padding: 20px 0;
+                            }
+                            &--left{
+                                button{
+                                    background: #23A6F0;
+                                    font-size: 16px;
+                                    padding: 10px 55px;
+                                    border: none;
+                                    border-radius: 5px;
+                                    color: white;
+                                    transition: .4s;
+                                    margin: 20px 0;
+                                    cursor: pointer;
+                                    margin-left: 383px;
+                                    &:hover{
+                                        background: #efecec;
+                                        color: #23A6F0;
+                                        border: 1px solid #23A6F0;
+                                    }
+                                }
+                                p{
+                                    color: #000;
+                                    font-family: Montserrat;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    width: 360px;
+                                    height: 19px;
+                                }
+                            }
+                            &--right{
+                                position: relative;
+                                button{
+                                    background: #23A6F0;
+                                    font-size: 16px;
+                                    padding: 10px 55px;
+                                    border: none;
+                                    border-radius: 5px;
+                                    color: white;
+                                    transition: .4s;
+                                    margin: 20px 0;
+                                    cursor: pointer;
+                                    margin-left: 1px;
+                                }
+                                p{
+                                    color: #000;
+                                    font-family: Montserrat;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    width: 360px;
+                                    height: 19px;
+                                }
+                                &__modules{
+                                    position: fixed;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: start;
+                                    z-index: 999;
+                                
+                                   
+                                    
+                                    &--arrow{
+                                        margin-top: 50px;
+                                        animation: myAnim 2s ease 0s 1 normal forwards;
+                                        @keyframes myAnim {
+                                            0% {
+                                                animation-timing-function: ease-in;
+                                                opacity: 1;
+                                                transform: translateY(-45px);
+                                            }
+                                        
+                                            24% {
+                                                opacity: 1;
+                                            }
+                                        
+                                            40% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-24px);
+                                            }
+                                        
+                                            65% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-12px);
+                                            }
+                                        
+                                            82% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-6px);
+                                            }
+                                        
+                                            93% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-4px);
+                                            }
+                                        
+                                            25%,
+                                            55%,
+                                            75%,
+                                            87% {
+                                                animation-timing-function: ease-out;
+                                                transform: translateY(0px);
+                                            }
+                                        
+                                            100% {
+                                                animation-timing-function: ease-out;
+                                                opacity: 1;
+                                                transform: translateY(0px);
+                                            }
+                                        }
+                                        span{
+                                            font-size: 100px;
+                                            color: rgb(44, 195, 17);
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -713,6 +1014,7 @@
                 }
                }
             }
+          
             
         }
     }
@@ -743,18 +1045,18 @@
       
         .container{
             .h6 p{
-                width: 1153px ;
-                color : #000 ;
+                width: 690px;
+                color: #000;
                 font-family: Rubik;
-                font-size: 16px;
-                font-style: normal ;
-                font-weight: 400 ;
-                margin: 0px -40px ;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                margin: 0px -40px;
             }
             .marketingOne{ 
                 
                 .market-text{
-                    margin: 52px 442px;
+                    margin: 52px 264px;
                     align-items: center;
                     text-align: center;
                     
@@ -785,11 +1087,15 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    img{
+                        width: 340px;
+                        height: 340px;
+                    }
                     h1{
                         width: 638px;
                         color: var(--text-color, #252B42);
                         font-family: Rubik;
-                        font-size: 36px;
+                        font-size: 20px;
                         font-style: normal;
                         font-weight: 700;
                         line-height: 39px;
@@ -797,13 +1103,13 @@
                          margin: 20px 30px;
                     }
                     h6{
-                        width: 653px;
+                        width: 330px;
                         color: #000;
                         font-family: Rubik;
-                        font-size: 16px;
+                        font-size: 12px;
                         font-style: normal;
                         font-weight: 400;
-                        line-height: 22.857px; 
+                        line-height: 16.857px;
                         margin: 20px 30px;
                        
                     }
@@ -813,73 +1119,7 @@
     
                 
             }
-            .modal{
-                position: relative;
-               &--content{
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 999;
-                background: #000000ab;
-                backdrop-filter: blur(10px);
-                &__panel{
-                    width: 75%;
-                    height: 90%;
-                    background: #efecec;
-                
-                    &--general{
-                       
-                        &__top{
-                            display: flex;
-                            align-items: center;
-                            gap: 150px;
-                            background-color:  #C9E7FD;
-                            h1{
-                                font-size: 20px;
-                            }
-                        }
-                        &__inputs{
-                            padding: 30px 68px;
-                            display: flex;
-                            gap: 50px;
-                            button{
-                                background: #23A6F0;
-                                font-size: 16px;
-                                padding: 10px 55px;
-                                border: none;
-                                border-radius: 5px;
-                                color: white;
-                                transition: .4s;
-                                margin: 20px 0;
-                                cursor: pointer;
-                                &:hover{
-                                    background: #efecec;
-                                    color: #23A6F0;
-                                    border: 1px solid #23A6F0;
-                                }
-                            }
-                            input{
-                                width: 29rem;
-                                height: 3rem;
-                                border-radius: 5px;
-                                border: 1px solid rgba(0, 0, 0, 0.40);
-                                outline: none;
-                                padding: 0 10px;
-                            }
-                            p{
-                                padding: 14px 0;
-                            }
-                        }
-                    }
-                    
-                }
-               }
-            }
+           
             
         }
     }
@@ -901,7 +1141,7 @@
         border-radius: 5px;
         background: #23A6F0;
         border: none;
-        margin: 100px 530px;
+        margin: 100px 390px;
     }
     
 }
@@ -954,8 +1194,13 @@
                     justify-content: space-between;
                     align-items: center;
                     flex-wrap: wrap;
+                    img{
+                        width: 640px;
+                        height: 640px;
+                        margin-left: -75px;
+                    }
                     h1{
-                        width: 538px;
+                        width: 611px;
                         color: var(--text-color, #252B42);
                         font-family: Rubik;
                         font-size: 36px;
@@ -963,17 +1208,17 @@
                         font-weight: 700;
                         line-height: 39px;
                         letter-spacing: 0.1px;
-                        margin: 20px 1px;
+                        margin: 20px -53px;
                     }
                     h6{
-                        width: 444px;
+                        width: 628px;
                         color: #000;
                         font-family: Rubik;
-                        font-size: 16px;
+                        font-size: 21px;
                         font-style: normal;
                         font-weight: 400;
                         line-height: 22.857px;
-                        margin: 20px 27px
+                        margin: 20px -54px;
                        
                     }
                    
@@ -982,73 +1227,7 @@
     
                 
             }
-            .modal{
-                position: relative;
-               &--content{
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 999;
-                background: #000000ab;
-                backdrop-filter: blur(10px);
-                &__panel{
-                    width: 75%;
-                    height: 90%;
-                    background: #efecec;
-                
-                    &--general{
-                       
-                        &__top{
-                            display: flex;
-                            align-items: center;
-                            gap: 150px;
-                            background-color:  #C9E7FD;
-                            h1{
-                                font-size: 20px;
-                            }
-                        }
-                        &__inputs{
-                            padding: 30px 68px;
-                            display: flex;
-                            gap: 50px;
-                            button{
-                                background: #23A6F0;
-                                font-size: 16px;
-                                padding: 10px 55px;
-                                border: none;
-                                border-radius: 5px;
-                                color: white;
-                                transition: .4s;
-                                margin: 20px 0;
-                                cursor: pointer;
-                                &:hover{
-                                    background: #efecec;
-                                    color: #23A6F0;
-                                    border: 1px solid #23A6F0;
-                                }
-                            }
-                            input{
-                                width: 29rem;
-                                height: 3rem;
-                                border-radius: 5px;
-                                border: 1px solid rgba(0, 0, 0, 0.40);
-                                outline: none;
-                                padding: 0 10px;
-                            }
-                            p{
-                                padding: 14px 0;
-                            }
-                        }
-                    }
-                    
-                }
-               }
-            }
+           
             
         }
     }
@@ -1123,6 +1302,11 @@
                     justify-content: space-between;
                     align-items: center;
                     flex-wrap: wrap;
+                    img{
+                        width: 560px;
+                        height: 572px;
+                        margin-left: -52px;
+                    }
                     h1{
                         width: 538px;
                         color: var(--text-color, #252B42);
@@ -1166,51 +1350,230 @@
                 background: #000000ab;
                 backdrop-filter: blur(10px);
                 &__panel{
-                    width: 75%;
-                    height: 90%;
-                    background: #efecec;
+                    width: 100%;
+                    height: 100%;
+                    background: #ffffff;
                 
                     &--general{
+                       .gen-img{
+                        padding-top: 100px;
+                        padding-left: 80px;
+                        margin: 60px -53px;
+                        width: 750px;
+                       }
+                      
                        
+                      
                         &__top{
                             display: flex;
                             align-items: center;
-                            gap: 150px;
+                            gap: 240px;
                             background-color:  #C9E7FD;
-                            h1{
-                                font-size: 20px;
+                            height: 115px;
+                            margin-bottom: 60px;
+                            .cardsImg{
+                                margin-left: -20px;
                             }
+                            h1{
+                                font-size: 25px;
+                                width: 567px;
+                                height: 32px;
+                                flex-shrink: 0;
+                                color: #348BCA;
+                                text-align: center;
+                                font-family: Roboto;
+                                font-size: 34.952px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+                            
+                         &--opshn{
+                        p{
+                            margin-left: -65px;
+                            padding: 56px 0;
+                            width: 776px;
+                            height: 21px;
+                            color: #000;
+                            text-align: center;
+                            font-family: Roboto;
+                            font-size: 40px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                            &__input{
+                                width: 71.3rem;
+                                height: 6rem;
+                                background: #fafafa;
+                                border-radius: 5px;
+                                margin-left: 92px;
+                                border: 0.5px solid rgb(88, 87, 87);
+    
+                            }
+                         }
                         }
                         &__inputs{
-                            padding: 30px 68px;
+                            margin-left: 30px ;
+                            padding: 10px 68px;
                             display: flex;
                             gap: 50px;
-                            button{
-                                background: #23A6F0;
-                                font-size: 16px;
-                                padding: 10px 55px;
-                                border: none;
-                                border-radius: 5px;
-                                color: white;
-                                transition: .4s;
-                                margin: 20px 0;
-                                cursor: pointer;
-                                &:hover{
-                                    background: #efecec;
-                                    color: #23A6F0;
-                                    border: 1px solid #23A6F0;
-                                }
-                            }
+                            flex-direction: column;
+                          
                             input{
-                                width: 29rem;
-                                height: 3rem;
+                                width: 69.2rem;
+                                height: 6rem;
                                 border-radius: 5px;
                                 border: 1px solid rgba(0, 0, 0, 0.40);
                                 outline: none;
                                 padding: 0 10px;
                             }
                             p{
-                                padding: 14px 0;
+                                padding: 20px 0;
+                            }
+                            &--left{
+                                button{
+                                    display: none;
+                                    background: #23A6F0;
+                                    font-size: 16px;
+                                    padding: 10px 55px;
+                                    border: none;
+                                    border-radius: 5px;
+                                    color: white;
+                                    transition: .4s;
+                                    margin: 20px 0;
+                                    cursor: pointer;
+                                    margin-left: 383px;
+                                    &:hover{
+                                        background: #efecec;
+                                        color: #23A6F0;
+                                        border: 1px solid #23A6F0;
+                                    }
+                                }
+                                p{
+                                    color: #000;
+                                    font-family: Montserrat;
+                                    font-size: 38px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    width: 860px;
+                                    margin: 18px 0;
+                                }
+                            }
+                            &--right{
+                                position: relative;
+                                .op{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    margin: 63px 5px;
+                                
+                                    .op-btn{
+                                        display: block;
+                                        background: #23A6F0;
+                                        font-size: 52px;
+                                        padding: 40px 170px;
+                                        border: none;
+                                        border-radius: 27px;
+                                        color: white;
+                                        transition: 0.4s;
+                                        margin: 20px 0;
+                                        cursor: pointer;
+                                        margin-left: 1px;
+                                    }
+                                    button{
+                                        background: #23A6F0;
+                                        font-size: 52px;
+                                        padding: 40px 170px;
+                                        border: none;
+                                        border-radius: 27px;
+                                        color: white;
+                                        transition: 0.4s;
+                                        margin: 20px 0;
+                                        cursor: pointer;
+                                        margin-left: 1px;
+                                    }
+
+                                }
+                               
+                                p{
+                                    color: #000;
+                                    font-family: Montserrat;
+                                    font-size: 38px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    width: 860px;
+                                    margin: 18px 0;
+                                }
+                                &__modules{
+                                    position: fixed;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: start;
+                                    z-index: 999;
+                                
+                                   
+                                    
+                                    &--arrow{
+                                        margin-top: 50px;
+                                        animation: myAnim 2s ease 0s 1 normal forwards;
+                                        @keyframes myAnim {
+                                            0% {
+                                                animation-timing-function: ease-in;
+                                                opacity: 1;
+                                                transform: translateY(-45px);
+                                            }
+                                        
+                                            24% {
+                                                opacity: 1;
+                                            }
+                                        
+                                            40% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-24px);
+                                            }
+                                        
+                                            65% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-12px);
+                                            }
+                                        
+                                            82% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-6px);
+                                            }
+                                        
+                                            93% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-4px);
+                                            }
+                                        
+                                            25%,
+                                            55%,
+                                            75%,
+                                            87% {
+                                                animation-timing-function: ease-out;
+                                                transform: translateY(0px);
+                                            }
+                                        
+                                            100% {
+                                                animation-timing-function: ease-out;
+                                                opacity: 1;
+                                                transform: translateY(0px);
+                                            }
+                                        }
+                                        span{
+                                            font-size: 100px;
+                                            color: rgb(44, 195, 17);
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -1218,6 +1581,7 @@
                 }
                }
             }
+          
             
         }
     }
@@ -1266,21 +1630,21 @@
                     
     
                     h1{
-                        width: 278px;
+                        width: 410px;
                         color: #0B132A;
                         font-family: Rubik;
-                        font-size: 30px;
+                        font-size: 50px;
                         font-style: normal;
                         font-weight: 700;
                         line-height: 70px;
                         margin-left: 14px;
                     }
                     p{
-                        width: 309px;
+                        width: 453px;
                         color: #4F5665;
                         text-align: center;
                         font-family: Rubik;
-                        font-size: 14px;
+                        font-size: 26px;
                         font-style: normal;
                         font-weight: 400;
                         line-height: 20px;
@@ -1293,18 +1657,18 @@
                     align-items: center;
                     flex-wrap: wrap;
                     img{
-                        width: 270px;
-                        height: 270px;
-                        margin-left: 190px;
+                        width: 470px;
+                        height: 470px;
+                        margin-left: 168px;
                     }
                     .market-title{
-                        margin-left: 180px;
+                        margin-left: 158px;
                     }
                     h1{
                         width: 538px;
                         color: var(--text-color, #252B42);
                         font-family: Rubik;
-                        font-size: 16px;
+                        font-size: 26px;
                         font-style: normal;
                         font-weight: 700;
                         line-height: 39px;
@@ -1312,13 +1676,13 @@
                         
                     }
                     h6{
-                        width: 307px;
+                        width: 507px;
                         color: #000;
                         font-family: Rubik;
-                        font-size: 12px;
+                        font-size: 20px;
                         font-style: normal;
                         font-weight: 400;
-                        line-height: 15.857px;
+                        line-height: 20.57px;
                        
                     }
                    
@@ -1342,51 +1706,230 @@
                 background: #000000ab;
                 backdrop-filter: blur(10px);
                 &__panel{
-                    width: 75%;
-                    height: 90%;
-                    background: #efecec;
+                    width: 100%;
+                    height: 100%;
+                    background: #ffffff;
                 
                     &--general{
+                       .gen-img{
+                        padding-top: 100px;
+                        padding-left: 80px;
+                        margin: 60px -53px;
+                        width: 950px;
+                       }
+                      
                        
+                      
                         &__top{
                             display: flex;
                             align-items: center;
-                            gap: 150px;
+                            gap: 240px;
                             background-color:  #C9E7FD;
-                            h1{
-                                font-size: 20px;
+                            height: 160px;
+                            margin-bottom: 60px;
+                            .cardsImg{
+                                margin-left: -45px;
                             }
+                            h1{
+                                width: 567px;
+                                height: 32px;
+                                flex-shrink: 0;
+                                color: #348BCA;
+                                text-align: center;
+                                font-family: Roboto;
+                                font-size: 34.952px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                margin-left: 10px;
+                            }
+                            
+                         &--opshn{
+                        p{
+                            margin-left: -38px;
+                            padding: 56px 0;
+                            width: 776px;
+                            height: 21px;
+                            color: #000;
+                            text-align: center;
+                            font-family: Roboto;
+                            font-size: 44px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                            &__input{
+                                width: 71.3rem;
+                                height: 8rem;
+                                background: #fafafa;
+                                border-radius: 21px;
+                                margin-left: 92px;
+                                border: 0.5px solid rgb(88, 87, 87);
+    
+                            }
+                         }
                         }
                         &__inputs{
-                            padding: 30px 68px;
+                            margin-left: 30px ;
+                            padding: 10px 68px;
                             display: flex;
                             gap: 50px;
-                            button{
-                                background: #23A6F0;
-                                font-size: 16px;
-                                padding: 10px 55px;
-                                border: none;
-                                border-radius: 5px;
-                                color: white;
-                                transition: .4s;
-                                margin: 20px 0;
-                                cursor: pointer;
-                                &:hover{
-                                    background: #efecec;
-                                    color: #23A6F0;
-                                    border: 1px solid #23A6F0;
-                                }
-                            }
+                            flex-direction: column;
+                          
                             input{
-                                width: 29rem;
-                                height: 3rem;
-                                border-radius: 5px;
-                                border: 1px solid rgba(0, 0, 0, 0.40);
+                                width: 69.2rem;
+                                height: 9rem;
+                                border-radius: 20px;
+                                border: 1px solid rgba(0, 0, 0, 0.4);
                                 outline: none;
                                 padding: 0 10px;
                             }
                             p{
-                                padding: 14px 0;
+                                padding: 20px 0;
+                            }
+                            &--left{
+                                button{
+                                    display: none;
+                                    background: #23A6F0;
+                                    font-size: 16px;
+                                    padding: 10px 55px;
+                                    border: none;
+                                    border-radius: 5px;
+                                    color: white;
+                                    transition: .4s;
+                                    margin: 20px 0;
+                                    cursor: pointer;
+                                    margin-left: 383px;
+                                    &:hover{
+                                        background: #efecec;
+                                        color: #23A6F0;
+                                        border: 1px solid #23A6F0;
+                                    }
+                                }
+                                p{
+                                    color: #000;
+                                    font-family: Montserrat;
+                                    font-size: 42px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    width: 860px;
+                                    margin: 60px 0;
+                                }
+                            }
+                            &--right{
+                                position: relative;
+                                .op{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    margin: 63px 5px;
+                                
+                                    .op-btn{
+                                        display: block;
+                                        background: #23A6F0;
+                                        font-size: 52px;
+                                        padding: 40px 170px;
+                                        border: none;
+                                        border-radius: 27px;
+                                        color: white;
+                                        transition: 0.4s;
+                                        margin: 20px 0;
+                                        cursor: pointer;
+                                        margin-left: 1px;
+                                    }
+                                    button{
+                                        background: #23A6F0;
+                                        font-size: 52px;
+                                        padding: 40px 170px;
+                                        border: none;
+                                        border-radius: 27px;
+                                        color: white;
+                                        transition: 0.4s;
+                                        margin: 20px 0;
+                                        cursor: pointer;
+                                        margin-left: 1px;
+                                    }
+
+                                }
+                               
+                                p{
+                                    color: #000;
+                                    font-family: Montserrat;
+                                    font-size: 42px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    width: 860px;
+                                    margin: 44px 0;
+                                }
+                                &__modules{
+                                    position: fixed;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: start;
+                                    z-index: 999;
+                                
+                                   
+                                    
+                                    &--arrow{
+                                        margin-top: 50px;
+                                        animation: myAnim 2s ease 0s 1 normal forwards;
+                                        @keyframes myAnim {
+                                            0% {
+                                                animation-timing-function: ease-in;
+                                                opacity: 1;
+                                                transform: translateY(-45px);
+                                            }
+                                        
+                                            24% {
+                                                opacity: 1;
+                                            }
+                                        
+                                            40% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-24px);
+                                            }
+                                        
+                                            65% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-12px);
+                                            }
+                                        
+                                            82% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-6px);
+                                            }
+                                        
+                                            93% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-4px);
+                                            }
+                                        
+                                            25%,
+                                            55%,
+                                            75%,
+                                            87% {
+                                                animation-timing-function: ease-out;
+                                                transform: translateY(0px);
+                                            }
+                                        
+                                            100% {
+                                                animation-timing-function: ease-out;
+                                                opacity: 1;
+                                                transform: translateY(0px);
+                                            }
+                                        }
+                                        span{
+                                            font-size: 100px;
+                                            color: rgb(44, 195, 17);
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -1415,7 +1958,717 @@
         border-radius: 5px;
         background: #23A6F0;
         border: none;
-        margin: 71px 92px;
+        margin: 71px 155px;
+    }
+    
+}
+@media (max-width: 376px) {
+    #marketingOne{
+      
+        .container{
+            .h6 p{
+                // width: 1153px ;
+                // color : #000 ;
+                // font-family: Rubik;
+                // font-size: 16px;
+                // font-style: normal ;
+                // font-weight: 400 ;
+                // margin: 0px -40px ;
+                display: none;
+            }
+            .marketingOne{ 
+                
+                .market-text{
+                    margin: 52px 50px;
+                    align-items: center;
+                    text-align: center;
+                    
+    
+                    h1{
+                        width: 410px;
+                        color: #0B132A;
+                        font-family: Rubik;
+                        font-size: 50px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 70px;
+                        margin-left: 14px;
+                    }
+                    p{
+                        width: 453px;
+                        color: #4F5665;
+                        text-align: center;
+                        font-family: Rubik;
+                        font-size: 26px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 20px;
+                    }
+                }
+                .market-img{
+                    margin-left: -118px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    img{
+                        width: 470px;
+                        height: 470px;
+                        margin-left: 168px;
+                    }
+                    .market-title{
+                        margin-left: 158px;
+                    }
+                    h1{
+                        width: 538px;
+                        color: var(--text-color, #252B42);
+                        font-family: Rubik;
+                        font-size: 26px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 39px;
+                        letter-spacing: 0.1px;
+                        
+                    }
+                    h6{
+                        width: 507px;
+                        color: #000;
+                        font-family: Rubik;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 20.57px;
+                       
+                    }
+                   
+                }
+                 
+    
+                
+            }
+            .modal{
+                position: relative;
+               &--content{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 999;
+                background: #000000ab;
+                backdrop-filter: blur(10px);
+                &__panel{
+                    width: 100%;
+                    height: 100%;
+                    background: #ffffff;
+                
+                    &--general{
+                       .gen-img{
+                        padding-top: 100px;
+                        padding-left: 80px;
+                        margin: 60px -53px;
+                        width: 950px;
+                       }
+                      
+                       
+                      
+                        &__top{
+                            display: flex;
+                            align-items: center;
+                            gap: 240px;
+                            background-color:  #C9E7FD;
+                            height: 160px;
+                            margin-bottom: 60px;
+                            .cardsImg{
+                                margin-left: -45px;
+                            }
+                            h1{
+                                width: 567px;
+                                height: 32px;
+                                flex-shrink: 0;
+                                color: #348BCA;
+                                text-align: center;
+                                font-family: Roboto;
+                                font-size: 34.952px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                margin-left: 10px;
+                            }
+                            
+                         &--opshn{
+                        p{
+                            margin-left: -38px;
+                            padding: 56px 0;
+                            width: 776px;
+                            height: 21px;
+                            color: #000;
+                            text-align: center;
+                            font-family: Roboto;
+                            font-size: 44px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                            &__input{
+                                width: 71.3rem;
+                                height: 8rem;
+                                background: #fafafa;
+                                border-radius: 21px;
+                                margin-left: 92px;
+                                border: 0.5px solid rgb(88, 87, 87);
+    
+                            }
+                         }
+                        }
+                        &__inputs{
+                            margin-left: 30px ;
+                            padding: 10px 68px;
+                            display: flex;
+                            gap: 50px;
+                            flex-direction: column;
+                          
+                            input{
+                                width: 69.2rem;
+                                height: 9rem;
+                                border-radius: 20px;
+                                border: 1px solid rgba(0, 0, 0, 0.4);
+                                outline: none;
+                                padding: 0 10px;
+                            }
+                            p{
+                                padding: 20px 0;
+                            }
+                            &--left{
+                                button{
+                                    display: none;
+                                    background: #23A6F0;
+                                    font-size: 16px;
+                                    padding: 10px 55px;
+                                    border: none;
+                                    border-radius: 5px;
+                                    color: white;
+                                    transition: .4s;
+                                    margin: 20px 0;
+                                    cursor: pointer;
+                                    margin-left: 383px;
+                                    &:hover{
+                                        background: #efecec;
+                                        color: #23A6F0;
+                                        border: 1px solid #23A6F0;
+                                    }
+                                }
+                                p{
+                                    color: #000;
+                                    font-family: Montserrat;
+                                    font-size: 42px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    width: 860px;
+                                    margin: 60px 0;
+                                }
+                            }
+                            &--right{
+                                position: relative;
+                                .op{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    margin: 63px 5px;
+                                
+                                    .op-btn{
+                                        display: block;
+                                        background: #23A6F0;
+                                        font-size: 52px;
+                                        padding: 40px 170px;
+                                        border: none;
+                                        border-radius: 27px;
+                                        color: white;
+                                        transition: 0.4s;
+                                        margin: 20px 0;
+                                        cursor: pointer;
+                                        margin-left: 1px;
+                                    }
+                                    button{
+                                        background: #23A6F0;
+                                        font-size: 52px;
+                                        padding: 40px 170px;
+                                        border: none;
+                                        border-radius: 27px;
+                                        color: white;
+                                        transition: 0.4s;
+                                        margin: 20px 0;
+                                        cursor: pointer;
+                                        margin-left: 1px;
+                                    }
+
+                                }
+                               
+                                p{
+                                    color: #000;
+                                    font-family: Montserrat;
+                                    font-size: 42px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    width: 860px;
+                                    margin: 44px 0;
+                                }
+                                &__modules{
+                                    position: fixed;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: start;
+                                    z-index: 999;
+                                
+                                   
+                                    
+                                    &--arrow{
+                                        margin-top: 50px;
+                                        animation: myAnim 2s ease 0s 1 normal forwards;
+                                        @keyframes myAnim {
+                                            0% {
+                                                animation-timing-function: ease-in;
+                                                opacity: 1;
+                                                transform: translateY(-45px);
+                                            }
+                                        
+                                            24% {
+                                                opacity: 1;
+                                            }
+                                        
+                                            40% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-24px);
+                                            }
+                                        
+                                            65% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-12px);
+                                            }
+                                        
+                                            82% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-6px);
+                                            }
+                                        
+                                            93% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-4px);
+                                            }
+                                        
+                                            25%,
+                                            55%,
+                                            75%,
+                                            87% {
+                                                animation-timing-function: ease-out;
+                                                transform: translateY(0px);
+                                            }
+                                        
+                                            100% {
+                                                animation-timing-function: ease-out;
+                                                opacity: 1;
+                                                transform: translateY(0px);
+                                            }
+                                        }
+                                        span{
+                                            font-size: 100px;
+                                            color: rgb(44, 195, 17);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+               }
+            }
+            
+        }
+    }
+    .market-btn{
+        color: #FFF;
+        font-family: Rubik;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0.2px;
+        display: flex;
+        width: 291px;
+        height: 40px;
+        padding: 15px 100px;
+        align-items: center;
+        gap: 15px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        background: #23A6F0;
+        border: none;
+        margin: 71px 155px;
+    }
+    
+}
+@media (max-width: 320px) {
+    #marketingOne{
+      
+        .container{
+            .h6 p{
+                // width: 1153px ;
+                // color : #000 ;
+                // font-family: Rubik;
+                // font-size: 16px;
+                // font-style: normal ;
+                // font-weight: 400 ;
+                // margin: 0px -40px ;
+                display: none;
+            }
+            .marketingOne{ 
+                
+                .market-text{
+                    margin: 105px 44px;
+                    
+                    
+    
+                    h1{
+                        width: 410px;
+                        color: #0B132A;
+                        font-family: Rubik;
+                        font-size: 50px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 70px;
+                        margin-left: 14px;
+                        margin: 10px 0;
+                    }
+                    p{
+                        width: 482px;
+                        color: #4F5665;
+                        text-align: center;
+                        font-family: Rubik;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 30px;
+                    }
+                }
+                .market-img{
+                    margin-left: -118px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    img{
+                        width: 470px;
+                        height: 470px;
+                        margin-left: 168px;
+                    }
+                    .market-title{
+                        margin-left: 158px;
+                    }
+                    h1{
+                        width: 538px;
+                        color: var(--text-color, #252B42);
+                        font-family: Rubik;
+                        font-size: 35px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 39px;
+                        letter-spacing: 0.1px;
+                        
+                    }
+                    h6{
+                        width: 507px;
+                        color: #000;
+                        font-family: Rubik;
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 30.57px;
+                       
+                    }
+                   
+                }
+                 
+    
+                
+            }
+            .modal{
+                position: relative;
+               &--content{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 999;
+                background: #000000ab;
+                backdrop-filter: blur(10px);
+                &__panel{
+                    width: 100%;
+                    height: 100%;
+                    background: #ffffff;
+                
+                    &--general{
+                       .gen-img{
+                        padding-top: 100px;
+                        padding-left: 80px;
+                        margin: 60px -53px;
+                        width: 950px;
+                       }
+                      
+                       
+                      
+                        &__top{
+                            display: flex;
+                            align-items: center;
+                            gap: 240px;
+                            background-color:  #C9E7FD;
+                            height: 160px;
+                            margin-bottom: 60px;
+                            .cardsImg{
+                                margin-left: -45px;
+                            }
+                            h1{
+                                width: 567px;
+                                height: 32px;
+                                flex-shrink: 0;
+                                color: #348BCA;
+                                text-align: center;
+                                font-family: Roboto;
+                                font-size: 34.952px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                margin-left: 10px;
+                            }
+                            
+                         &--opshn{
+                        p{
+                            margin-left: -38px;
+                            padding: 56px 0;
+                            width: 776px;
+                            height: 21px;
+                            color: #000;
+                            text-align: center;
+                            font-family: Roboto;
+                            font-size: 44px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                            &__input{
+                                width: 71.3rem;
+                                height: 8rem;
+                                background: #fafafa;
+                                border-radius: 21px;
+                                margin-left: 92px;
+                                border: 0.5px solid rgb(88, 87, 87);
+    
+                            }
+                         }
+                        }
+                        &__inputs{
+                            margin-left: 30px ;
+                            padding: 10px 68px;
+                            display: flex;
+                            gap: 50px;
+                            flex-direction: column;
+                          
+                            input{
+                                width: 69.2rem;
+                                height: 9rem;
+                                border-radius: 20px;
+                                border: 1px solid rgba(0, 0, 0, 0.4);
+                                outline: none;
+                                padding: 0 10px;
+                            }
+                            p{
+                                padding: 20px 0;
+                            }
+                            &--left{
+                                button{
+                                    display: none;
+                                    background: #23A6F0;
+                                    font-size: 16px;
+                                    padding: 10px 55px;
+                                    border: none;
+                                    border-radius: 5px;
+                                    color: white;
+                                    transition: .4s;
+                                    margin: 20px 0;
+                                    cursor: pointer;
+                                    margin-left: 383px;
+                                    &:hover{
+                                        background: #efecec;
+                                        color: #23A6F0;
+                                        border: 1px solid #23A6F0;
+                                    }
+                                }
+                                p{
+                                    color: #000;
+                                    font-family: Montserrat;
+                                    font-size: 42px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    width: 860px;
+                                    margin: 60px 0;
+                                }
+                            }
+                            &--right{
+                                position: relative;
+                                .op{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    margin: 63px 5px;
+                                
+                                    .op-btn{
+                                        display: block;
+                                        background: #23A6F0;
+                                        font-size: 52px;
+                                        padding: 40px 170px;
+                                        border: none;
+                                        border-radius: 27px;
+                                        color: white;
+                                        transition: 0.4s;
+                                        margin: 20px 0;
+                                        cursor: pointer;
+                                        margin-left: 1px;
+                                    }
+                                    button{
+                                        background: #23A6F0;
+                                        font-size: 52px;
+                                        padding: 40px 170px;
+                                        border: none;
+                                        border-radius: 27px;
+                                        color: white;
+                                        transition: 0.4s;
+                                        margin: 20px 0;
+                                        cursor: pointer;
+                                        margin-left: 1px;
+                                    }
+
+                                }
+                               
+                                p{
+                                    color: #000;
+                                    font-family: Montserrat;
+                                    font-size: 42px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    width: 860px;
+                                    margin: 44px 0;
+                                }
+                                &__modules{
+                                    position: fixed;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: start;
+                                    z-index: 999;
+                                
+                                   
+                                    
+                                    &--arrow{
+                                        margin-top: 50px;
+                                        animation: myAnim 2s ease 0s 1 normal forwards;
+                                        @keyframes myAnim {
+                                            0% {
+                                                animation-timing-function: ease-in;
+                                                opacity: 1;
+                                                transform: translateY(-45px);
+                                            }
+                                        
+                                            24% {
+                                                opacity: 1;
+                                            }
+                                        
+                                            40% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-24px);
+                                            }
+                                        
+                                            65% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-12px);
+                                            }
+                                        
+                                            82% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-6px);
+                                            }
+                                        
+                                            93% {
+                                                animation-timing-function: ease-in;
+                                                transform: translateY(-4px);
+                                            }
+                                        
+                                            25%,
+                                            55%,
+                                            75%,
+                                            87% {
+                                                animation-timing-function: ease-out;
+                                                transform: translateY(0px);
+                                            }
+                                        
+                                            100% {
+                                                animation-timing-function: ease-out;
+                                                opacity: 1;
+                                                transform: translateY(0px);
+                                            }
+                                        }
+                                        span{
+                                            font-size: 100px;
+                                            color: rgb(44, 195, 17);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+               }
+            }
+            
+        }
+    }
+    .market-btn{
+        color: #FFF;
+        font-family: Rubik;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0.2px;
+        display: flex;
+        width: 455px;
+        height: 40px;
+        padding: 45px 128px;
+        align-items: center;
+        gap: 15px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        background: #23A6F0;
+        border: none;
+        margin: 71px 62px;
     }
     
 }

@@ -119,12 +119,12 @@ const Marketing1 = () => {
                           <div className='modal--content'>
                           <div className="modal--content__panel">
                            <div className='modal--content__panel--general'>
-                           <img style={{paddingTop:"100px",paddingLeft:"80px"}} src={imgLogo} alt=''/>
+                           <img className='gen-img'  src={imgLogo} alt=''/>
                            <div className='modal--content__panel--general__top'>
                             <div className='modal--content__panel--general__top--h1'>
                                 <h1 style={{paddingLeft:"80px"}}>КРЕДИТНАЯ / ДЕБЕТОВАЯ КАРТА</h1>
                             </div>
-                            <div className='modal--content__panel--general__top--cardsImg'>
+                            <div  className='cardsImg'>
                                 <img src={imgCards} alt=''/>
                             </div>
                            </div>
@@ -160,7 +160,7 @@ const Marketing1 = () => {
         {!isCardNumberValid && (
             <p style={{ color: 'red' }}>Введите корректный номер карты</p>
         )}
-                     <div style={{marginLeft:"328px"}}><button  onClick={closeModal}>Назад </button></div>
+                     <div className='left-btn' ><button  onClick={closeModal}>Назад </button></div>
 
                 
                 
@@ -188,8 +188,11 @@ const Marketing1 = () => {
                                     {!isCVCValid && (
                                         <p style={{ color: 'red' }}>Некорректный CVC/CVV</p>
                                     )}
-                    <div> <button onClick={()=>{handlePayment(setModal(!modal))}}>Оплата</button>
-</div>
+                    <div className='op'>  
+                         <button className='op-btn' onClick={closeModal}>Назад </button>
+                         <button onClick={()=>{handlePayment(setModal(!modal))}}>Оплата</button>
+                            
+                    </div>
                     <div style={{ display:modal ? '':'none'}}>
                         <div className='modal--content__panel--general__inputs--right__modules'>
                                                <div className='modal--content__panel--general__inputs--right__modules--arrow'>
