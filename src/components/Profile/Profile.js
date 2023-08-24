@@ -13,6 +13,8 @@ import Chat from "./Chat/Chat";
 import { removeUser } from "../../store/userSlice/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import Favorite from "./Favorite/Favorite";
+import PaidBack from "../BackEnd/paidBack";
 
 const Profile = () => {
   const dispatch = useDispatch();

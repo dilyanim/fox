@@ -1,0 +1,115 @@
+@media (max-Width:1400px){
+    #user {
+        .container {
+          .user {
+           &--blocks{
+            zoom: 90%;
+           }
+          }
+        }
+    }
+}
+
+@media (max-Width:1200px){
+    #user {
+        .container {
+          .user {
+           &--blocks{
+            zoom: 75%;
+           }
+          }
+        }
+    }
+}
+@media (max-Width:1024px){
+    #user {
+        .container {
+          .user {
+           &--blocks{
+            zoom: 60%;
+           }
+          }
+        }
+    }
+}
+@media (max-Width:992px){
+    #user {
+        .container {
+          .user {
+           &--blocks{
+          
+            &__block1{
+              width: 690px !important;
+            }
+           }
+          }
+        }
+    }
+}
+@media(max-width:768px){
+  #user .container .user--blocks__block1--imgProf {
+    width: 100%;
+}
+#user .container .user--blocks__block2 {
+  width: 691px;
+  
+}
+}
+// @media(max-width:)
+@media (max-width:576px){
+  #user .container .user--blocks__block1--imgProf {
+    width: 100%;
+}
+#user .container .user--blocks__block2 {
+  width: 691px;
+  
+}
+#user .container .user--blocks__block2 {
+  height: 1038px;
+  margin-top: 124px;
+}
+#user .container .user--blocks__block1 {
+  height: 364px;
+  margin-top: 85px;
+}
+}
+
+@media (max-width:451px){
+  #user .container .user--blocks__block1--imgProf {
+    width: 100%;
+}
+#user .container .user--blocks__block2 {
+  width: 650px;
+  
+}
+#user .container .user--blocks__block2 {
+  height: 1038px;
+  margin-top: 124px;
+}
+#user .container .user--blocks__block1 {
+  height: 364px;
+  margin-top: 85px;
+  width: 650px !important;
+}
+
+}
+
+@media(max-width:376px){
+  #user .container .user--blocks__block1--imgProf {
+    width: 100%;
+}
+#user .container .user--blocks__block2 {
+  width: 620px;
+  
+}
+#user .container .user--blocks__block2 {
+  height: 1038px;
+  margin-top: 124px;
+}
+#user .container .user--blocks__block1 {
+  height: 364px;
+  margin-top: 85px;
+  width: 620px !important;
+}
+}
+
