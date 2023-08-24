@@ -26,13 +26,16 @@
 @import "./components/Profile/media.scss";
 @import "./components/reg/register/media.scss";
 @import "./components/reg/media.scss";
+@import './components/Videodi/index.scss';
 
-
-@import "./components/Acardion/VideaoDetail/style.scss";
 * {
   margin: 0;
   padding: 0;
 }
 .container {
   width: 90%;
+}
+button{
+  cursor: pointer;
+
 }

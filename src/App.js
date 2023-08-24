@@ -10,7 +10,9 @@ import Register from "./components/reg/register/Register";
 import AboutCourse from "./components/AboutCourse";
 import Marketing1 from "./components/Marceting1";
 import Profile from "./components/Profile/Profile";
-import Video from "./components/Acardion/VideaoDetail/Video";
+import Videodi from './components/Videodi'
+
+
 function App() {
   return (
     <div className="App">
@@ -24,6 +26,7 @@ function App() {
         <Route path="/aboutCourse" element={<AboutCourse />} />
         <Route path="/marketing1" element={<Marketing1 />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/videodi" element={<Videodi/>}/>
       </Routes>
       <Footer />
     </div>
