@@ -11,3 +11,16 @@
         }
     }
 }
+@media (max-width:768px){
+  
+    #profile{
+        .container{
+            .profile{
+                width: 0;
+                &--nav{
+                    display: none;
+                }
+            }
+        }
+    }
+}
