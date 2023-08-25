@@ -4,7 +4,8 @@ const videodi = () => {
     return (
         <div id="video">
             <div className="container">
-                <div className="video">
+                <git pull origin argenVid
+div className="video">
                     <div className='video-if'>
                       <iframe width="850px" height="500px" src="https://www.youtube.com/embed/UIKyAKC0ab8" ></iframe>
                     </div>
@@ -18,7 +19,7 @@ const videodi = () => {
                                 <p>1430 просмотров</p>
                          </div>
                     </div>
-                </div>
+                </git>
             </div>
             
         </div>
