@@ -50,7 +50,7 @@ const Videodi = () => {
       <div className="container">
         <div className="video">
           <div className="video--left">
-            <h1>Урок 1 : Ознакомление</h1>
+            <h1 style={{fontSize:"20px",fontWeight:"400"}}>Урок 1 : Ознакомление</h1>
             <div className="video-if">
               <iframe
                 width="850px"
@@ -75,7 +75,7 @@ const Videodi = () => {
                 <ul>
                   {items.map((item) => (
                     <ul key={item.id}>
-                      {item.text} (Created: {item.createdAt.toLocaleString()})
+                      {item.text} ( {item.createdAt.toLocaleString()})
                       {item.updatedAt && (
                         <> | Last Updated: {item.updatedAt.toLocaleString()}</>
                       )}
