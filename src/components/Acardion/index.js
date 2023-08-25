@@ -38,7 +38,6 @@ const Acardion = () => {
                 <h3 className="pages--weleft--titleaccord">
                   Урок 1 : Ознакомление
                 </h3>
-                <button className="pages--weleft--titleaccord--btn">
                   {question1 ? (
                     <span className="accordion--weleft--titleaccord--btn__icon">
                       <IoIosArrowDropupCircle />
@@ -48,7 +47,6 @@ const Acardion = () => {
                       <IoIosArrowDropdownCircle />
                     </span>
                   )}
-                </button>
               </div>
               <div
                 style={{ display: "flex", gap: "20px" }}
@@ -103,7 +101,6 @@ const Acardion = () => {
                 <h3 className="pages--weleft--titleaccord">
                   Урок 2 : Методы бизнеса
                 </h3>
-                <button className="pages--weleft--titleaccord--btn">
                   {question1 ? (
                     <span className="accordion--weleft--titleaccord--btn__icon">
                       <IoIosArrowDropupCircle />
@@ -113,7 +110,6 @@ const Acardion = () => {
                       <IoIosArrowDropdownCircle />
                     </span>
                   )}
-                </button>
               </div>
               <div
                 style={{ display: "flex", gap: "20px" }}
@@ -165,7 +161,6 @@ const Acardion = () => {
                 <h3 className="pages--weleft--titleaccord">
                   Урок 3 : Как начать зарабатывать больше
                 </h3>
-                <button className="pages--weleft--titleaccord--btn">
                   {question1 ? (
                     <span className="accordion--weleft--titleaccord--btn__icon">
                       <IoIosArrowDropupCircle />
@@ -175,7 +170,6 @@ const Acardion = () => {
                       <IoIosArrowDropdownCircle />
                     </span>
                   )}
-                </button>
               </div>
               <div
                 style={{ display: "flex", gap: "20px" }}
@@ -227,7 +221,6 @@ const Acardion = () => {
                 <h3 className="pages--weleft--titleaccord">
                   Урок 4 : Заключение
                 </h3>
-                <button className="pages--weleft--titleaccord--btn">
                   {question1 ? (
                     <span className="accordion--weleft--titleaccord--btn__icon">
                       <IoIosArrowDropupCircle />
@@ -237,7 +230,6 @@ const Acardion = () => {
                       <IoIosArrowDropdownCircle />
                     </span>
                   )}
-                </button>
               </div>
               <div
                 style={{ display: "flex", gap: "20px" }}

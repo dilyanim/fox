@@ -96,6 +96,30 @@ const ReviewTwo = () => {
                             </div>
                             <p className="review2--cards__card--p">«Это очень необычно для моего бизнеса, которому в настоящее время требуется виртуальная частная сеть с высоким уровнем безопасности».</p>
                         </div> 
+                        <div className="review2--cards__card">
+                            <div className="review2--cards__card--block">
+                                <img src={Avatar} alt=""/>
+                                <div className="review2--cards__card--block__text"><h5>Viezh Robert</h5>
+                                    <p>Warsaw, Poland</p></div>
+                                <div className="review2--cards__card--block__icon"><h6>4.5</h6>
+                                    <img src={Star} alt=""/></div>
+                            </div>
+                            <p className="review2--cards__card--p">«Вау… Я очень рад использовать этот VPN, он оказался
+                                больше, чем мои ожидания, и до сих
+                                пор не было никаких проблем. (Название) всегда лучший».</p>
+                        </div>
+                        <div className="review2--cards__card">
+                            <div className="review2--cards__card--block">
+                                <img src={Avatar} alt=""/>
+                                <div className="review2--cards__card--block__text"><h5>Viezh Robert</h5>
+                                    <p>Warsaw, Poland</p></div>
+                                <div className="review2--cards__card--block__icon"><h6>4.5</h6>
+                                    <img src={Star} alt=""/></div>
+                            </div>
+                            <p className="review2--cards__card--p">«Вау… Я очень рад использовать этот VPN, он оказался
+                                больше, чем мои ожидания, и до сих
+                                пор не было никаких проблем. (Название) всегда лучший».</p>
+                        </div>
                     </div> 
                 </div>
 

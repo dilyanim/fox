@@ -309,7 +309,7 @@ const AboutCourse = () => {
         </div>
       </div>
       <Lessons />
-      {/* <ReviewTwo/>  */}
+      <ReviewTwo/> 
     </>
   );
 };
