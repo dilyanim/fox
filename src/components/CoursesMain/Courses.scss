@@ -928,22 +928,26 @@
                background:  lightgray 50% / cover no-repeat;
                border-radius: 5px;
            }
-       .top-btnM{
-           color: var(--primary-color, #23A6F0);
-           font-family: Montserrat;
-           font-size: 14px;
-           font-weight: 700;
-           display: flex;
-           padding: 10px 20px;
-           align-items: center;
-           gap: 10px;
-           border-radius: 37px;
-           border: 1px solid var(--primary-color, #23A6F0);
-           background: none;
-           margin: 20px 0px;
+           .top-btnM{
+            color: var(--primary-color, #23A6F0);
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 700;
+            display: flex;
+            padding: 10px 20px;
+            align-items: center;
+            gap: 10px;
+            border-radius: 37px;
+            border: 1px solid var(--primary-color, #23A6F0);
+            background: none;
+            margin: 20px 0px;
+           outline: none;
            text-decoration: none;
+        }
+       
+      
        }
-       }
+       
       
    }
   
