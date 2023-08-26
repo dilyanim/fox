@@ -1,26 +1,10 @@
 import React, { useState } from "react";
 import { AiOutlineSend } from "react-icons/ai";
+import { useSelector } from "react-redux";
 
-    return (
-        <div id="video">
-            <div className="container">
-                <git pull origin argenVid
-div className="video">
-                    <div className='video-if'>
-                      <iframe width="850px" height="500px" src="https://www.youtube.com/embed/UIKyAKC0ab8" ></iframe>
-                    </div>
-                    <div className='video-text'>
-                         <div className='video1'>
-                            <h3>Как ставить и оценивать задачи</h3>
-                            <button>Поделиться</button>
-                         </div>
-                         <div className='video2'>
-                                  <p>1 месяц назад</p>
-                                <p>1430 просмотров</p>
-                         </div>
-                    </div>
-                </git>
 const Videodi = () => {
+  const { name } = useSelector((s) => s.user);
+  const { userImage } = useSelector((s) => s.user);
   const [items, setItems] = useState([]);
   const [inputValue, setInputValue] = useState("");
   const [editingItemId, setEditingItemId] = useState(null);
@@ -33,7 +17,11 @@ const Videodi = () => {
     if (inputValue.trim() !== "") {
       setItems([
         ...items,
-        { id: Date.now(), text: inputValue, createdAt: new Date() },
+        {
+          id: Date.now(),
+          text: inputValue,
+          createdAt: `${new Date().getHours()}:${new Date().getMinutes()}`,
+        },
       ]);
       setInputValue("");
     }
@@ -69,7 +57,9 @@ const Videodi = () => {
       <div className="container">
         <div className="video">
           <div className="video--left">
-            <h1 style={{fontSize:"20px",fontWeight:"400"}}>Урок 1 : Ознакомление</h1>
+            <h1 style={{ fontSize: "20px", fontWeight: "400" }}>
+              Урок 1 : Ознакомление
+            </h1>
             <div className="video-if">
               <iframe
                 width="850px"
@@ -94,16 +84,25 @@ const Videodi = () => {
                 <ul>
                   {items.map((item) => (
                     <ul key={item.id}>
-                      {item.text} ( {item.createdAt.toLocaleString()})
-                      {item.updatedAt && (
-                        <> | Last Updated: {item.updatedAt.toLocaleString()}</>
-                      )}
-                      {/* <button onClick={() => handleEditItem(item.id)}>
-                        Edit
-                      </button>
-                      <button onClick={() => handleDeleteItem(item.id)}>
-                        Delete
-                      </button> */}
+                      <img
+                        className="video--right__chat--ulGroup__userImage"
+                        src={userImage}
+                        alt=""
+                      />
+                      <div>
+                        <div className="video--right__chat--ulGroup--nameAndHourse">
+                          <h1>{name}</h1>
+                          {item.createdAt.toLocaleString()}
+                        </div>
+
+                        {item.text}
+                        {item.updatedAt && (
+                          <>
+                            {" "}
+                            | Last Updated: {item.updatedAt.toLocaleString()}
+                          </>
+                        )}
+                      </div>
                     </ul>
                   ))}
                 </ul>
