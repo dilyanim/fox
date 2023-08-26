@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { AiOutlineSend } from "react-icons/ai";
+import { useSelector } from "react-redux";
 
 const Videodi = () => {
+  const { name } = useSelector((s) => s.user);
+  const { userImage } = useSelector((s) => s.user);
   const [items, setItems] = useState([]);
   const [inputValue, setInputValue] = useState("");
   const [editingItemId, setEditingItemId] = useState(null);
@@ -14,7 +17,11 @@ const Videodi = () => {
     if (inputValue.trim() !== "") {
       setItems([
         ...items,
-        { id: Date.now(), text: inputValue, createdAt: new Date() },
+        {
+          id: Date.now(),
+          text: inputValue,
+          createdAt: `${new Date().getHours()}:${new Date().getMinutes()}`,
+        },
       ]);
       setInputValue("");
     }
@@ -77,16 +84,25 @@ const Videodi = () => {
                 <ul>
                   {items.map((item) => (
                     <ul key={item.id}>
-                      {item.text} ( {item.createdAt.toLocaleString()})
-                      {item.updatedAt && (
-                        <> | Last Updated: {item.updatedAt.toLocaleString()}</>
-                      )}
-                      {/* <button onClick={() => handleEditItem(item.id)}>
-                        Edit
-                      </button>
-                      <button onClick={() => handleDeleteItem(item.id)}>
-                        Delete
-                      </button> */}
+                      <img
+                        className="video--right__chat--ulGroup__userImage"
+                        src={userImage}
+                        alt=""
+                      />
+                      <div>
+                        <div className="video--right__chat--ulGroup--nameAndHourse">
+                          <h1>{name}</h1>
+                          {item.createdAt.toLocaleString()}
+                        </div>
+
+                        {item.text}
+                        {item.updatedAt && (
+                          <>
+                            {" "}
+                            | Last Updated: {item.updatedAt.toLocaleString()}
+                          </>
+                        )}
+                      </div>
                     </ul>
                   ))}
                 </ul>
