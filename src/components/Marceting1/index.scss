@@ -320,15 +320,6 @@
 
 
 
- 
- 
-
-
-
-
-
-
-
 @media (max-width: 1440px) {
   #marketingOne {
     .container {
@@ -1598,15 +1589,34 @@
 
  @media (max-width: 576px) {
   #marketingOne {
+    .read-more{
+      button{
+         margin-left: 230px;
+      }
+     
+  }
+    .market-btn{
+      color: #FFF;
+      font-family: Rubik;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 22px;
+      letter-spacing: 0.2px;
+      display: flex;
+      width: 291px;
+      height: 40px;
+      padding: 15px 100px;
+      align-items: center;
+      gap: 15px;
+      flex-shrink: 0;
+      border-radius: 5px;
+      background: #23A6F0;
+      border: none;
+      margin: 71px 150px;
+  }
     .container {
       .h6 p {
-        // width: 1153px ;
-        // color : #000 ;
-        // font-family: Rubik;
-        // font-size: 16px;
-        // font-style: normal ;
-        // font-weight: 400 ;
-        // margin: 0px -40px ;
         display: none;
       }
       .marketingOne {
@@ -2081,104 +2091,19 @@
   }
 }}}}}}
 
+
+
+
+
+
 @media (max-width: 400px) {
-  #marketingOne {
-    .container {
-      .h6 p {
-        // width: 1153px ;
-        // color : #000 ;
-        // font-family: Rubik;
-        // font-size: 16px;
-        // font-style: normal ;
-        // font-weight: 400 ;
-        // margin: 0px -40px ;
-        display: none;
-      }
-      .marketingOne {
-        .market-text {
-          margin: 52px 50px;
-          align-items: center;
-          text-align: center;
-
-          h1 {
-            width: 278px;
-            color: #0b132a;
-            font-family: Rubik;
-            font-size: 30px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 70px;
-            margin-left: 14px;
-          }
-          p {
-            width: 309px;
-            color: #4f5665;
-            text-align: center;
-            font-family: Rubik;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 20px;
-          }
-        }
-        .market-img {
-          margin-left: -118px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          flex-wrap: wrap;
-          img {
-            width: 270px;
-            height: 270px;
-            margin-left: 190px;
-          }
-          .market-title {
-            margin-left: 180px;
-          }
-          h1 {
-            width: 538px;
-            color: var(--text-color, #252b42);
-            font-family: Rubik;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 39px;
-            letter-spacing: 0.1px;
-          }
-          h6 {
-            width: 307px;
-            color: #000;
-            font-family: Rubik;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 15.857px;
-          }
-        }
-      }
-      .modal {
-        position: relative;
-        &--content {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          z-index: 999;
-          background: #000000ab;
-          backdrop-filter: blur(10px);
-          &__panel {
-            width: 75%;
-            height: 90%;
-            background: #efecec;
-
-            &--general {
-              &__top {
     #marketingOne{
-      
+      .read-more{
+        button{
+           margin-left: 225px;
+        }
+       
+    }
         .container{
             .h6 p{
                 // width: 1153px ;
@@ -2543,397 +2468,401 @@
                }
             }
         }
-    }
-    .market-btn{
-        color: #FFF;
-        font-family: Rubik;
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 22px;
-        letter-spacing: 0.2px;
-        display: flex;
-        width: 291px;
-        height: 40px;
-        padding: 15px 100px;
-        align-items: center;
-        gap: 15px;
-        flex-shrink: 0;
-        border-radius: 5px;
-        background: #23A6F0;
-        border: none;
-        margin: 71px 155px;
-    }
-    
+        .market-btn{
+          color: #FFF;
+          font-family: Rubik;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 22px;
+          letter-spacing: 0.2px;
+          display: flex;
+          width: 291px;
+          height: 40px;
+          padding: 15px 100px;
+          align-items: center;
+          gap: 15px;
+          flex-shrink: 0;
+          border-radius: 5px;
+          background: #23A6F0;
+          border: none;
+          margin: 71px 155px;
+      }
+ }
 }
+}
+
 @media (max-width: 376px) {
-    #marketingOne{
-      
-        .container{
-            .h6 p{
-                // width: 1153px ;
-                // color : #000 ;
-                // font-family: Rubik;
-                // font-size: 16px;
-                // font-style: normal ;
-                // font-weight: 400 ;
-                // margin: 0px -40px ;
-                display: none;
-            }
-            .marketingOne{ 
-                
-                .market-text{
-                    margin: 52px 50px;
-                    align-items: center;
-                    text-align: center;
-                    
-    
-                    h1{
-                        width: 410px;
-                        color: #0B132A;
-                        font-family: Rubik;
-                        font-size: 50px;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: 70px;
-                        margin-left: 14px;
-                    }
-                    p{
-                        width: 453px;
-                        color: #4F5665;
-                        text-align: center;
-                        font-family: Rubik;
-                        font-size: 26px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 20px;
-                    }
-                }
-                .market-img{
-                    margin-left: -118px;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    img{
-                        width: 470px;
-                        height: 470px;
-                        margin-left: 168px;
-                    }
-                    .market-title{
-                        margin-left: 158px;
-                    }
-                    h1{
-                        width: 538px;
-                        color: var(--text-color, #252B42);
-                        font-family: Rubik;
-                        font-size: 26px;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: 39px;
-                        letter-spacing: 0.1px;
-                        
-                    }
-                    h6{
-                        width: 507px;
-                        color: #000;
-                        font-family: Rubik;
-                        font-size: 20px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 20.57px;
-                       
-                    }
-                   
-                }
-                 
-    
-                
-            }
-            .modal{
-                position: relative;
-               &--content{
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 999;
-                background: #000000ab;
-                backdrop-filter: blur(10px);
-                &__panel{
-                    width: 100%;
-                    height: 100%;
-                    background: #ffffff;
-                
-                    &--general{
-                       .gen-img{
-                        padding-top: 26px;
-                        padding-left: 80px;
-                        margin: 30px -53px;
-                        width: 400px;
-                       }
+          #marketingOne{
+            
+              .container{
+                  .h6 p{
+                      // width: 1153px ;
+                      // color : #000 ;
+                      // font-family: Rubik;
+                      // font-size: 16px;
+                      // font-style: normal ;
+                      // font-weight: 400 ;
+                      // margin: 0px -40px ;
+                      display: none;
+                  }
+                  .marketingOne{ 
                       
-                       
-                      
-                        &__top{
-                            display: flex;
-                            align-items: center;
-                            gap: 240px;
-                            background-color:  #C9E7FD;
-                            height: 57px;
-                            margin-bottom: -20px;
-                            .cardsImg{
-                               
-                                img{
-                                    width: 165px;
-                                    margin-left: -291px;
-                                }
-                            }
-                            h1{
-                                width: 567px;
-                                height: 32px;
-                                flex-shrink: 0;
-                                color: #348BCA;
-                                text-align: center;
-                                font-family: Roboto;
-                                font-size: 17.952px;
-                                font-style: normal;
-                                font-weight: 400;
-                                line-height: normal;
-                                margin-left: -203px;
-                            }
-                            
-                         &--opshn{
-                        p{
-                            margin-left: -187px;
-                            padding: 35px 0;
-                            width: 776px;
-                            height: 10px;
-                            color: #000;
-                            text-align: center;
-                            font-family: Roboto;
-                            font-size: 19px;
-                            font-style: normal;
-                            font-weight: 400;
-                            line-height: normal;
-                        }
-                            &__input{
-                                width: 26rem;
-                                height: 4rem;
-                                background: #fafafa;
-                                border-radius: 5px;
-                                margin-left: 91px;
-                                border: 0.5px solid rgb(88, 87, 87);
-    
-                            }
-                         }
-                        }
-                        &__inputs{
-                            margin-left: 30px ;
-                            padding: 10px 68px;
-                            display: flex;
-                            gap: 15px;
-                            flex-direction: column;
+                      .market-text{
+                          margin: 52px 50px;
+                          align-items: center;
+                          text-align: center;
                           
-                            input{
-                                width: 24.7rem;
-                                height: 4rem;
-                                border-radius: 5px;
-                                border: 1px solid rgba(0, 0, 0, 0.4);
-                                outline: none;
-                                padding: 0 -13px;
-                                margin-left: -6px;
-                            }
-                            p{
-                                padding: 20px 0;
-                            }
-                            &--left{
-                                button{
-                                    display: none;
-                                    background: #23A6F0;
-                                    font-size: 16px;
-                                    padding: 10px 55px;
-                                    border: none;
-                                    border-radius: 5px;
-                                    color: white;
-                                    transition: .4s;
-                                    margin: 20px 0;
-                                    cursor: pointer;
-                                    margin-left: 383px;
-                                    &:hover{
-                                        background: #efecec;
-                                        color: #23A6F0;
-                                        border: 1px solid #23A6F0;
-                                    }
-                                }
-                                p{
-                                    color: #000;
-                                    font-family: Montserrat;
-                                    font-size: 17px;
-                                    font-style: normal;
-                                    font-weight: 500;
-                                    line-height: normal;
-                                    width: 860px;
-                                    margin: -14px 0;
-                                }
-                            }
-                            &--right{
-                                position: relative;
-                                .op{
-                                    display: flex;
-                                    justify-content: space-between;
-                                    align-items: center;
-                                    margin: 56px 0;
-
+          
+                          h1{
+                              width: 410px;
+                              color: #0B132A;
+                              font-family: Rubik;
+                              font-size: 50px;
+                              font-style: normal;
+                              font-weight: 700;
+                              line-height: 70px;
+                              margin-left: 14px;
+                          }
+                          p{
+                              width: 453px;
+                              color: #4F5665;
+                              text-align: center;
+                              font-family: Rubik;
+                              font-size: 26px;
+                              font-style: normal;
+                              font-weight: 400;
+                              line-height: 20px;
+                          }
+                      }
+                      .market-img{
+                          margin-left: -118px;
+                          display: flex;
+                          justify-content: space-between;
+                          align-items: center;
+                          flex-wrap: wrap;
+                          img{
+                              width: 470px;
+                              height: 470px;
+                              margin-left: 168px;
+                          }
+                          .market-title{
+                              margin-left: 158px;
+                          }
+                          h1{
+                              width: 538px;
+                              color: var(--text-color, #252B42);
+                              font-family: Rubik;
+                              font-size: 26px;
+                              font-style: normal;
+                              font-weight: 700;
+                              line-height: 39px;
+                              letter-spacing: 0.1px;
+                              
+                          }
+                          h6{
+                              width: 507px;
+                              color: #000;
+                              font-family: Rubik;
+                              font-size: 20px;
+                              font-style: normal;
+                              font-weight: 400;
+                              line-height: 20.57px;
+                             
+                          }
+                         
+                      }
+                       
+          
+                      
+                  }
+                  .modal{
+                      position: relative;
+                     &--content{
+                      position: fixed;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 100%;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      z-index: 999;
+                      background: #000000ab;
+                      backdrop-filter: blur(10px);
+                      &__panel{
+                          width: 100%;
+                          height: 100%;
+                          background: #ffffff;
+                      
+                          &--general{
+                             .gen-img{
+                              padding-top: 26px;
+                              padding-left: 80px;
+                              margin: 30px -53px;
+                              width: 400px;
+                             }
+                            
+                             
+                            
+                              &__top{
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 240px;
+                                  background-color:  #C9E7FD;
+                                  height: 57px;
+                                  margin-bottom: -20px;
+                                  .cardsImg{
+                                     
+                                      img{
+                                          width: 165px;
+                                          margin-left: -291px;
+                                      }
+                                  }
+                                  h1{
+                                      width: 567px;
+                                      height: 32px;
+                                      flex-shrink: 0;
+                                      color: #348BCA;
+                                      text-align: center;
+                                      font-family: Roboto;
+                                      font-size: 17.952px;
+                                      font-style: normal;
+                                      font-weight: 400;
+                                      line-height: normal;
+                                      margin-left: -203px;
+                                  }
+                                  
+                               &--opshn{
+                              p{
+                                  margin-left: -187px;
+                                  padding: 35px 0;
+                                  width: 776px;
+                                  height: 10px;
+                                  color: #000;
+                                  text-align: center;
+                                  font-family: Roboto;
+                                  font-size: 19px;
+                                  font-style: normal;
+                                  font-weight: 400;
+                                  line-height: normal;
+                              }
+                                  &__input{
+                                      width: 26rem;
+                                      height: 4rem;
+                                      background: #fafafa;
+                                      border-radius: 5px;
+                                      margin-left: 91px;
+                                      border: 0.5px solid rgb(88, 87, 87);
+          
+                                  }
+                               }
+                              }
+                              &__inputs{
+                                  margin-left: 30px ;
+                                  padding: 10px 68px;
+                                  display: flex;
+                                  gap: 15px;
+                                  flex-direction: column;
                                 
-                                    .op-btn{
-                                        display: block;
-                                        background: rgb(35, 166, 240);
-                                        font-size: 22px;
-                                        padding: 15px 55px;
-                                        border: none;
-                                        border-radius: 10px;
-                                        color: white;
-                                        transition: all 0.4s ease 0s;
-                                        margin: -57px 0px -57px -10px;
-                                        cursor: pointer;
-                                    }
-                                    button{
-                                        background: rgb(35, 166, 240);
-                                        font-size: 22px;
-                                        padding: 15px 55px;
-                                        border: none;
-                                        border-radius: 10px;
-                                        color: white;
-                                        transition: all 0.4s ease 0s;
-                                        margin: -57px 0px -57px -10px;
-                                        cursor: pointer;
-                                    }
-
-                                }
-                               
-                                p{
-                                    color: #000;
-                                    font-family: Montserrat;
-                                    font-size: 17px;
-                                    font-style: normal;
-                                    font-weight: 500;
-                                    line-height: normal;
-                                    width: 860px;
-                                    margin: -10px 0
-                                }
-                                &__modules{
-                                    position: fixed;
-                                    top: 0;
-                                    left: 0;
-                                    width: 100%;
-                                    height: 100%;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: start;
-                                    z-index: 999;
-                                
-                                   
-                                    
-                                    &--arrow{
-                                        margin-top: 50px;
-                                        animation: myAnim 2s ease 0s 1 normal forwards;
-                                        @keyframes myAnim {
-                                            0% {
-                                                animation-timing-function: ease-in;
-                                                opacity: 1;
-                                                transform: translateY(-45px);
-                                            }
-                                        
-                                            24% {
-                                                opacity: 1;
-                                            }
-                                        
-                                            40% {
-                                                animation-timing-function: ease-in;
-                                                transform: translateY(-24px);
-                                            }
-                                        
-                                            65% {
-                                                animation-timing-function: ease-in;
-                                                transform: translateY(-12px);
-                                            }
-                                        
-                                            82% {
-                                                animation-timing-function: ease-in;
-                                                transform: translateY(-6px);
-                                            }
-                                        
-                                            93% {
-                                                animation-timing-function: ease-in;
-                                                transform: translateY(-4px);
-                                            }
-                                        
-                                            25%,
-                                            55%,
-                                            75%,
-                                            87% {
-                                                animation-timing-function: ease-out;
-                                                transform: translateY(0px);
-                                            }
-                                        
-                                            100% {
-                                                animation-timing-function: ease-out;
-                                                opacity: 1;
-                                                transform: translateY(0px);
-                                            }
-                                        }
-                                        span{
-                                            font-size: 100px;
-                                            color: rgb(44, 195, 17);
-                                        }
-                                    }
-                                }
-                            }
-                        }
+                                  input{
+                                      width: 24.7rem;
+                                      height: 4rem;
+                                      border-radius: 5px;
+                                      border: 1px solid rgba(0, 0, 0, 0.4);
+                                      outline: none;
+                                      padding: 0 -13px;
+                                      margin-left: -6px;
+                                  }
+                                  p{
+                                      padding: 20px 0;
+                                  }
+                                  &--left{
+                                      button{
+                                          display: none;
+                                          background: #23A6F0;
+                                          font-size: 16px;
+                                          padding: 10px 55px;
+                                          border: none;
+                                          border-radius: 5px;
+                                          color: white;
+                                          transition: .4s;
+                                          margin: 20px 0;
+                                          cursor: pointer;
+                                          margin-left: 383px;
+                                          &:hover{
+                                              background: #efecec;
+                                              color: #23A6F0;
+                                              border: 1px solid #23A6F0;
+                                          }
+                                      }
+                                      p{
+                                          color: #000;
+                                          font-family: Montserrat;
+                                          font-size: 17px;
+                                          font-style: normal;
+                                          font-weight: 500;
+                                          line-height: normal;
+                                          width: 860px;
+                                          margin: -14px 0;
+                                      }
+                                  }
+                                  &--right{
+                                      position: relative;
+                                      .op{
+                                          display: flex;
+                                          justify-content: space-between;
+                                          align-items: center;
+                                          margin: 56px 0;
+      
+                                      
+                                          .op-btn{
+                                              display: block;
+                                              background: rgb(35, 166, 240);
+                                              font-size: 22px;
+                                              padding: 15px 55px;
+                                              border: none;
+                                              border-radius: 10px;
+                                              color: white;
+                                              transition: all 0.4s ease 0s;
+                                              margin: -57px 0px -57px -10px;
+                                              cursor: pointer;
+                                          }
+                                          button{
+                                              background: rgb(35, 166, 240);
+                                              font-size: 22px;
+                                              padding: 15px 55px;
+                                              border: none;
+                                              border-radius: 10px;
+                                              color: white;
+                                              transition: all 0.4s ease 0s;
+                                              margin: -57px 0px -57px -10px;
+                                              cursor: pointer;
+                                          }
+      
+                                      }
+                                     
+                                      p{
+                                          color: #000;
+                                          font-family: Montserrat;
+                                          font-size: 17px;
+                                          font-style: normal;
+                                          font-weight: 500;
+                                          line-height: normal;
+                                          width: 860px;
+                                          margin: -10px 0
+                                      }
+                                      &__modules{
+                                          position: fixed;
+                                          top: 0;
+                                          left: 0;
+                                          width: 100%;
+                                          height: 100%;
+                                          display: flex;
+                                          justify-content: center;
+                                          align-items: start;
+                                          z-index: 999;
+                                      
+                                         
+                                          
+                                          &--arrow{
+                                              margin-top: 50px;
+                                              animation: myAnim 2s ease 0s 1 normal forwards;
+                                              @keyframes myAnim {
+                                                  0% {
+                                                      animation-timing-function: ease-in;
+                                                      opacity: 1;
+                                                      transform: translateY(-45px);
+                                                  }
+                                              
+                                                  24% {
+                                                      opacity: 1;
+                                                  }
+                                              
+                                                  40% {
+                                                      animation-timing-function: ease-in;
+                                                      transform: translateY(-24px);
+                                                  }
+                                              
+                                                  65% {
+                                                      animation-timing-function: ease-in;
+                                                      transform: translateY(-12px);
+                                                  }
+                                              
+                                                  82% {
+                                                      animation-timing-function: ease-in;
+                                                      transform: translateY(-6px);
+                                                  }
+                                              
+                                                  93% {
+                                                      animation-timing-function: ease-in;
+                                                      transform: translateY(-4px);
+                                                  }
+                                              
+                                                  25%,
+                                                  55%,
+                                                  75%,
+                                                  87% {
+                                                      animation-timing-function: ease-out;
+                                                      transform: translateY(0px);
+                                                  }
+                                              
+                                                  100% {
+                                                      animation-timing-function: ease-out;
+                                                      opacity: 1;
+                                                      transform: translateY(0px);
+                                                  }
+                                              }
+                                              span{
+                                                  font-size: 100px;
+                                                  color: rgb(44, 195, 17);
+                                              }
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                          
+                      }
+                      p {
+                        padding: 14px 0;
+                      }
                     }
-                    
-                }
-                p {
-                  padding: 14px 0;
+                  }
                 }
               }
+              .market-btn{
+                color: #FFF;
+                font-family: Rubik;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 22px;
+                letter-spacing: 0.2px;
+                display: flex;
+                width: 291px;
+                height: 40px;
+                padding: 15px 100px;
+                align-items: center;
+                gap: 15px;
+                flex-shrink: 0;
+                border-radius: 5px;
+                background: #23A6F0;
+                border: none;
+                margin: 71px 155px;
             }
-          }
-        }
-      }
-    }
-  }
+            }
+          
   
-    .market-btn{
-        color: #FFF;
-        font-family: Rubik;
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 22px;
-        letter-spacing: 0.2px;
-        display: flex;
-        width: 291px;
-        height: 40px;
-        padding: 15px 100px;
-        align-items: center;
-        gap: 15px;
-        flex-shrink: 0;
-        border-radius: 5px;
-        background: #23A6F0;
-        border: none;
-        margin: 71px 155px;
-    }
-    
-}
-        }}}}}
 @media (max-width: 320px) {
     #marketingOne{
+      .read-more{
+        button{
+          margin-left: 188px;
+          font-size: 20px;
+          width: 200px;
+        }
+      }
       
         .container{
             .h6 p{
