@@ -16,6 +16,7 @@ import IMG from "../../img/IMG.svg";
 import { AiOutlineHeart } from "react-icons/ai";
 import { useDispatch } from "react-redux";
 import { addToFavorite } from "../../store/Reducer/Reducer";
+
 const AboutCourse = () => {
   const dispatsh = useDispatch()
   return (
@@ -185,10 +186,7 @@ const AboutCourse = () => {
                 <div className="top--img__blockIcon">
                   <div className="top--img__blockIcon--icon">
                     <AiOutlineHeart
-                      style={{
-                        fontSize: "30px",
-                        cursor: "pointer",
-                      }}
+                    
                     />
                   </div>
                 </div>
@@ -309,7 +307,7 @@ const AboutCourse = () => {
         </div>
       </div>
       <Lessons />
-      <ReviewTwo/> 
+      {/* <ReviewTwo/>  */}
     </>
   );
 };

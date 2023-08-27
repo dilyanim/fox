@@ -11,6 +11,7 @@ import AboutCourse from "./components/AboutCourse";
 import Marketing1 from "./components/Marceting1";
 import Profile from "./components/Profile/Profile";
 import Videodi from './components/Videodi'
+import Acardion from "./components/Acardion";
 
 
 function App() {
@@ -27,6 +28,8 @@ function App() {
         <Route path="/marketing1" element={<Marketing1 />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/videodi" element={<Videodi/>}/>
+        <Route path="/videodi" element={<Videodi/>}/>
+        <Route path="/marketing" element={<Marketing1/>}/>
       </Routes>
       <Footer />
     </div>
