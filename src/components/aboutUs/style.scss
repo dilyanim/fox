@@ -942,25 +942,24 @@
           margin-top: 400px;
           &__text{
             h1{
-              color: var(--text-color, #252b42);
-              font-family: Montserrat;
-              font-size: 18px;
+              width: 353px;
+              color: var(--text-color, #252B42);
+              text-align: center;
+              font-family: Rubik;
+              font-size: 24px;
+              font-style: normal;
               font-weight: 700;
-              line-height: 30px;
+              line-height: 35px; /* 145.833% */
               letter-spacing: 0.1px;
-              width: 311px;
-              z-index: 1;
-              left: -143px;
-              position: absolute;
-              top: 73px;
+              margin-top: -112px;
             }
           }
           &__image {
             position: absolute;
-            top: -100px; 
-            left: 50%; 
-            transform: translateX(-50%); 
-            z-index: 2; 
+            top: -157px;
+            left: 53%;
+            transform: translateX(-50%);
+            z-index: 2;
             
             
             &--imgCir {
@@ -968,21 +967,21 @@
               top: -182px;
               right: -148px;
               z-index: 0;
-              width: 300px;
-              height: 300px;
+              width: 240px;
+              height: 240px;
             }
             &--imgRoc {
               position: absolute;
-              right: -200px;
-              top: -214px;
-              width: 400px;
-              height: 400px;
+              right: -172px;
+              top: -166px;
+              width: 290px;
+              height: 290px;
             }
           }
         
         }
         &--block2 {
-          margin-left: 160px;
+          margin-top: -150px;
           &__image {
             position: relative;
             margin-left: -102px;
@@ -1021,7 +1020,7 @@
             width: 300px;
             height: 300px;
           }
-          margin-top: 1500px;
+          margin-top: 1150px;
           &__zag {
             h1 {
               margin: 0 0 32px 70px;            }

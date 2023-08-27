@@ -20,7 +20,8 @@ const Header = () => {
             <NavLink to={"/"}> Главная</NavLink>
             <NavLink to={"/aboutUs"}> О нас</NavLink>
             <NavLink to={"/aboutCourse"}>Курсы</NavLink>
-            <NavLink>Контакты</NavLink>
+            <NavLink to={"/videodi"}>Контакты</NavLink>
+           
           </div>
           <div class="hamburger-menu">
             <input id="menu__toggle" type="checkbox" />
@@ -46,7 +47,7 @@ const Header = () => {
               </NavLink>
               <div className="fix" src={line}></div>
 
-              <NavLink className="menu__item" href="#">
+              <NavLink to={"/videodi"} className="menu__item" href="#">
                 {" "}
                 <TbPointFilled /> Контакты
               </NavLink>

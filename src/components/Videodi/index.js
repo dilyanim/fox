@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { AiOutlineSend } from "react-icons/ai";
 import { useSelector } from "react-redux";
+import {IoIosArrowBack} from 'react-icons/io'
+import { NavLink } from "react-router-dom";
 
 const Videodi = () => {
   const { name } = useSelector((s) => s.user);
@@ -57,13 +59,22 @@ const Videodi = () => {
       <div className="container">
         <div className="video">
           <div className="video--left">
-            <h1 style={{ fontSize: "20px", fontWeight: "400" }}>
+            <div className="arrow-video">
+            <NavLink to={"/marketing"} > 
+              <div className="arrow-bl">
+                   <IoIosArrowBack/>
+              </div>
+             </NavLink> 
+
+            <h1 >
               Урок 1 : Ознакомление
             </h1>
+
+            </div>
+           
             <div className="video-if">
               <iframe
-                width="850px"
-                height="500px"
+               
                 src="https://www.youtube.com/embed/UIKyAKC0ab8"
               ></iframe>
             </div>
@@ -108,12 +119,40 @@ const Videodi = () => {
                 </ul>
               </div>
               <div className="video--right__chat--inputGen">
-                <input
+                <input placeholder="Комментировать..." style={{
+                  fontWeight: "700" ,
+                  fontSize : "14px"
+                }}
                   type="text"
                   value={inputValue}
                   onChange={handleInputChange}
+
                 />
                 <button
+                  className="video--right__chat--inputGen__add"
+                  onClick={
+                    editingItemId !== null ? handleUpdateItem : handleAddItem
+                  }
+                >
+                  {editingItemId !== null ? (
+                    <AiOutlineSend style={{ fontSize: "20px" }} />
+                  ) : (
+                    <AiOutlineSend style={{ fontSize: "20px" }} />
+                  )}
+                </button>
+              </div>
+              <div className="video--right__chat--inputPen">
+            
+                <input placeholder="Комментировать..." style={{
+                  fontWeight: "700" ,
+                  fontSize : "14px"
+                }}
+                  type="text"
+                  value={inputValue}
+                  onChange={handleInputChange}
+
+                />
+                  <button
                   className="video--right__chat--inputGen__add"
                   onClick={
                     editingItemId !== null ? handleUpdateItem : handleAddItem
