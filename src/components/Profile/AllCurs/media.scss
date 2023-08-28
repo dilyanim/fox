@@ -1,3 +1,253 @@
 @media (max-width:1400px){
-
+    #AllCurs {
+        margin: 120px 150px;
+        .container {
+          .AllCurs {
+            zoom: 95%;
+          } 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: -123px;
+            border-top: 2px solid grey;
+            .popular-blocks {
+              display: flex;
+              margin-left: 160px;
+            }
+            .btn-1 {
+              display: flex;
+      
+              padding: 10.882px 16.765px;
+              align-items: flex-start;
+              gap: 10.882px;
+              color: #fff;
+              font-family: Rubik;
+              font-size: 13.059px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              text-transform: capitalize;
+              border-radius: 5.441px;
+              background: #23a6f0;
+              border: none;
+              margin-right: 14px;
+            }
+            .btn-2 {
+              color: #818c96;
+              font-family: Rubik;
+              font-size: 13.059px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              text-transform: capitalize;
+              display: flex;
+      
+              padding: 10.882px 16.765px;
+              align-items: flex-start;
+              gap: 10.882px;
+              border-radius: 5.441px;
+              border: 1.088px solid #c4c4c4;
+              margin: 0 16px;
+              background: none;
+            }
+      
+            h1 {
+              width: 682px;
+              color: #0b132a;
+              font-family: Rubik;
+              font-size: 50px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 70px;
+            }
+            .abBtn {
+              margin: 70px 0;
+              color: #fff;
+              font-family: Rubik;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 25px;
+              border: none;
+              display: inline-flex;
+              padding: 17px 96px;
+              justify-content: center;
+              align-items: center;
+              gap: 10px;
+              border-radius: 10px;
+              background: #23a6f0;
+              box-shadow: 0px 4px 29px 0px rgba(35, 166, 240, 0.7);
+            }
+            .img {
+              width: 492px;
+              height: 456px;
+              flex-shrink: 0;
+              margin-left: 50px;
+            }
+          }
+          .popularCourse {
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-top: 100px;
+            .popular-text {
+              margin: 50px 320px;
+              h1 {
+                margin-left: 20px;
+                width: 498px;
+                color: #0b132a;
+                font-family: Rubik;
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 70px;
+              }
+              p {
+                margin: 12px 0;
+                width: 555px;
+                color: #4f5665;
+                font-family: Rubik;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px; /* 187.5% */
+              }
+            }
+            .btn-1 {
+              display: flex;
+              padding: 10.882px 21.765px;
+              align-items: flex-start;
+              gap: 10.882px;
+              color: #fff;
+              font-family: Rubik;
+              font-size: 13.059px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              text-transform: capitalize;
+              border-radius: 5.441px;
+              background: #23a6f0;
+              border: none;
+              margin-right: 14px;
+            }
+            .btn-2 {
+              color: #818c96;
+              font-family: Rubik;
+              font-size: 13.059px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              text-transform: capitalize;
+              display: flex;
+              padding: 10.882px 21.765px;
+              align-items: flex-start;
+              gap: 10.882px;
+              border-radius: 5.441px;
+              border: 1.088px solid #c4c4c4;
+              margin: 0 16px;
+              background: none;
+            }
+            .popular-blocks {
+              display: flex;
+              margin-left: 160px;
+            }
+          }
+      
+          .lessons {
+            margin-left: -36px;
+            .topic1 {
+              display: flex;
+              margin-top: 30px;
+            }
+            .first {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin: 14px 0 0 -44px;
+            }
+            .top {
+              margin: 10px 34px;
+              width: 329px;
+              height: 580px;
+              box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.15);
+              border-radius: 10px;
+              .top-text {
+                margin: 10px 20px;
+                h6 {
+                  color: var(--second-text-color, #737373);
+                  font-family: Montserrat;
+                  font-size: 11px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 16px;
+                  letter-spacing: 0.2px;
+                }
+              }
+              h4 {
+                width: 219px;
+                color: var(--text-color, #252b42);
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px; /* 150% */
+                letter-spacing: 0.1px;
+                margin: 10px 0;
+              }
+              p {
+                color: var(--second-text-color, #737373);
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; /* 142.857% */
+                letter-spacing: 0.2px;
+                width: 280px;
+              }
+              .top-img {
+                width: 329px;
+                height: 310px;
+                flex-shrink: 0;
+                background: lightgray 50% / cover no-repeat;
+                border-radius: 5px;
+              }
+              .top-btn {
+                margin-top: 15px;
+                color: var(--primary-color, #23a6f0);
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 700;
+                display: flex;
+                padding: 10px 20px;
+                align-items: center;
+                gap: 10px;
+                border-radius: 37px;
+                border: 1px solid var(--primary-color, #23a6f0);
+                background: none;
+                cursor: pointer;
+                &:hover {
+                  background: #23a6f0;
+                  color: #fff;
+                  transition: 1s;
+                }
+              }
+            }
+          }
+          .slider-btn {
+            color: rgba(0, 0, 0, 0.4);
+            font-family: Rubik;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration-line: underline;
+            text-transform: capitalize;
+            border: none;
+            background: none;
+      
+            margin: 100px 448px;
+          }
+        }
+      
+      
 }
