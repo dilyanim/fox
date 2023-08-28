@@ -11,7 +11,7 @@ const Marketing1 = () => {
   const toggleShowMore = () => {
     setShowMore(!showMore);
   };
-    const [selectedPaymentMethod, setSelectedPaymentMethod] = useState("");
+  const [selectedPaymentMethod, setSelectedPaymentMethod] = useState("");
 
   const [isOpen, setIsOpen] = useState(false);
   const [modal, setModal] = useState(false);
@@ -28,7 +28,7 @@ const Marketing1 = () => {
     const isCardHolderNameValid = cardHolderName.trim() !== "";
     const isCardNumberValid = /^\d{16}$/.test(cardNumber);
     const isExpiryDateValid =
-      /^(0[1-9]|1[0-2])\/\d{2}$/.test(expiryDate) && !isDateExpired(expiryDate);
+      /^(0[1-9]|1[0-2])\/\d{2}$/.test(expiryDate) ;
     const isCVCValid = /^\d{3,4}$/.test(cvc);
 
     setIsCardHolderNameValid(isCardHolderNameValid);
@@ -62,23 +62,23 @@ const Marketing1 = () => {
     setIsOpen(false);
   };
 
-  const isDateExpired = (date) => {
-    const currentDate = new Date();
-    const currentYear = currentDate.getFullYear();
-    const currentMonth = currentDate.getMonth() + 1;
+  // const isDateExpired = (date) => {
+  //   const currentDate = new Date();
+  //   const currentYear = currentDate.getFullYear();
+  //   const currentMonth = currentDate.getMonth() + 1;
 
-    const [inputMonth, inputYear] = date
-      .split("")
-      .map((part) => parseInt(part, 10));
+  //   const [inputMonth, inputYear] = date
+  //     .split("")
+  //     .map((part) => parseInt(part, 10));
 
-    if (inputYear < currentYear) {
-      return true;
-    } else if (inputYear === currentYear && inputMonth < currentMonth) {
-      return true;
-    } else {
-      return false;
-    }
-  };
+  //   if (inputYear < currentYear) {
+  //     return true;
+  //   } else if (inputYear === currentYear && inputMonth < currentMonth) {
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
+  // };
 
   const handlePayment = () => {
     if (validateForm()) {
@@ -264,7 +264,15 @@ const Marketing1 = () => {
                         <input
                           type="text"
                           value={expiryDate}
-                          onChange={(e) => setExpiryDate(e.target.value)}
+                          onChange={(e) => {
+                            const formattedDate = e.target.value
+                              .replace(/\D/g, "") // Удалить все символы, кроме цифр
+                              .slice(0, 4) // Ограничить длину ввода до 4 символов (ММГГ)
+                              .replace(/(\d{2})(\d{0,2})/, "$1/$2"); // Добавить слэш между ММ и ГГ
+                            setExpiryDate(formattedDate);
+                          }}
+                          placeholder="ММ/ГГ"
+                          maxLength="5"
                         />
                         {!isExpiryDateValid && (
                           <p style={{ color: "red" }}>Некорректная дата</p>
@@ -291,7 +299,7 @@ const Marketing1 = () => {
                             Оплата
                           </button>
                         </div>
-                        <div style={{ display: modal ? "" : "none" }}>
+                        <div style={{ display: modal ? "none" : "none" }}>
                           <div className="modal--content__panel--general__inputs--right__modules">
                             <div className="modal--content__panel--general__inputs--right__modules--arrow">
                               <p

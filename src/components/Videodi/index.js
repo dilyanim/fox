@@ -15,8 +15,6 @@ const Videodi = () => {
     setInputValue(event.target.value);
   };
 
-  
-
   const handleAddItem = () => {
     if (inputValue.trim() !== "") {
       setItems([
@@ -124,9 +122,9 @@ const Videodi = () => {
                   type="text"
                   value={inputValue}
                   onChange={handleInputChange}
-                  onKeyDown={(e)=>{
-                    if(e.key === 'Enter'){
-                      handleAddItem()
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      handleAddItem();
                     }
                   }}
                 />
