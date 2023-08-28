@@ -2,18 +2,18 @@
   .container {
     .user {
       &--blocks {
-        border-top: 2px solid grey;
+        border-top: 1px solid grey;
         margin-left: 88px;
-        width: 100%;
+        width: 103%;
         &__block1 {
-          width: 1130px;
+          width: 890px;
           height: 301px;
           border-radius: 10px;
           border: 1px solid rgba(0, 0, 0, 0.6);
           margin-left: 22px;
           margin-top: 24px;
           &--imgProf {
-            width: 1130px;
+            width: 890px;
             height: 180px;
           }
           &--userInfo {
@@ -110,7 +110,7 @@
           }
         }
         &__block2 {
-          width: 1130px;
+          width: 890px;
           height: 496px;
           border-radius: 10px;
           border: 1px solid rgba(0, 0, 0, 0.6);
